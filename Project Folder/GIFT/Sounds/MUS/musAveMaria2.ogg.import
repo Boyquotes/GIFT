@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/musAveMaria2.ogg-975f7e45e8e5a2f325cf6434a626b4a5.oggstr"
+
+[deps]
+
+source_file="res://Sounds/MUS/musAveMaria2.ogg"
+dest_files=[ "res://.import/musAveMaria2.ogg-975f7e45e8e5a2f325cf6434a626b4a5.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

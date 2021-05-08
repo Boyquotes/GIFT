@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/mdlLines2.obj-b33b97ddbe817be60d3640e10ecc5397.mesh"
+
+[deps]
+
+files=[ "res://.import/mdlLines2.obj-b33b97ddbe817be60d3640e10ecc5397.mesh" ]
+
+source_file="res://Models/Objects/Shapes/mdlLines2.obj"
+dest_files=[ "res://.import/mdlLines2.obj-b33b97ddbe817be60d3640e10ecc5397.mesh", "res://.import/mdlLines2.obj-b33b97ddbe817be60d3640e10ecc5397.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

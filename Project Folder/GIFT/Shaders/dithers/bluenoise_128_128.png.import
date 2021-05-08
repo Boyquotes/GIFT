@@ -1,0 +1,37 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path.s3tc="res://.import/bluenoise_128_128.png-c1d34c0a427c8e5e58102c135c72b199.s3tc.stex"
+path.etc2="res://.import/bluenoise_128_128.png-c1d34c0a427c8e5e58102c135c72b199.etc2.stex"
+path.etc="res://.import/bluenoise_128_128.png-c1d34c0a427c8e5e58102c135c72b199.etc.stex"
+metadata={
+"imported_formats": [ "s3tc", "etc2", "etc" ],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://Shaders/dithers/bluenoise_128_128.png"
+dest_files=[ "res://.import/bluenoise_128_128.png-c1d34c0a427c8e5e58102c135c72b199.s3tc.stex", "res://.import/bluenoise_128_128.png-c1d34c0a427c8e5e58102c135c72b199.etc2.stex", "res://.import/bluenoise_128_128.png-c1d34c0a427c8e5e58102c135c72b199.etc.stex" ]
+
+[params]
+
+compress/mode=2
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=true
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

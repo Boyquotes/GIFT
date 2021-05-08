@@ -1,0 +1,76 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Models/mdlDodecahedron.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Wireframe/make_wireframe.gd" type="Script" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
+[ext_resource path="res://Models/mdlManUnderTheStair.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://Wireframe/shrPSX2.shader" type="Shader" id=5]
+
+[sub_resource type="Animation" id=1]
+resource_name = "anmMain"
+length = 9.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Pivot:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 360, 0 ) ]
+}
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = ExtResource( 5 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/specular_intensity = null
+shader_param/resolution = 256.0
+shader_param/cull_distance = 100.0
+shader_param/uv_scale = Vector2( 1, 1 )
+shader_param/uv_offset = Vector2( 0, 0 )
+shader_param/emissive = true
+shader_param/moving_uv = true
+shader_param/uv_speed = Vector2( 0.847, -0.525 )
+shader_param/albedoTex = ExtResource( 3 )
+
+[sub_resource type="ShaderMaterial" id=3]
+shader = ExtResource( 5 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/specular_intensity = null
+shader_param/resolution = 256.0
+shader_param/cull_distance = 100.0
+shader_param/uv_scale = Vector2( 1, 1 )
+shader_param/uv_offset = Vector2( 0, 0 )
+shader_param/emissive = true
+shader_param/moving_uv = false
+shader_param/uv_speed = Vector2( 0.847, -0.525 )
+
+[node name="Main" type="Spatial"]
+
+[node name="Pivot" type="Spatial" parent="."]
+
+[node name="Camera" type="Camera" parent="Pivot"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "anmMain"
+anims/anmMain = SubResource( 1 )
+
+[node name="Models" type="Spatial" parent="."]
+
+[node name="mdlDodecahedron" type="MeshInstance" parent="Models"]
+transform = Transform( 4.7235, 0, 0, 0, 4.7235, 0, 0, 0, 4.7235, 0, 0, 0 )
+material_override = SubResource( 2 )
+mesh = ExtResource( 1 )
+material/0 = null
+script = ExtResource( 2 )
+
+[node name="mdlManUnderTheStairs" type="MeshInstance" parent="Models"]
+transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, -0.852972, -0.733953 )
+material_override = SubResource( 3 )
+mesh = ExtResource( 4 )
+material/0 = null
+script = ExtResource( 2 )

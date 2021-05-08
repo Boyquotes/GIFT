@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/trgSec2.obj-f38ae1f23044ecf0b5060bf098167bbb.mesh"
+
+[deps]
+
+files=[ "res://.import/trgSec2.obj-f38ae1f23044ecf0b5060bf098167bbb.mesh" ]
+
+source_file="res://Models/Maps/Sector/Sec/trgSec2.obj"
+dest_files=[ "res://.import/trgSec2.obj-f38ae1f23044ecf0b5060bf098167bbb.mesh", "res://.import/trgSec2.obj-f38ae1f23044ecf0b5060bf098167bbb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

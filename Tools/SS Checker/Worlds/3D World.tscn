@@ -1,0 +1,213 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Shaders/shrPSX2.shader" type="Shader" id=1]
+[ext_resource path="res://Images/3D/bigboss1.png" type="Texture" id=2]
+[ext_resource path="res://Images/3D/bigboss2.png" type="Texture" id=3]
+[ext_resource path="res://default_env.tres" type="Environment" id=4]
+
+[sub_resource type="SpatialMaterial" id=1]
+flags_transparent = true
+flags_unshaded = true
+flags_vertex_lighting = true
+params_diffuse_mode = 1
+params_specular_mode = 4
+params_depth_draw_mode = 3
+albedo_color = Color( 1, 1, 1, 0.666667 )
+albedo_texture = ExtResource( 2 )
+
+[sub_resource type="SpatialMaterial" id=2]
+params_diffuse_mode = 1
+params_specular_mode = 4
+albedo_texture = ExtResource( 3 )
+metallic_specular = 1.0
+
+[sub_resource type="SpatialMaterial" id=3]
+flags_unshaded = true
+flags_vertex_lighting = true
+params_diffuse_mode = 1
+params_specular_mode = 4
+albedo_texture = ExtResource( 2 )
+
+[sub_resource type="ShaderMaterial" id=8]
+shader = ExtResource( 1 )
+shader_param/tint_color = Color( 1, 1, 1, 1 )
+shader_param/specular_intensity = null
+shader_param/vertex_resolution = 100.0
+shader_param/cull_distance = 100.0
+shader_param/uv_scale = Vector2( 1, 1 )
+shader_param/uv_offset = Vector2( 0, 0 )
+shader_param/uv_speed = Vector2( 0, -1 )
+shader_param/affine_texture_mapping = false
+shader_param/emissive = true
+shader_param/moving_uv = false
+shader_param/double_sided = false
+shader_param/stippled_transparent = false
+shader_param/albedoTex = ExtResource( 2 )
+
+[sub_resource type="ShaderMaterial" id=9]
+shader = ExtResource( 1 )
+shader_param/tint_color = Color( 1, 1, 1, 1 )
+shader_param/specular_intensity = null
+shader_param/vertex_resolution = 100.0
+shader_param/cull_distance = 100.0
+shader_param/uv_scale = Vector2( 1, 1 )
+shader_param/uv_offset = Vector2( 0, 0 )
+shader_param/uv_speed = Vector2( 0, -1 )
+shader_param/affine_texture_mapping = false
+shader_param/emissive = true
+shader_param/moving_uv = false
+shader_param/double_sided = false
+shader_param/stippled_transparent = true
+shader_param/albedoTex = ExtResource( 3 )
+
+[sub_resource type="ShaderMaterial" id=7]
+shader = ExtResource( 1 )
+shader_param/tint_color = Color( 1, 1, 1, 1 )
+shader_param/specular_intensity = null
+shader_param/vertex_resolution = 100.0
+shader_param/cull_distance = 100.0
+shader_param/uv_scale = Vector2( 1, 1 )
+shader_param/uv_offset = Vector2( 0, 0 )
+shader_param/uv_speed = Vector2( 0, -1 )
+shader_param/affine_texture_mapping = false
+shader_param/emissive = true
+shader_param/moving_uv = true
+shader_param/double_sided = false
+shader_param/stippled_transparent = false
+shader_param/albedoTex = ExtResource( 2 )
+
+[sub_resource type="Animation" id=4]
+resource_name = "anmMain"
+length = 3.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("1/Box1:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 359, 359 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("1/Box2:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 359, 0, 359 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("1/Box3:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 359, 359, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("2/Box3:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 359, 359 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("2/Box2:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 359, 0, 359 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("2/Box1:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 359, 359, 0 ) ]
+}
+
+[node name="World" type="Spatial"]
+
+[node name="1" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.81852, 0 )
+
+[node name="Box1" type="CSGBox" parent="1"]
+transform = Transform( 0.999696, 0.0174495, -0.0174521, -0.0174521, 0.999848, 0, 0.0174495, 0.000304577, 0.999847, 0, 0, 0 )
+width = 1.5
+height = 1.5
+depth = 1.5
+material = SubResource( 1 )
+
+[node name="Box2" type="CSGBox" parent="1"]
+transform = Transform( 0.999848, 0.0174521, 0, -0.0174495, 0.999696, 0.0174521, 0.000304577, -0.0174495, 0.999847, 2, 0, -2 )
+width = 1.5
+height = 1.5
+depth = 1.5
+material = SubResource( 2 )
+
+[node name="Box3" type="CSGBox" parent="1"]
+transform = Transform( 0.999847, 0.000304577, -0.0174495, 0, 0.999848, 0.0174521, 0.0174521, -0.0174495, 0.999696, -2, 0, 2 )
+width = 1.5
+height = 1.5
+depth = 1.5
+material = SubResource( 3 )
+
+[node name="2" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.989545, 0 )
+
+[node name="Box1" type="CSGBox" parent="2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+width = 1.5
+height = 1.5
+depth = 1.5
+material = SubResource( 8 )
+
+[node name="Box2" type="CSGBox" parent="2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2 )
+width = 1.5
+height = 1.5
+depth = 1.5
+material = SubResource( 9 )
+
+[node name="Box3" type="CSGBox" parent="2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2 )
+width = 1.5
+height = 1.5
+depth = 1.5
+material = SubResource( 7 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.707107, -0.253404, 0.660141, 0, 0.933581, 0.358368, -0.707107, -0.253404, 0.660141, 4, 3, 4 )
+environment = ExtResource( 4 )
+current = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "anmMain"
+anims/anmMain = SubResource( 4 )

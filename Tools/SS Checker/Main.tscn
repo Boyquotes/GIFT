@@ -1,0 +1,137 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://addons/monitor_overlay/monitor_overlay.gd" type="Script" id=1]
+[ext_resource path="res://Main.gd" type="Script" id=2]
+[ext_resource path="res://Shaders/dithers/psxdither.png" type="Texture" id=3]
+[ext_resource path="res://Shaders/Screen/shrDither.shader" type="Shader" id=4]
+[ext_resource path="res://Worlds/2D World.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Worlds/3D World.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Shaders/dithers/bayer8x8.png" type="Texture" id=7]
+[ext_resource path="res://Shaders/dithers/bayer2x2.png" type="Texture" id=8]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 4 )
+shader_param/col_depth = 32.0
+shader_param/dith_range = 1.0
+shader_param/dither_tex = ExtResource( 8 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 640, 180 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 640, 180 )
+
+[sub_resource type="Animation" id=4]
+resource_name = "anmMain"
+length = 6.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("fxShader:material:shader_param/col_depth")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2, 2.1, 4, 4.1, 6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 6.0, 0.0, 6.0, 0.0, 6.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("fxShader:material:shader_param/dither_tex")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2.1, 4.1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 3 ), ExtResource( 7 ), ExtResource( 8 ) ]
+}
+
+[node name="Main" type="Node"]
+script = ExtResource( 2 )
+
+[node name="2D Test" type="ViewportContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+stretch = true
+stretch_shrink = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Viewport" type="Viewport" parent="2D Test"]
+size = Vector2( 640, 360 )
+handle_input_locally = false
+disable_3d = true
+usage = 0
+render_target_update_mode = 3
+audio_listener_enable_2d = true
+
+[node name="World" parent="2D Test/Viewport" instance=ExtResource( 5 )]
+
+[node name="3D Test" type="ViewportContainer" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+stretch = true
+stretch_shrink = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Viewport" type="Viewport" parent="3D Test"]
+size = Vector2( 640, 360 )
+handle_input_locally = false
+render_target_update_mode = 0
+audio_listener_enable_2d = true
+
+[node name="World" parent="3D Test/Viewport" instance=ExtResource( 6 )]
+
+[node name="Ui" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="fxShader" type="ColorRect" parent="Ui"]
+material = SubResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MonitorOverlay" type="VBoxContainer" parent="Ui"]
+anchor_bottom = 1.0
+margin_right = 425.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+background_color = Color( 0, 0, 0, 0.501961 )
+graph_color = Color( 1, 0, 0.494118, 1 )
+static_memory = true
+dynamic_memory = true
+shader_changes = true
+draw_calls_3d = true
+draw_calls_2d = true
+video_memory = true
+vertex_memory = true
+
+[node name="btnTogleScene" type="TouchScreenButton" parent="Ui"]
+shape = SubResource( 2 )
+
+[node name="btnTogleShader" type="TouchScreenButton" parent="Ui"]
+position = Vector2( 0, 360.678 )
+shape = SubResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Ui"]
+autoplay = "anmMain"
+anims/anmMain = SubResource( 4 )
+
+[connection signal="released" from="Ui/btnTogleScene" to="." method="_on_btnTogleScene_released"]
+[connection signal="released" from="Ui/btnTogleShader" to="." method="_on_btnTogleShader_released"]

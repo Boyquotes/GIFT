@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Shaders/Screen/shrCC.shader" type="Shader" id=1]
+
+[sub_resource type="ShaderMaterial" id=5]
+shader = ExtResource( 1 )
+shader_param/Shadows = Vector3( 0, 0, 0 )
+shader_param/Midtones = Vector3( 0, 0, 0 )
+shader_param/Hilights = Vector3( 0, 0, 0 )
+
+[node name="fxCC" type="ColorRect"]
+material = SubResource( 5 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bgsVynil.ogg-cff2c5eeb48dde1ce4845d75cb02bb8c.oggstr"
+
+[deps]
+
+source_file="res://Sounds/BGS/bgsVynil.ogg"
+dest_files=[ "res://.import/bgsVynil.ogg-cff2c5eeb48dde1ce4845d75cb02bb8c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

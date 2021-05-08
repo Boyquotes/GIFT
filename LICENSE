@@ -1,3 +1,4 @@
+# GNU LICENSE
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
@@ -672,3 +673,41 @@ may consider it more useful to permit linking proprietary applications with
 the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 <https://www.gnu.org/licenses/why-not-lgpl.html>.
+
+
+# THING SPECIFIC TO THIS PROJECT
+
+* Engine
+Godot Engine itself is distributed using the MIT license,more on "https://godotengine.org/license"
+
+* Code
+All the `.gd` codes in the game are free to use, modify, claim and copy. Use it as you wish
+
+* Shaders
+A lot of shaders used in the project are not made by me, and they are all credited in the credits section of the README.md page. All rights reserved to each creator.
+
+* Textures
+All textures in the game cannot be used without direct permition from Ahopness, The only exeption being logos and press material.
+
+* Models
+All models in the game cannot be used without direct permition from Ahopness, The only exeption being Venus de Milo and David, since those models are in public domain.
+
+* Fonts
+`fontRoboto[...].ttf` - Roboto - are made by Google and licensed under Apache.
+`fontTimes[...].ttf` - Times new roman - is made by Monotype and licensed under Proprietary.
+`fontRubik.ttf` - Rubik - is made by Hubert & Fischer and licensed under Open Font License.
+
+* Sounds
+All of the `.ogg` files in godot are grabbed and modifyed from https://freesound.org/
+
+# PRIVACY POLICY
+
+* Usage of data
+GIFT dont keep any of a user's data, everything aquired at runtime is discarted as soon as the player quits the game.
+
+* Maintaining "save" files
+GIFT uses a "saving" feature, wich is present in most modern games. this feature saves only 3 things necessary for the game to run, these being : 
+- "currect_scene" : where the player is in the videogame.
+- "on_tutorial" : check if the player is on a tutorial phase.
+- "player_movable": check if the player was currecly moving when the file is created.
+None of these ocntain sensitive information and are used to benefit the user of the videogame.

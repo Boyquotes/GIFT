@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/sfxDoor.ogg-26f002aca84590e935ddac588261de04.oggstr"
+
+[deps]
+
+source_file="res://Sounds/SFX/sfxDoor.ogg"
+dest_files=[ "res://.import/sfxDoor.ogg-26f002aca84590e935ddac588261de04.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

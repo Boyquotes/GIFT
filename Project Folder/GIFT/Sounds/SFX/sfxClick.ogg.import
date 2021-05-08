@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/sfxClick.ogg-73f7314a39414c664c68737f649bb4c3.oggstr"
+
+[deps]
+
+source_file="res://Sounds/SFX/sfxClick.ogg"
+dest_files=[ "res://.import/sfxClick.ogg-73f7314a39414c664c68737f649bb4c3.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

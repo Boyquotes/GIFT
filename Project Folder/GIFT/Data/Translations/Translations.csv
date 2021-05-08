@@ -1,0 +1,143 @@
+,en,pt_BR
+&menu1,Play,Jogar
+&menu2,Continue,Continuar
+&menu3,New game,Novo jogo
+&menu4,This game saves automatically,Este jogo salva automaticamente.
+&menu5,Best experienced with headphones.,Melhor experenciado com fones de ouvido.
+&menu6,This game have controller and keyboard support.,Este jogo possui suporte para controle e teclado.
+,,
+&playtest1,"This is a playtesting build, things may change in the final game","Essa é uma build de playtesting, coisas podem mudar no jogo final"
+&playtest2,"For now, it ends here. Thanks for playtesting GIFT! Don't forget to give feedback to the creator!","Por enquanto, acaba aqui. Obrigado por fazer o playtesting de GIFT! Não esqueça de dar feedback ao criador!"
+&playtest3,End session,Finalizar sessão
+,,
+&ui1,It's locked.,Está trancado.
+&ui2,You unlocked a door near by.,Você destrancou uma porta por perto.
+,,
+&tutorial,"Press ""back"" 2x to turn around","Pressione ""trás"" 2x para virar-se"
+,,
+&intro1,You woke up...,Você acorda...
+&intro2,"Theres someone on your side,","Tem alguém do seu lado,"
+&intro3,They give you a gift.,Ele te dá um presente.
+&intro4,Open it?,Abrir-lo?
+&intro5,Did you like it?,Você gostou?
+,,
+&rosalia1,I was diagnosed with Alzheimer when i was 52.,Eu fui diagnosticada com Alzheimer com 52 anos.
+&rosalia2,You know... Dementia is one of those things that changed everything about your life;,Você sabe... Demência é uma daquelas coisas que altera tudo da sua vida;
+&rosalia3,"From the people around you,","Das pessoas ao seu redor,"
+&rosalia4,"Your memories and thoughts about those people,","As suas memorias com essas pessoas,"
+&rosalia5,And how those people see you.,E como essas pessoas te veem.
+&rosalia6,"Once you get diagnosed, you feel like your life ended by there,","Quando você é diagnosticado, a sensação é que a sua vida acaba alí."
+&rosalia7,"Its like if god looked at you and said ""you're done here"",","É como deus olhasse pra sua cara e falasse ""seu trabalho acabou aqui"","
+&rosalia8,"But something happend and you are still there,","Mas alguma coisa aconteceu e eu ainda to aqui,"
+&rosalia9,"Laying in bed, just waiting until everthing to be gone and you to die in a extreamily slow way.","Deitado na cama, esperando pra tudo desaparecer e pra você morrer de forma lenta."
+,,
+&statue1,"Things just stoped making sense with time,","As coisas paravam de fazer sentido com o tempo,"
+&statue2,"And i stopped searching the sense for those things too,",E eu parei de procurar sentido pra essas coisas tambem.
+,,
+&interlude1,"In a certain way, i stoped carying about the people that leaved.","De certa forma, eu parei de ligar para as pessoas que sairam."
+&interlude2,Mostly because i was forgetting about them...,Principalmente poque eu estava esquecendo sobre elas...
+&interlude3,But i certainly care about me leaving people's lifes,Mas eu certamente ligo pra eu saindo da vida de pessoas
+&interlude4,"Since im not there to anybody,",Já que eu estou lá pra ninguem.
+&interlude5,"And nobody is there for me,","E ninguem esta lá pra mim,"
+&interlude6,Whats the point for being alive then?,Qual é o ponto de viver então?
+,,
+&brother1,My brother used to visit me frequently.,Meu irmão me visitava frequentemente.
+&brother2,"We used to hang out, he was really suportive!","Agente passava um tempo junto, ele era bem solidario!"
+&brother3,I cant remember a time that he wasnt there for me.,Eu não consigo lembrar em um momento que ele não tava ali pra mim quando eu precisava.
+&brother4,I don't know... I'm just afraid to forget about him.,Você sabe né... eu só tenho medo de esquecer ele.
+,,
+&end1,"From all the people i met,","De todas as pessoas que eu conheci,"
+&end2,"From every place i got,","De todos os lugares que eu já fui,"
+&end3,"It was great,",Valeu a pena.
+&end4,It was worth it.,Foi bom...
+,,
+&god1,Fear not.,Não temas.
+&god2,I've come for you.,Eu estou aqui para você.
+&god3,Everything will make more sense.,Tudo vai fazer mais sentido.
+&god4,Its a matter of time.,É uma questão de tempo.
+&god5,...,...
+&god6,"Go on, it depends on you.","Vai, isso depende de você."
+,,
+&outroUI,Type here (optional),Digite aqui (opcional)
+&outro,"What is the gift, for you?","Oque é o presente, pra você?"
+,,
+&credits0,Continues...,Continua...
+&credits,">Concection lost...
+>
+>
+>A game by : 
+>Lucas Ângelo Câmara (@ahopness)
+>
+>
+>Acknowledgements :
+>Sounds from freesound.org
+>PSOne shader by marmitoTH
+>Dithering shader by WittyCognomen
+>Cloud shader by Gonkee
+>Wireframe script by gorrgolem
+>Melting shader by Krzysztof Kondrak
+>
+>
+>Powered by :
+>Godot
+>
+>
+>Playtested by :
+>YellowMurloc
+>Scott Melanson
+>Lazarus Tegra
+>Warisson
+>Rukasu
+>Gard Gasodden 
+>
+>MacOS version exported by Gard Gassoden.
+>
+>Special credits :
+>Nykra community
+>HPSX community
+>Sis
+>
+>
+>
+>Thanks for playing !
+>
+>Click here to quit",">Conexão perdida...
+>
+>
+>Um jogo por : 
+>Lucas Ângelo Câmara (@ahopness)
+>
+>
+>Reconhecimentos :
+>Sons de freesound.org
+>Shader de PSOne por marmitoTH
+>Shader de Dithering por WittyCognomen
+>Shader de nuvem por Gonkee
+>Script de wireframe  por gorrgolem
+>Shader de Derretimento por Krzysztof Kondrak
+>
+>
+>Feito na:
+>Godot
+>
+>
+>Playtest por :
+>YellowMurloc
+>Scott Melanson
+>Lazarus Tegra
+>Warisson
+>Rukasu
+>Gard Gasodden 
+>
+>Vesão para macOS exportado por Gard Gassoden.
+>
+>Agradecimentos especiais :
+>Comunidade Nykra
+>Comunidade HPSX
+>Maninha
+>
+>
+>
+>Obrigado por jogar!
+>
+>Clique aqui para sair"

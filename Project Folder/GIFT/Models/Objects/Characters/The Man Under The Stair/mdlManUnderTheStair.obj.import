@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/mdlManUnderTheStair.obj-2412229dda287de911283016a0867b77.mesh"
+
+[deps]
+
+files=[ "res://.import/mdlManUnderTheStair.obj-2412229dda287de911283016a0867b77.mesh" ]
+
+source_file="res://Models/Objects/Characters/The Man Under The Stair/mdlManUnderTheStair.obj"
+dest_files=[ "res://.import/mdlManUnderTheStair.obj-2412229dda287de911283016a0867b77.mesh", "res://.import/mdlManUnderTheStair.obj-2412229dda287de911283016a0867b77.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

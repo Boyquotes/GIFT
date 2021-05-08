@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/trgBeg32.obj-b9d5dd9ffdf65e0aedfc0acf9b01a214.mesh"
+
+[deps]
+
+files=[ "res://.import/trgBeg32.obj-b9d5dd9ffdf65e0aedfc0acf9b01a214.mesh" ]
+
+source_file="res://Models/Maps/Begin/3/trgBeg32.obj"
+dest_files=[ "res://.import/trgBeg32.obj-b9d5dd9ffdf65e0aedfc0acf9b01a214.mesh", "res://.import/trgBeg32.obj-b9d5dd9ffdf65e0aedfc0acf9b01a214.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

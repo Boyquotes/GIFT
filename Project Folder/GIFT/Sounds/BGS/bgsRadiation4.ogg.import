@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bgsRadiation4.ogg-ffebac876be5f47fceafbab0638dc70a.oggstr"
+
+[deps]
+
+source_file="res://Sounds/BGS/bgsRadiation4.ogg"
+dest_files=[ "res://.import/bgsRadiation4.ogg-ffebac876be5f47fceafbab0638dc70a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bgmAmem.ogg-d593ade9368374539ad0d53e6f5c27a9.oggstr"
+
+[deps]
+
+source_file="res://Sounds/BGM/bgmAmem.ogg"
+dest_files=[ "res://.import/bgmAmem.ogg-d593ade9368374539ad0d53e6f5c27a9.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

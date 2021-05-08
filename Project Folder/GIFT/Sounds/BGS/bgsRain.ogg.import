@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bgsRain.ogg-f18ac4030a7ab3ea225988165753f8b2.oggstr"
+
+[deps]
+
+source_file="res://Sounds/BGS/bgsRain.ogg"
+dest_files=[ "res://.import/bgsRain.ogg-f18ac4030a7ab3ea225988165753f8b2.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

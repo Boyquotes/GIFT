@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://Smile/Smile.tres" type="SpriteFrames" id=2]
+[ext_resource path="res://GodotRetro/font_vcr_csd_mono.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://GodotRetro/Screen Shaders/VHS.shader" type="Shader" id=141]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 141 )
+shader_param/tape_wave_amount = 0.011
+shader_param/tape_crease_amount = 15.0
+shader_param/color_displacement = 4.184
+shader_param/lines_velocity = 2.226
+
+[sub_resource type="DynamicFont" id=2]
+size = 35
+font_data = ExtResource( 3 )
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2D" type="Node2D" parent="."]
+
+[node name="Footage" type="AnimatedSprite" parent="2D"]
+visible = false
+material = SubResource( 1 )
+frames = ExtResource( 2 )
+centered = false
+
+[node name="Frame" type="Label" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 18.6877
+margin_top = -46.0361
+margin_right = 81.6877
+margin_bottom = -15.0361
+custom_fonts/font = SubResource( 2 )
+text = "000"
+__meta__ = {
+"_edit_use_anchors_": false
+}

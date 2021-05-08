@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/trgOutStairs.obj-ff0d9563063afd7b747ccd7d7acf1e7f.mesh"
+
+[deps]
+
+files=[ "res://.import/trgOutStairs.obj-ff0d9563063afd7b747ccd7d7acf1e7f.mesh" ]
+
+source_file="res://Models/Maps/Outside/OutStairs/trgOutStairs.obj"
+dest_files=[ "res://.import/trgOutStairs.obj-ff0d9563063afd7b747ccd7d7acf1e7f.mesh", "res://.import/trgOutStairs.obj-ff0d9563063afd7b747ccd7d7acf1e7f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,643 @@
+[gd_scene load_steps=31 format=2]
+
+[ext_resource path="res://Data/Fonts/fontRobotoLight.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scripts/scrScene.gd" type="Script" id=2]
+[ext_resource path="res://Sounds/BGS/bgsBuzz.ogg" type="AudioStream" id=3]
+[ext_resource path="res://Sprites/UI/sprArrows.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Credits/sprPnC1.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Credits/sprContinues.png" type="Texture" id=6]
+[ext_resource path="res://Data/Fonts/fontTimes-Bold.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://Shaders/shrGlitch.shader" type="Shader" id=8]
+[ext_resource path="res://Shaders/shrGlitch2.shader" type="Shader" id=9]
+[ext_resource path="res://Sounds/SFX/sfxDoor.ogg" type="AudioStream" id=10]
+[ext_resource path="res://Sounds/MUS/musAveMaria2.ogg" type="AudioStream" id=11]
+[ext_resource path="res://Sounds/SFX/sfxKey.ogg" type="AudioStream" id=12]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 100, -20 )
+
+[sub_resource type="StyleBoxEmpty" id=2]
+content_margin_left = 5.0
+content_margin_right = 5.0
+content_margin_top = 5.0
+
+[sub_resource type="StyleBoxFlat" id=3]
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.929412, 0.929412, 0.929412, 1 )
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.878431, 0.878431, 0.878431, 1 )
+anti_aliasing = false
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="Theme" id=7]
+ScrollContainer/styles/bg = SubResource( 2 )
+VScrollBar/icons/decrement = null
+VScrollBar/icons/decrement_highlight = null
+VScrollBar/icons/increment = null
+VScrollBar/icons/increment_highlight = null
+VScrollBar/styles/grabber = SubResource( 3 )
+VScrollBar/styles/grabber_highlight = SubResource( 4 )
+VScrollBar/styles/grabber_pressed = SubResource( 5 )
+VScrollBar/styles/scroll = SubResource( 6 )
+VScrollBar/styles/scroll_focus = null
+
+[sub_resource type="ShaderMaterial" id=8]
+shader = ExtResource( 9 )
+shader_param/pixel = 20.0
+shader_param/red_offset = Vector2( 0, 0 )
+shader_param/green_offset = Vector2( 0, 0 )
+shader_param/blue_offset = Vector2( 0, 0 )
+shader_param/alpha = 1.0
+shader_param/rand_strength = 0.85
+shader_param/affected = Plane( 0, 0, 1, 1 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 12
+font_data = ExtResource( 1 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 26.5, 26.5 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 26.5, 26.5 )
+
+[sub_resource type="ShaderMaterial" id=12]
+shader = ExtResource( 8 )
+shader_param/range = 0.03
+shader_param/noiseQuality = 250.0
+shader_param/noiseIntensity = 0.009
+shader_param/offsetIntensity = 0.01
+shader_param/colorOffsetIntensity = 0.0
+
+[sub_resource type="DynamicFont" id=13]
+size = 23
+font_data = ExtResource( 7 )
+
+[sub_resource type="Animation" id=14]
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("nTeaser/nTeaserUI/crRefresh:margin_top")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 4.5, 4.6, 4.7, 4.8, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0.0, 0.0, 152.0, 320.0, 495.0, 640.0 ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "activate_screens"
+} ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("nTeaser/nTeaserUI:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("nTeaser/nTeaser:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/4/type = "method"
+tracks/4/path = NodePath("nSounds/bgsBuzz")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 3.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ 0.0 ],
+"method": "play"
+} ]
+}
+
+[sub_resource type="Animation" id=15]
+length = 15.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("nTeaser/nTeaserUI:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("nTeaser/nTeaser:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("nTeaser/nTeaser/txtContinues:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 6, 11, 15 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, false, true, false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("nTeaser/nTeaser/sprContinues:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 6, 11 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, true, false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("nTeaser/nTeaser/sprContinues:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 6, 7.5, 10.5, 11 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0.960784, 0.960784, 0 ), Color( 1, 0.960784, 0.960784, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0, 0, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("nTeaser/nTeaser/sprContinues:material:shader_param/colorOffsetIntensity")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 9, 11 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 1.5 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("nTeaser/nTeaser/txtContinues:material:shader_param/pixel")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 11, 11.4, 11.7, 12, 12.3, 12.7, 13.1, 14.2, 15 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 1.0, 1.0, 6.0, 1.0, 1.0, 9.0, 1.0, 1.0, 20.0 ]
+}
+tracks/7/type = "method"
+tracks/7/path = NodePath(".")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 15.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "play_next_part"
+} ]
+}
+tracks/8/type = "method"
+tracks/8/path = NodePath("nSounds/bgsBuzz")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "stop"
+} ]
+}
+tracks/9/type = "method"
+tracks/9/path = NodePath("nSounds/sfxDoor")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ 0.0 ],
+"method": "play"
+} ]
+}
+tracks/10/type = "method"
+tracks/10/path = NodePath("nSounds/musAveMaria2")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 6, 11 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [ 0.0 ],
+"method": "play"
+}, {
+"args": [  ],
+"method": "stop"
+} ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("nSounds/musAveMaria2:pitch_scale")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 6, 10.5, 11 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 1.0, 1.0, 1.0, 2.0 ]
+}
+
+[sub_resource type="Theme" id=16]
+ScrollContainer/styles/bg = SubResource( 2 )
+VScrollBar/icons/decrement = null
+VScrollBar/icons/decrement_highlight = null
+VScrollBar/icons/increment = null
+VScrollBar/icons/increment_highlight = null
+VScrollBar/styles/grabber = SubResource( 3 )
+VScrollBar/styles/grabber_highlight = SubResource( 4 )
+VScrollBar/styles/grabber_pressed = SubResource( 5 )
+VScrollBar/styles/scroll = null
+VScrollBar/styles/scroll_focus = null
+
+[sub_resource type="Animation" id=17]
+length = 10.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("nCredits/nUI/scrollContainer/txtCredits:visible_characters")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 1.2, 1.4, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 9, 9.3, 9.6, 9.9, 10.2, 10.5, 10.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 0, 11, 15, 16, 17, 18, 15, 16, 17, 18, 15, 16, 17, 18, 58, 235, 254, 339, 395, 416, -1 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("nCredits/nUI/scrollContainer:scroll_vertical")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 10.2, 10.5, 10.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 40, 70, 90 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("nCredits/nUI/scrollContainer:mouse_filter")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 10.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 1, 0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("nCredits/nUI/scrollContainer:theme")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 10.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ SubResource( 7 ), SubResource( 16 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("nCredits/nUI/scrollContainer/txtCredits:material:shader_param/pixel")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1, 1.4, 4, 4.5, 4.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 20.0, 20.0, 1.0, 1.0, 20.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=18]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("nTeaser/nTeaserUI/crRefresh:margin_top")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0.0, 169.0, 320.0, 464.0, 640.0 ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "activate_screens"
+} ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("nSounds/bgsBuzz:pitch_scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0.95, 0.98, 1.0, 1.0 ]
+}
+
+[node name="scnCredits" type="Spatial"]
+script = ExtResource( 2 )
+currect_scene = 5
+anm = NodePath("anmMain")
+
+[node name="nCredits" type="Node" parent="."]
+
+[node name="nUI" type="Control" parent="nCredits"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="crBG" type="ColorRect" parent="nCredits/nUI"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pivotExit" type="Control" parent="nCredits/nUI"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btnExit" type="TouchScreenButton" parent="nCredits/nUI/pivotExit"]
+shape = SubResource( 1 )
+shape_visible = false
+
+[node name="scrollContainer" type="ScrollContainer" parent="nCredits/nUI"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 1
+theme = SubResource( 7 )
+follow_focus = true
+scroll_horizontal_enabled = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txtCredits" type="Label" parent="nCredits/nUI/scrollContainer"]
+material = SubResource( 8 )
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 345.0
+margin_bottom = 735.0
+rect_min_size = Vector2( 340, 730 )
+custom_fonts/font = SubResource( 9 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "&credits"
+clip_text = true
+uppercase = true
+percent_visible = 0.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nTeaser" type="Node" parent="."]
+
+[node name="nTeaserUI" type="Control" parent="nTeaser"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="uiButtons" type="Control" parent="nTeaser/nTeaserUI"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -20.0
+margin_top = -40.0
+margin_right = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Up" type="Sprite" parent="nTeaser/nTeaserUI/uiButtons"]
+position = Vector2( 0, -159 )
+texture = ExtResource( 4 )
+centered = false
+hframes = 7
+
+[node name="upButton" type="TouchScreenButton" parent="nTeaser/nTeaserUI/uiButtons/Up"]
+shape = SubResource( 10 )
+shape_visible = false
+
+[node name="Down" type="Sprite" parent="nTeaser/nTeaserUI/uiButtons"]
+position = Vector2( 0, -99 )
+texture = ExtResource( 4 )
+centered = false
+hframes = 7
+frame = 1
+
+[node name="downButton" type="TouchScreenButton" parent="nTeaser/nTeaserUI/uiButtons/Down"]
+shape = SubResource( 11 )
+shape_visible = false
+
+[node name="Interact" type="Sprite" parent="nTeaser/nTeaserUI/uiButtons"]
+position = Vector2( 67, -136 )
+texture = ExtResource( 4 )
+centered = false
+hframes = 7
+frame = 4
+
+[node name="interactButton" type="TouchScreenButton" parent="nTeaser/nTeaserUI/uiButtons/Interact"]
+shape = SubResource( 11 )
+shape_visible = false
+
+[node name="texMap" type="TextureRect" parent="nTeaser/nTeaserUI"]
+anchor_left = 0.5
+anchor_top = 0.500781
+anchor_right = 0.5
+anchor_bottom = 0.500781
+margin_left = -149.5
+margin_top = -252.5
+margin_right = 149.5
+margin_bottom = 46.5
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="crRefresh" type="ColorRect" parent="nTeaser/nTeaserUI"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nTeaser" type="Control" parent="nTeaser"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sprContinues" type="TextureRect" parent="nTeaser/nTeaser"]
+modulate = Color( 1, 0.960784, 0.960784, 0 )
+material = SubResource( 12 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -180.0
+margin_top = -320.0
+margin_right = 180.0
+margin_bottom = 320.0
+mouse_filter = 2
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txtContinues" type="Label" parent="nTeaser/nTeaser"]
+visible = false
+material = SubResource( 8 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -64.0
+margin_top = -13.0
+margin_right = 64.0
+margin_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 13 )
+text = "&credits0"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nSounds" type="Node" parent="."]
+
+[node name="bgsBuzz" type="AudioStreamPlayer" parent="nSounds"]
+stream = ExtResource( 3 )
+bus = "BGS"
+
+[node name="musAveMaria2" type="AudioStreamPlayer" parent="nSounds"]
+stream = ExtResource( 11 )
+volume_db = 2.0
+bus = "MUS"
+
+[node name="sfxDoor" type="AudioStreamPlayer" parent="nSounds"]
+stream = ExtResource( 10 )
+volume_db = -7.0
+bus = "SFX"
+
+[node name="sfxKeyUp" type="AudioStreamPlayer" parent="nSounds"]
+stream = ExtResource( 12 )
+volume_db = -6.0
+pitch_scale = 1.2
+bus = "SFX"
+
+[node name="sfxKeyDown" type="AudioStreamPlayer" parent="nSounds"]
+stream = ExtResource( 12 )
+volume_db = -6.0
+bus = "SFX"
+
+[node name="anmMain" type="AnimationPlayer" parent="."]
+autoplay = "anmPart1"
+anims/anmPart1 = SubResource( 14 )
+anims/anmPart2 = SubResource( 15 )
+anims/anmPart3 = SubResource( 17 )
+anims/anmRefresh = SubResource( 18 )
+
+[connection signal="released" from="nCredits/nUI/pivotExit/btnExit" to="." method="exit_credits"]
+[connection signal="released" from="nTeaser/nTeaserUI/uiButtons/Up/upButton" to="." method="_on_upButton_released"]
+[connection signal="released" from="nTeaser/nTeaserUI/uiButtons/Down/downButton" to="." method="_on_DownButton_released"]
+[connection signal="released" from="nTeaser/nTeaserUI/uiButtons/Interact/interactButton" to="." method="_on_interactButton_released"]

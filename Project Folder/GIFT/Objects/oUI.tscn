@@ -1,0 +1,246 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Data/Fonts/fontRobotoLight.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Sprites/UI/sprGrain.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/scrUI.gd" type="Script" id=3]
+[ext_resource path="res://Sprites/UI/sprArrows.png" type="Texture" id=4]
+[ext_resource path="res://Objects/Effects/fxDithering.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Data/Fonts/fontRobotoLightItalic.ttf" type="DynamicFontData" id=6]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+blend_mode = 1
+
+[sub_resource type="DynamicFont" id=2]
+size = 15
+font_data = ExtResource( 1 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 26.5, 26.5 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 13
+font_data = ExtResource( 6 )
+
+[node name="oUI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="uiDialogue" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="clrBG" type="ColorRect" parent="uiDialogue"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.447059 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sprGrain" type="TextureRect" parent="uiDialogue/clrBG"]
+modulate = Color( 1, 1, 1, 0.631373 )
+material = SubResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txtDialogue" type="Label" parent="uiDialogue"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -128.0
+margin_top = -71.0
+margin_right = 128.0
+margin_bottom = -22.9998
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 2 )
+text = "loren impsun"
+align = 1
+valign = 1
+autowrap = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="uiButtons" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -180.0
+margin_top = -640.0
+margin_right = 180.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btnAlert" type="TouchScreenButton" parent="uiButtons"]
+position = Vector2( 49, 425 )
+shape = SubResource( 3 )
+visibility_mode = 1
+
+[node name="sprAlert" type="Sprite" parent="uiButtons/btnAlert"]
+texture = ExtResource( 4 )
+centered = false
+hframes = 7
+frame = 4
+
+[node name="btnMoveFoward" type="TouchScreenButton" parent="uiButtons"]
+position = Vector2( 235, 461 )
+shape = SubResource( 3 )
+passby_press = true
+
+[node name="sprMoveFoward" type="Sprite" parent="uiButtons/btnMoveFoward"]
+texture = ExtResource( 4 )
+centered = false
+hframes = 7
+
+[node name="btnMoveBackward" type="TouchScreenButton" parent="uiButtons"]
+position = Vector2( 235, 514 )
+shape = SubResource( 3 )
+passby_press = true
+
+[node name="sprMoveBackward" type="Sprite" parent="uiButtons/btnMoveBackward"]
+texture = ExtResource( 4 )
+centered = false
+hframes = 7
+frame = 1
+
+[node name="btnMoveLeft" type="TouchScreenButton" parent="uiButtons"]
+position = Vector2( 182, 486 )
+shape = SubResource( 3 )
+passby_press = true
+
+[node name="sprMoveLeft" type="Sprite" parent="uiButtons/btnMoveLeft"]
+texture = ExtResource( 4 )
+centered = false
+hframes = 7
+frame = 6
+
+[node name="btnMoveRight" type="TouchScreenButton" parent="uiButtons"]
+position = Vector2( 288, 486 )
+shape = SubResource( 3 )
+passby_press = true
+
+[node name="sprMoveRight" type="Sprite" parent="uiButtons/btnMoveRight"]
+texture = ExtResource( 4 )
+centered = false
+hframes = 7
+frame = 5
+
+[node name="btnTurnRight" type="TouchScreenButton" parent="uiButtons"]
+position = Vector2( 76, 486 )
+shape = SubResource( 3 )
+passby_press = true
+
+[node name="sprTurnRight" type="Sprite" parent="uiButtons/btnTurnRight"]
+texture = ExtResource( 4 )
+centered = false
+hframes = 7
+frame = 3
+
+[node name="btnTurnLeft" type="TouchScreenButton" parent="uiButtons"]
+position = Vector2( 23, 486 )
+shape = SubResource( 3 )
+passby_press = true
+
+[node name="sprTurnLeft" type="Sprite" parent="uiButtons/btnTurnLeft"]
+texture = ExtResource( 4 )
+centered = false
+hframes = 7
+frame = 2
+
+[node name="txtTutorial" type="Label" parent="uiButtons"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -47.0
+margin_top = -50.0
+margin_right = 54.0
+margin_bottom = -33.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 4 )
+text = "&tutorial"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="uiEffects" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="uiEffects"]
+position = Vector2( 180, 320 )
+scale = Vector2( 1.8, 3.2 )
+copy_mode = 2
+
+[node name="fxDithering" parent="uiEffects/BackBufferCopy" instance=ExtResource( 5 )]
+margin_left = -100.0
+margin_top = -100.0
+margin_right = -100.0
+margin_bottom = -100.0
+higher_color_depth = false
+
+[node name="uiPC" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="barTop" type="ColorRect" parent="uiPC"]
+anchor_right = 1.0
+margin_top = -8.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="barLeft" type="ColorRect" parent="uiPC"]
+anchor_bottom = 1.0
+margin_left = -8.0
+
+[node name="barBottom" type="ColorRect" parent="uiPC"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = 8.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="barRight" type="ColorRect" parent="uiPC"]
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.05176e-05
+margin_right = 8.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="released" from="uiButtons/btnAlert" to="." method="_on_btnAlert_released"]
+[connection signal="released" from="uiButtons/btnMoveBackward" to="." method="_on_btnMoveBackward_released"]
