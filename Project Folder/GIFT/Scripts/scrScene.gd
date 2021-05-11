@@ -37,7 +37,7 @@ func _process(delta):
 		$nMap/nModels/mdlOut/nDodecas/anmDodeca/nPivot.scale = Vector3(rand_scale, rand_scale, rand_scale)
 	elif currect_scene == scenes.CREDITS:
 		if $anmMain.is_playing() == false:
-			if $nCredits/nUI/scrollContainer.scroll_vertical >= 75:
+			if $nCredits/nUI/scrollContainer.scroll_vertical >= 0:
 				$nCredits/nUI/pivotExit/btnExit.shape_visible = true
 			else:
 				$nCredits/nUI/pivotExit/btnExit.shape_visible = false
@@ -88,8 +88,6 @@ func _on_end_playtesting_session():
 		SceneManeger.change_scene("res://Scenes/scnMenu.tscn -direct -no-auto-save")
 
 # CREDITS
-# all my end-game code looks like shit
-# this is no diferent...
 var on_point_and_click := false
 
 var screen := 0
@@ -109,6 +107,7 @@ func exit_credits():
 	if $nCredits/nUI/pivotExit/btnExit.shape_visible == true:
 		GameManeger.delete_save_file()
 		SceneManeger.change_scene("res://Scenes/scnMenu.tscn -direct -no-auto-save")
+		OS.alert(tr("&thankyou1"), "Fin")
 func activate_screens():
 	on_point_and_click = true
 func _on_upButton_released():

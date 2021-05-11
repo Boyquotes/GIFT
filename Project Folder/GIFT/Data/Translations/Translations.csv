@@ -1,67 +1,70 @@
-,en,pt_BR
-&menu1,Play,Jogar
-&menu2,Continue,Continuar
-&menu3,New game,Novo jogo
-&menu4,This game saves automatically,Este jogo salva automaticamente.
-&menu5,Best experienced with headphones.,Melhor experenciado com fones de ouvido.
-&menu6,This game have controller and keyboard support.,Este jogo possui suporte para controle e teclado.
-,,
-&playtest1,"This is a playtesting build, things may change in the final game","Essa é uma build de playtesting, coisas podem mudar no jogo final"
-&playtest2,"For now, it ends here. Thanks for playtesting GIFT! Don't forget to give feedback to the creator!","Por enquanto, acaba aqui. Obrigado por fazer o playtesting de GIFT! Não esqueça de dar feedback ao criador!"
-&playtest3,End session,Finalizar sessão
-,,
-&ui1,It's locked.,Está trancado.
-&ui2,You unlocked a door near by.,Você destrancou uma porta por perto.
-,,
-&tutorial,"Press ""back"" 2x to turn around","Pressione ""trás"" 2x para virar-se"
-,,
-&intro1,You woke up...,Você acorda...
-&intro2,"Theres someone on your side,","Tem alguém do seu lado,"
-&intro3,They give you a gift.,Ele te dá um presente.
-&intro4,Open it?,Abrir-lo?
-&intro5,Did you like it?,Você gostou?
-,,
-&rosalia1,I was diagnosed with Alzheimer when i was 52.,Eu fui diagnosticada com Alzheimer com 52 anos.
-&rosalia2,You know... Dementia is one of those things that changed everything about your life;,Você sabe... Demência é uma daquelas coisas que altera tudo da sua vida;
-&rosalia3,"From the people around you,","Das pessoas ao seu redor,"
-&rosalia4,"Your memories and thoughts about those people,","As suas memorias com essas pessoas,"
-&rosalia5,And how those people see you.,E como essas pessoas te veem.
-&rosalia6,"Once you get diagnosed, you feel like your life ended by there,","Quando você é diagnosticado, a sensação é que a sua vida acaba alí."
-&rosalia7,"Its like if god looked at you and said ""you're done here"",","É como deus olhasse pra sua cara e falasse ""seu trabalho acabou aqui"","
-&rosalia8,"But something happend and you are still there,","Mas alguma coisa aconteceu e eu ainda to aqui,"
-&rosalia9,"Laying in bed, just waiting until everthing to be gone and you to die in a extreamily slow way.","Deitado na cama, esperando pra tudo desaparecer e pra você morrer de forma lenta."
-,,
-&statue1,"Things just stoped making sense with time,","As coisas paravam de fazer sentido com o tempo,"
-&statue2,"And i stopped searching the sense for those things too,",E eu parei de procurar sentido pra essas coisas tambem.
-,,
-&interlude1,"In a certain way, i stoped carying about the people that leaved.","De certa forma, eu parei de ligar para as pessoas que sairam."
-&interlude2,Mostly because i was forgetting about them...,Principalmente poque eu estava esquecendo sobre elas...
-&interlude3,But i certainly care about me leaving people's lifes,Mas eu certamente ligo pra eu saindo da vida de pessoas
-&interlude4,"Since im not there to anybody,",Já que eu estou lá pra ninguem.
-&interlude5,"And nobody is there for me,","E ninguem esta lá pra mim,"
-&interlude6,Whats the point for being alive then?,Qual é o ponto de viver então?
-,,
-&brother1,My brother used to visit me frequently.,Meu irmão me visitava frequentemente.
-&brother2,"We used to hang out, he was really suportive!","Agente passava um tempo junto, ele era bem solidario!"
-&brother3,I cant remember a time that he wasnt there for me.,Eu não consigo lembrar em um momento que ele não tava ali pra mim quando eu precisava.
-&brother4,I don't know... I'm just afraid to forget about him.,Você sabe né... eu só tenho medo de esquecer ele.
-,,
-&end1,"From all the people i met,","De todas as pessoas que eu conheci,"
-&end2,"From every place i got,","De todos os lugares que eu já fui,"
-&end3,"It was great,",Valeu a pena.
-&end4,It was worth it.,Foi bom...
-,,
-&god1,Fear not.,Não temas.
-&god2,I've come for you.,Eu estou aqui para você.
-&god3,Everything will make more sense.,Tudo vai fazer mais sentido.
-&god4,Its a matter of time.,É uma questão de tempo.
-&god5,...,...
-&god6,"Go on, it depends on you.","Vai, isso depende de você."
-,,
-&outroUI,Type here (optional),Digite aqui (opcional)
-&outro,"What is the gift, for you?","Oque é o presente, pra você?"
-,,
-&credits0,Continues...,Continua...
+,en,pt_BR,es,de,fr,pl
+&setup1,Select a language,Selecione um idioma,Selecciona un idioma,Wähle eine Sprache,Sélectionnez une langue,Wybierz język
+&setup2,Confirm,Confirmar,Confirmar,Bestätigen,Confirmer,Potwierdzać
+,,,,,,
+&menu1,Play,Jogar,Jugar,abspielen,Jouer,Grać
+&menu2,Continue,Continuar,Continuar,Fortsetzen,Continuer,Kontyntynuj
+&menu3,New game,Novo jogo,Nuevo juego,Neues Spiel,Nouveau jeu,Nowa gra
+&menu4,This game saves automatically,Este jogo salva automaticamente.,Este juego guarda automáticamente.,Dieses Spiel speichert automatisch,Ce jeu sauvegarde automatiquement,Gra zapisuje się automatycznie
+&menu5,Best experienced with headphones.,Melhor experenciado com fones de ouvido.,Mejor lightful con auriculares.,Am besten mit Kopfhörern erfahren.,Mieux avec un casque.,Najlepiej doświadczony ze słuchawkami.
+&menu6,This game have controller and keyboard support.,Este jogo possui suporte para controle e teclado.,Este juego cuenta con el apoyo para el control y el teclado.,Dieses Spiel hat Controller und Tastatur-Unterstützung.,Ce jeu a le soutien du contrôleur et du clavier.,Ta gra ma kontrolera klawiatury i wsparcie.
+,,,,,,
+&playtest1,"This is a playtesting build, things may change in the final game","Essa é uma build de playtesting, coisas podem mudar no jogo final","Se trata de una acumulación de pruebas de juego, las cosas pueden cambiar en el último partido","Dies ist ein Spieltest zu bauen, können die Dinge im letzten Spiel ändern","Ceci est une version playtesting, les choses peuvent changer dans le jeu final","Jest to build playtesting, wszystko może się zmienić w ostatnim meczu"
+&playtest2,"For now, it ends here. Thanks for playtesting GIFT! Don't forget to give feedback to the creator!","Por enquanto, acaba aqui. Obrigado por fazer o playtesting de GIFT! Não esqueça de dar feedback ao criador!","Por ahora, sólo aquí. Gracias por hacer pruebas de juego de REGALO! No se olvide de dar retroalimentación al creador!","Denn jetzt, es endet hier. Vielen Dank für die Spieltests GESCHENK! Vergessen Sie nicht, Feedback an den Schöpfer zu geben!","Pour l'instant, elle se termine ici. Merci pour playtesting cadeau! Ne pas oublier de donner des commentaires au créateur!",Na razie kończy się tutaj. Dzięki za playtesting prezent! Nie zapomnij wyrazić opinię twórcy!
+&playtest3,End session,Finalizar sessão,Cerrar sesión,Sitzung beenden,Fin de session,koniec sesji
+,,,,,,
+&ui1,It's locked.,Está trancado.,Está cerrada.,Es ist abgeschlossen.,Il est verrouillé.,Jest zamknięta.
+&ui2,You unlocked a door near by.,Você destrancou uma porta por perto.,Has desbloqueado una puerta cercana.,Sie schloß eine Tür in der Nähe.,Débloquer une porte à proximité.,Ci odblokowane drzwi w pobliżu.
+,,,,,,
+&tutorial,"Press ""back"" 2x to turn around","Pressione ""trás"" 2x para virar-se","Pulse el botón ""volver"" 2x para subir",Drücken Sie auf „zurück“ 2x zu umdrehen,Appuyez sur « retour » 2x pour faire demi-tour,Naciśnij przycisk „back” 2x zawrócić
+,,,,,,
+&intro1,You woke up...,Você acorda...,Te despiertas...,Du bist aufgewacht...,Tu t'es reveillé...,Obudziłeś się...
+&intro2,"Theres someone on your side,","Tem alguém do seu lado,","Tener a alguien a su lado,","Theres jemand auf Ihrer Seite,","Theres quelqu'un de votre côté,","Tam ktoś na swojej stronie,"
+&intro3,They give you a gift.,Ele te dá um presente.,Se le da un regalo.,Sie geben Ihnen ein Geschenk.,Ils vous donnent un cadeau.,Dają ci prezent.
+&intro4,Open it?,Abrir-lo?,¿Abrelo?,Öffne es?,Ouvrez-le?,Otwórz to?
+&intro5,Did you like it?,Você gostou?,¿Te gustó?,Magst du das?,As-tu aimé?,Podobało ci się?
+,,,,,,
+&rosalia1,I was diagnosed with Alzheimer when i was 52.,Eu fui diagnosticada com Alzheimer com 52 anos.,Me diagnosticaron con 52 años de Alzheimer.,"Ich war mit Alzheimer diagnostiziert, als ich 52 war.",J'ai été diagnostiqué avec la maladie d'Alzheimer quand j'avais 52.,"Zdiagnozowano u mnie chorobę Alzheimera, kiedy był 52."
+&rosalia2,You know... Dementia is one of those things that changed everything about your life;,Você sabe... Demência é uma daquelas coisas que altera tudo da sua vida;,Ya sabes ... La demencia es una de esas cosas que cambia toda su vida;,"Sie wissen schon ... Dementia eines dieser Dinge ist, dass alles über Ihr Leben verändert;",Vous savez ... La démence est une de ces choses que tout a changé votre vie;,"Wiesz ... Demencja jest jedna z tych rzeczy, które zmieniły wszystko o swoim życiu;"
+&rosalia3,"From the people around you,","Das pessoas ao seu redor,","Las personas que le rodean,","Von den Menschen um Sie herum,","Des gens autour de vous,","Od ludzi wokół ciebie,"
+&rosalia4,"Your memories and thoughts about those people,","As suas memorias com essas pessoas,","Sus memorias con estas personas,","Ihre Erinnerungen und Gedanken über diese Leute,","Vos souvenirs et réflexions sur ces personnes,","Twoje wspomnienia i myśli o tych ludzi,"
+&rosalia5,And how those people see you.,E como essas pessoas te veem.,Y ya que estas personas te ven.,Und wie die Leute sehen dich.,Et comment ces gens que vous voyez.,A jak ci ludzie cię widzieć.
+&rosalia6,"Once you get diagnosed, you feel like your life ended by there,","Quando você é diagnosticado, a sensação é que a sua vida acaba alí.","Cuando se le diagnostica, la sensación es que su vida termina allí.","Sobald Sie diagnostiziert bekommen, fühlen Sie sich wie Sie Ihr Leben durch dort endete,","Une fois que vous obtenez un diagnostic, vous sentez que votre vie a pris fin par là,","Kiedy się zdiagnozowany, czujesz jak twoje życie zakończył tam,"
+&rosalia7,"Its like if god looked at you and said ""you're done here"",","É como deus olhasse pra sua cara e falasse ""seu trabalho acabou aqui"",","Es como si Dios miró a la cara y hablar ""su trabajo está hecho aquí""","Es ist wie wenn Gott dich ansah und sagte: „Sie sind hier fertig“,","Son comme si Dieu vous a regardé et a dit: « vous avez fait ici »,",To jak gdyby Bóg spojrzał na ciebie i powiedział „ty skończysz tutaj”
+&rosalia8,"But something happend and you are still there,","Mas alguma coisa aconteceu e eu ainda to aqui,","Pero algo pasó y tengo que aquí,","Aber etwas geschieht und Sie sind immer noch da,","Mais quelque chose happend et vous êtes toujours là,","Ale coś się stało, a ty wciąż tam są,"
+&rosalia9,"Laying in bed, just waiting until everthing to be gone and you to die in a extreamily slow way.","Deitado na cama, esperando pra tudo desaparecer e pra você morrer de forma lenta.","Acostado en la cama, esperando a que todo desaparecerá y morir lentamente.","im Bett legen, die nur darauf warten, bis das Everthing weg zu sein und Sie in einer extreamily langsamen Art zu sterben.","Couché dans son lit, en attendant jusqu'à ce que everthing soit parti et vous mourir d'une manière lente extreamily.","Układanie w łóżku, tylko czekają aż everthing aby zniknąć i umrzeć w extreamily powolny sposób."
+,,,,,,
+&statue1,"Things just stoped making sense with time,","As coisas paravam de fazer sentido com o tempo,","Cosas dejan de tener sentido con el tiempo,","Dinge stoped nur mit der Zeit macht Sinn,","Les choses stoped donner un sens avec le temps,","Rzeczy po prostu zatykać sensu z czasem,"
+&statue2,"And i stopped searching the sense for those things too,",E eu parei de procurar sentido pra essas coisas tambem.,Y dejé de buscar sentido a estas cosas también.,"Und ich hielt auch den Sinn für die Dinge suchen,","Et je me suis arrêté de chercher le sens pour ces choses aussi,","I zatrzymał przeszukiwania sens tych rzeczy też,"
+,,,,,,
+&interlude1,"In a certain way, i stoped carying about the people that leaved.","De certa forma, eu parei de ligar para as pessoas que sairam.","En cierto modo, me detuve a llamar a las personas que dejaron.","In gewisser Weise stoped ich über die Menschen, die carying Endivie.","D'une certaine manière, je stoped carying sur les gens qui feuilles.","W pewnym sensie, i zatykać carying o ludziach, że karbowanych."
+&interlude2,Mostly because i was forgetting about them...,Principalmente poque eu estava esquecendo sobre elas...,Sobre todo me poque estaba olvidando de ellos ...,"Vor allem, weil ich über sie wurde vergessen ...",La plupart du temps parce que j'oubliais sur eux ...,"Głównie dlatego, że zapomniał o nich ..."
+&interlude3,But i certainly care about me leaving people's lifes,Mas eu certamente ligo pra eu saindo da vida de pessoas,Pero desde luego llamaré a cabo la vida de las personas,Aber ich sorge mich sicher über mich Menschen Leben verlassen,Mais je me soucie certainement de me laisser les natures mortes de personnes,Ale na pewno dbają o mnie pozostawiając natury ludzi
+&interlude4,"Since im not there to anybody,",Já que eu estou lá pra ninguem.,Desde que estoy allí a cualquiera.,"Da im nicht dort jemand,","Depuis je ne suis pas là pour tout le monde,","Ponieważ nie jestem tam do nikogo,"
+&interlude5,"And nobody is there for me,","E ninguem esta lá pra mim,","Y nadie está ahí para mí,","Und niemand ist da für mich,","Et personne est là pour moi,","I nikt nie jest tam dla mnie,"
+&interlude6,Whats the point for being alive then?,Qual é o ponto de viver então?,Cuál es el punto de la vida entonces?,Was ist der Punkt für am Leben dann sein?,Quel est le point d'être en vie alors?,"Whats punkt za to, że żyje wtedy?"
+,,,,,,
+&brother1,My brother used to visit me frequently.,Meu irmão me visitava frequentemente.,Mi hermano me visitaba a menudo.,Mein Bruder hat mich oft zu besuchen.,Mon frère me rendre visite fréquemment.,Mój brat odwiedzał mnie często.
+&brother2,"We used to hang out, he was really suportive!","Agente passava um tempo junto, ele era bem solidario!","Agente ha pasado tiempo juntos, así que era de Solidaridad!","Früher haben wir hängen, war er wirklich suportive!","Nous avons l'habitude de traîner, il était vraiment suportive!","Użyliśmy wywiesić, był naprawdę suportive!"
+&brother3,I cant remember a time that he wasnt there for me.,Eu não consigo lembrar em um momento que ele não tava ali pra mim quando eu precisava.,No puedo recordar un momento en lo que él no estaba allí para mí cuando lo necesitaba.,"Ich kann nicht an eine Zeit erinnern, dass er war nicht für mich da.",Je ne peux pas me souviens d'un temps qu'il était pas là pour moi.,"Nie pamiętam czas, że Nie był tam dla mnie."
+&brother4,I don't know... I'm just afraid to forget about him.,Você sabe né... eu só tenho medo de esquecer ele.,Ya sabes eh ... Sólo miedo de olvidarlo.,Ich weiß nicht ... Ich habe nur Angst um ihn zu vergessen.,Je ne sais pas ... Je suis juste peur d'oublier.,Nie wiem ... Jestem po prostu boi się o nim zapomnieć.
+,,,,,,
+&end1,"From all the people i met,","De todas as pessoas que eu conheci,","De todas las personas que conocí,","Von allen Menschen, die ich traf,","De tous les gens que je rencontrais,","Ze wszystkich ludzi poznałem,"
+&end2,"From every place i got,","De todos os lugares que eu já fui,","De todos los lugares que he estado,","Von jedem Ort, den ich bekam,","De tous les endroits que je suis arrivé,","Z każdego miejsca dostałam,"
+&end3,"It was great,",Valeu a pena.,Valió la pena.,"Es war toll,","C'était super,","To było wspaniałe,"
+&end4,It was worth it.,Foi bom...,Fue bueno...,Das war es wert.,Ça valait la peine.,To było tego warte.
+,,,,,,
+&god1,Fear not.,Não temas.,No temas.,Keine Angst.,Ne crains pas.,Nie bój się.
+&god2,I've come for you.,Eu estou aqui para você.,Yo estoy aqui para ti.,Ich habe für Sie kommen.,Je suis venu pour vous.,Doszedłem do ciebie.
+&god3,Everything will make more sense.,Tudo vai fazer mais sentido.,Todo va a tener más sentido.,Alles wird mehr Sinn machen.,Tout sera plus logique.,Wszystko będzie więcej sensu.
+&god4,Its a matter of time.,É uma questão de tempo.,Es cuestión de tiempo.,Es ist eine Frage der Zeit.,C'est une question de temps.,To kwestia czasu.
+&god5,...,...,...,...,...,...
+&god6,"Go on, it depends on you.","Vai, isso depende de você.","Will, que depende de usted.","Gehen Sie weiter, es hängt von Ihnen ab.","Allez, cela dépend de vous.","No, to zależy od ciebie."
+,,,,,,
+&outroUI,Type here (optional),Digite aqui (opcional),Ingrese aquí (opcional),Geben Sie hier (optional),Tapez ici (en option),Wpisz tutaj (opcjonalnie)
+&outro,"What is the gift, for you?","Oque é o presente, pra você?",¿Qué es el presente para usted?,"Was ist das Geschenk, für Sie?","Quel est le cadeau, pour vous?",Co to jest prezent dla ciebie?
+,,,,,,
+&credits0,Continues...,Continua...,Continuará...,Geht weiter...,Continue...,Trwa...
 &credits,">Concection lost...
 >
 >
@@ -140,4 +143,163 @@
 >
 >Obrigado por jogar!
 >
->Clique aqui para sair"
+>Clique aqui para sair","> Pérdida de conexión ...
+>
+>
+> Un juego por:
+> Lucas Angelo Hall (@ahopness)
+>
+>
+> Reconocimientos:
+> Sonidos freesound.org
+> Shader PSOne por marmitoTH
+> Shader tramado por WittyCognomen
+> Nube de sombreado por Gonkee
+> Script alambre por gorrgolem
+> Shader de fusión de Krzysztof Kondrak
+>
+>
+> Hecho en:
+> Godot
+>
+>
+> Playtest por:
+> YellowMurloc
+> Scott Melanson
+> Lázaro Tegra
+> Warisson
+> Rukasu
+> Gard Gasodden
+>
+> Vesão para MacOS exportado por Gard Gassoden.
+>
+> Gracias especiales:
+> Nykra Comunidad
+> HPSX Comunidad
+> Maninha
+>
+>
+>
+> Gracias por jugar!
+>
+> Haga clic para salir","> Concection verloren ...
+>
+>
+> Ein Spiel von:
+> Lucas Ângelo Câmara (@ahopness)
+>
+>
+> Anerkennungen:
+> Sounds von freesound.org
+> PSOne-Shader von marmitoTH
+> Dithering-Shader von WittyCognomen
+> Cloud-Shader von Gonkee
+> Wireframe-Skript von gorrgolem
+> Schmelz Shader durch Krzysztof Kondrak
+>
+>
+> Powered by:
+> Godot
+>
+>
+> Playtested von:
+> YellowMurloc
+> Scott Melanson
+> Lazarus Tegra
+> Warisson
+> Rukasu
+> Gard Gasodden
+>
+> MacOS-Version von Gard Gassoden exportiert.
+>
+> Spezielle Kredite:
+> Nykra Gemeinschaft
+> HPSX Gemeinschaft
+> Sis
+>
+>
+>
+> Vielen Dank für das Spiel!
+>
+> Klicken Sie hier zu beenden","> Concection perdu ...
+>
+>
+> Un jeu par:
+> Lucas Ângelo Câmara (@ahopness)
+>
+>
+> Remerciements:
+> Sons de freesound.org
+> Shader PSOne par marmitoTH
+> Tramage shaders par WittyCognomen
+> Shaders Cloud par Gonkee
+> Script par Wireframe gorrgolem
+> Shader fusion par Krzysztof Kondrak
+>
+>
+> Animé par:
+> Godot
+>
+>
+> Playtested par:
+> YellowMurloc
+> Scott Melanson
+> Lazarus Tegra
+> Warisson
+> Rukasu
+> Gard Gasodden
+>
+> Version MacOS exporté par Gard Gassoden.
+>
+> Crédits spéciaux:
+> Communauté Nykra
+> Communauté HPSX
+> Sis
+>
+>
+>
+> Merci pour jouer!
+>
+> Cliquez ici pour quitter","> Concection stracił ...
+>
+>
+> A gra przez:
+> Lucas Ângelo Camara (@ahopness)
+>
+>
+> Podziękowania:
+> Dźwięki z freesound.org
+> PSOne shader przez marmitoTH
+> Dithering cieniującego przez WittyCognomen
+> Chmura shader przez Gonkee
+> Szkielet skryptu przez gorrgolem
+> Moduł cieniujący topnienia Krzysztof Kondrak
+>
+>
+> Powered by:
+> Godot
+>
+>
+> Playtested przez:
+> YellowMurloc
+> Scott Melanson
+> Łazarz Tegra
+> Warisson
+> Rukasu
+> Gard Gasodden
+>
+> MacOS wersja eksportowana przez Gard Gassoden.
+>
+> Punkty szczególne:
+> Społeczność Nykra
+> Społeczność HPSX
+> Sis
+>
+>
+>
+> Dzięki za grę!
+>
+> Kliknij tutaj, aby zamknąć"
+,,,,,,
+&thankyou1,Thanks for playing! Don't forget to rate the game on the playstore!,Obrigado por jogar! Não se esqueça de avaliar o jogo na playstore!,¡Gracias por jugar! No se olvide de evaluar el juego en playstore!,"Danke fürs Spielen! Vergessen Sie nicht, das Spiel auf dem Plays um zu bewerten!",Merci d'avoir joué! Ne pas oublier de noter le jeu sur le Playstore!,Dzięki za grę! Nie zapomnij ocenić grę na playstore!
+&thankyou2,Thanks for playing! Don't forget to rate the game on the itch.io!,Obrigado por jogar! Não se esqueça de avaliar o jogo na itch.io!,¡Gracias por jugar! No se olvide de evaluar el juego en itch.io!,"Danke fürs Spielen! Vergessen Sie nicht, das Spiel auf dem itch.io um zu bewerten!",Merci d'avoir joué! Ne pas oublier de noter le jeu sur le itch.io!,Dzięki za grę! Nie zapomnij ocenić grę na itch.io!

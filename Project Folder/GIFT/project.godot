@@ -12,7 +12,7 @@ config_version=4
 
 config/name="GIFT"
 config/description="Search the post-death"
-run/main_scene="res://Scenes/scnMenu.tscn"
+run/main_scene="res://Scenes/scnSetup.tscn"
 boot_splash/image="res://Sprites/sprSplash.png"
 boot_splash/fullsize=false
 boot_splash/use_filter=false
@@ -126,7 +126,7 @@ pointing/emulate_touch_from_mouse=true
 
 [locale]
 
-translations=PoolStringArray( "res://Data/Translations/Translations.en.translation", "res://Data/Translations/Translations.pt_BR.translation" )
+translations=PoolStringArray( "res://Data/Translations/Translations.en.translation", "res://Data/Translations/Translations.pt_BR.translation", "res://Data/Translations/Translations.de.translation", "res://Data/Translations/Translations.es.translation", "res://Data/Translations/Translations.fr.translation", "res://Data/Translations/Translations.pl.translation" )
 locale_filter=[ 1, [ "en", "pt_BR" ] ]
 
 [logging]
@@ -140,6 +140,7 @@ name_casing=1
 
 [rendering]
 
+quality/driver/driver_name="GLES2"
 quality/intended_usage/framebuffer_allocation.mobile=2
 vram_compression/import_etc=true
 quality/directional_shadow/size=2048
@@ -155,7 +156,7 @@ quality/filters/anisotropic_filter_level=1
 quality/filters/use_nearest_mipmap_filter=true
 gles2/compatibility/enable_high_float.Android=true
 batching/precision/uv_contract=true
+quality/subsurface_scattering/quality=0
 quality/depth/hdr.mobile=true
 environment/default_environment="res://Data/Environments/envDebug.tres"
 quality/dynamic_fonts/use_oversampling=false
-quality/subsurface_scattering/quality=0

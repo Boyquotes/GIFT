@@ -700,6 +700,7 @@ All models in the game cannot be used without direct permition from Ahopness, Th
 * Sounds
 All of the `.ogg` files in godot are grabbed and modifyed from https://freesound.org/
 
+
 # PRIVACY POLICY
 
 * Usage of data
@@ -710,4 +711,8 @@ GIFT uses a "saving" feature, wich is present in most modern games. this feature
 - "currect_scene" : where the player is in the videogame.
 - "on_tutorial" : check if the player is on a tutorial phase.
 - "player_movable": check if the player was currecly moving when the file is created.
-None of these ocntain sensitive information and are used to benefit the user of the videogame.
+None of these contain sensitive information and are used to benefit the user of the videogame.
+
+# CONTACT
+
+Email : thenewlucass2@gmail.com
