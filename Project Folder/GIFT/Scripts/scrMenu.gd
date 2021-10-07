@@ -2,10 +2,13 @@ extends Control
 
 var can_touch = false
 var have_save = false
+var new_game = false
 
 func _ready():
 	check_save_file()
 	reset_icon()
+	
+	Pause.can_pause = false
 func _process(delta):
 	if Input.is_action_just_pressed("player_interact"):
 		if can_touch:
@@ -19,8 +22,8 @@ func _process(delta):
 	if can_touch:
 		$anmMain.playback_speed = 1
 
-func activate_touch():
-	can_touch = true
+func activate_touch(activate :bool = true):
+	can_touch = activate
 
 func check_save_file():
 	if not GameManeger.check_save_file():
@@ -38,8 +41,12 @@ func check_save_file():
 
 func _on_btnPlay_released():
 	if can_touch:
-		SceneManeger.change_scene("res://Scenes/Cutscenes/scnIntro.tscn")
+		$musAveMaria.stop()
 		$sfxButton.play()
+		
+		new_game = true
+		$anmMain.playback_speed = 1
+		$anmMain.play_backwards("anmInit")
 func _on_btnContinue_released():
 	if can_touch:
 		SceneManeger.change_scene(GameManeger.info.currect_scene)
@@ -49,12 +56,23 @@ func _on_btnNewGame_released():
 		_on_btnPlay_released()
 		GameManeger.info.on_tutorial = true
 
+func new_game():
+	if new_game:
+		SceneManeger.change_scene("res://Scenes/Cutscenes/scnIntro.tscn")
+
 func _on_btnSkip_released():
 	$anmMain.playback_speed = 3
 
 func _on_btnTwitter_released():
 	if can_touch:
 		OS.shell_open("https://twitter.com/ahopness")
+func _on_btnLegal_released():
+	if can_touch:
+		OS.shell_open("https://github.com/Ahopness/GIFT/blob/main/LICENSE")
+
+func _on_btnExtras_released():
+	if can_touch:
+		SceneManeger.change_scene("res://Scenes/scnExtras.tscn -no-auto-save")
 
 func prank():
 	if OS.get_datetime(false).hour == 3:

@@ -1,0 +1,207 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Shaders/shrPause.shader" type="Shader" id=1]
+[ext_resource path="res://Data/Fonts/fontRobotoLight.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Sprites/UI/sprPause.png" type="Texture" id=3]
+[ext_resource path="res://Data/Fonts/fontTimes.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://AutoLoads/Pause/scrPause.gd" type="Script" id=5]
+[ext_resource path="res://Data/Themes/themeSliders.tres" type="Theme" id=6]
+[ext_resource path="res://Shaders/Screen/shrUI.shader" type="Shader" id=7]
+[ext_resource path="res://Materials/matUIText.tres" type="Material" id=8]
+
+[sub_resource type="ShaderMaterial" id=6]
+shader = ExtResource( 7 )
+shader_param/blur_amount = 0.016
+shader_param/grain_strenth = 1.064
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 24, 24 )
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = ExtResource( 1 )
+shader_param/contrast = 0.65
+shader_param/brightness = -0.238
+shader_param/strenth = 0.005
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 75, 19.06 )
+
+[node name="autoPause" type="CanvasLayer"]
+script = ExtResource( 5 )
+
+[node name="oUI" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sprPause" type="TextureRect" parent="oUI"]
+self_modulate = Color( 1, 1, 1, 0.313726 )
+material = SubResource( 6 )
+margin_left = 3.88908
+margin_top = 4.94975
+margin_right = 43.8891
+margin_bottom = 44.9497
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btnPause" type="TouchScreenButton" parent="oUI/sprPause"]
+shape = SubResource( 1 )
+
+[node name="Menu" type="Control" parent="oUI"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="backBufferCopy" type="BackBufferCopy" parent="oUI/Menu"]
+position = Vector2( 180, 552.929 )
+scale = Vector2( 1.8, 5.52929 )
+copy_mode = 2
+
+[node name="fxB&W" type="ColorRect" parent="oUI/Menu/backBufferCopy"]
+material = SubResource( 2 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -100.0
+margin_top = -100.0
+margin_right = -100.0
+margin_bottom = -100.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txtPaused" type="Label" parent="oUI/Menu"]
+material = ExtResource( 8 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -76.0
+margin_top = -72.4991
+margin_right = 76.0
+margin_bottom = -38.4991
+grow_horizontal = 0
+grow_vertical = 0
+custom_fonts/font = SubResource( 3 )
+text = "$pause0"
+align = 1
+valign = 1
+autowrap = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txtResume" type="Label" parent="oUI/Menu"]
+material = ExtResource( 8 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -76.0
+margin_top = -6.49915
+margin_right = 76.0
+margin_bottom = 26.5009
+grow_horizontal = 0
+grow_vertical = 0
+custom_fonts/font = SubResource( 4 )
+text = "$pause1"
+align = 1
+valign = 1
+autowrap = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btnResume" type="TouchScreenButton" parent="oUI/Menu/txtResume"]
+position = Vector2( 78, 16 )
+shape = SubResource( 5 )
+shape_centered = false
+
+[node name="txtExit" type="Label" parent="oUI/Menu"]
+material = ExtResource( 8 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -76.0
+margin_top = 32.5009
+margin_right = 76.0
+margin_bottom = 63.5009
+grow_horizontal = 0
+grow_vertical = 0
+custom_fonts/font = SubResource( 4 )
+text = "$pause2"
+align = 1
+valign = 1
+autowrap = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btnExit" type="TouchScreenButton" parent="oUI/Menu/txtExit"]
+position = Vector2( 78, 16 )
+shape = SubResource( 5 )
+shape_centered = false
+
+[node name="txtVolume" type="Label" parent="oUI/Menu"]
+material = ExtResource( 8 )
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -87.0
+margin_top = -58.7183
+margin_right = 87.0
+margin_bottom = -27.7183
+grow_horizontal = 0
+grow_vertical = 0
+mouse_filter = 0
+custom_fonts/font = SubResource( 4 )
+text = "$pause3"
+valign = 2
+autowrap = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sldVolume" type="HSlider" parent="oUI/Menu/txtVolume"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = 16.0
+theme = ExtResource( 6 )
+max_value = 2.0
+step = 0.1
+value = 1.0
+scrollable = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="released" from="oUI/sprPause/btnPause" to="." method="_on_btnPause_released"]
+[connection signal="released" from="oUI/Menu/txtResume/btnResume" to="." method="_on_btnResume_released"]
+[connection signal="released" from="oUI/Menu/txtExit/btnExit" to="." method="_on_btnExit_released"]
+[connection signal="value_changed" from="oUI/Menu/txtVolume/sldVolume" to="." method="_on_sldVolume_value_changed"]

@@ -44,6 +44,13 @@ func _process(delta):
 		
 		if on_point_and_click:
 			screens()
+			
+			if Input.is_action_just_pressed("player_move_foward"):
+				_on_upButton_released()
+			if Input.is_action_just_pressed("player_move_backwards"):
+				_on_DownButton_released()
+			if Input.is_action_just_pressed("player_interact"):
+				_on_interactButton_released()
 
 # END
 var going_to_outro = false
@@ -106,8 +113,13 @@ var can_interact := false
 func exit_credits():
 	if $nCredits/nUI/pivotExit/btnExit.shape_visible == true:
 		GameManeger.delete_save_file()
-		SceneManeger.change_scene("res://Scenes/scnMenu.tscn -direct -no-auto-save")
-		OS.alert(tr("&thankyou1"), "Fin")
+		GameManeger.info.unlock_extras = true
+		SceneManeger.change_scene("res://Scenes/scnMenu.tscn -no-auto-save")
+		
+		if GameManeger.globals.os_type == "Mobile":
+			OS.alert(tr("&thankyou1"), "Fin")
+		elif GameManeger.globals.os_type == "PC":
+			OS.alert(tr("&thankyou2"), "Fin")
 func activate_screens():
 	on_point_and_click = true
 func _on_upButton_released():
@@ -190,17 +202,11 @@ func play_next_part():
 	get_node(anm).play("anmPart3")
 
 func exit_oob(): # OUT OF BOUNDS
-	SceneManeger.change_scene("res://Scenes/scnMenu.tscn -no-auto-save")
+	SceneManeger.change_scene("res://Scenes/scnMenu.tscn -direct -no-auto-save")
 	
 	var log_file = File.new()
 	log_file.open( OS.get_executable_path().get_base_dir() + "/godot.log", File.WRITE)
-	log_file.store_string("Godot Engine v3.2.4.official - https://godotengine.org \nOpenGL ES 3.0 Renderer: " + String(OS.get_video_driver_name(OS.get_current_video_driver())) + " \nOpenGL ES Batching: ON \n \n \nERROR: (Person was found out of bounds (in memory : " + String(GameManeger.info.currect_scene) + ")) \n   at: main/guardian.cpp:1248 \n note: Amelio is watching your everystep to make you safe. Still, be careful with walking around.")
+	log_file.store_string("Godot Engine v3.3.2.official - https://godotengine.org \nOpenGL ES 3.0 Renderer: " + String(OS.get_video_driver_name(OS.get_current_video_driver())) + " \nOpenGL ES Batching: ON \n \n \nERROR: (Person was found out of bounds (in memory : " + String(GameManeger.info.currect_scene) + ")) \n   at: main/guardian.cpp:1248 \n note: Amelio is watching your everystep to make you safe. Still, be careful with walking around.")
 	log_file.close()
 func exit_3am(): # 3 AM EASTER EGG
 	SceneManeger.change_scene("res://Scenes/Wireframe/scnWF1.tscn -direct -no-auto-save")
-
-
-
-
-
-

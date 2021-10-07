@@ -1,12 +1,13 @@
 //SHADER ORIGINALY CREADED BY "caaaaaaarter" FROM SHADERTOY
 //PORTED AND MODIFYED  TO GODOT BY AHOPNESS (@ahopness)
-//
+//LICENSE : CC0
+//COMATIBLE WITH : GLES2, GLES3
 //SHADERTOY LINK : https://www.shadertoy.com/view/4lB3Dc
 
 shader_type canvas_item;
 
-uniform float shake_amount_x  : hint_range(1, 500) = 64.0;
-uniform float shake_amount_y  : hint_range(1, 500) = 32.0;
+uniform float shake_amount_x  : hint_range(1, 500) = 250.0;
+uniform float shake_amount_y  : hint_range(1, 500) = 40.0;
 uniform float white_hlines : hint_range(0, 50) = 50;
 uniform float white_vlines : hint_range(0,80) = 80;
 
@@ -17,8 +18,7 @@ float rand(vec2 co){
 void fragment(){
 	vec4 texColor = vec4(0);
 	// get position to sample
-	vec2 samplePosition = UV.xy;
-	samplePosition.y = (samplePosition.y - 1.0) * -1.0;
+	vec2 samplePosition =  FRAGCOORD.xy / (1.0 / SCREEN_PIXEL_SIZE).xy;
 	
 	float whiteNoise = 9999.0;
 	
@@ -34,7 +34,7 @@ void fragment(){
 	if (whiteNoise > 11.5-30.0*samplePosition.y || whiteNoise < 1.5-5.0*samplePosition.y) {
 		// Sample the texture.
 		//samplePosition.y = 1.0-samplePosition.y; //Fix for upside-down texture
-		texColor = texColor + texture(TEXTURE,UV);
+		texColor = texColor + texture(SCREEN_TEXTURE,samplePosition);
 	}else{
 		// Use white. (I'm adding here so the color noise still applies)
 		texColor = vec4(1);

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Data/Fonts/fontRobotoLight.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Sprites/UI/sprGrain.png" type="Texture" id=2]
@@ -6,6 +6,9 @@
 [ext_resource path="res://Sprites/UI/sprArrows.png" type="Texture" id=4]
 [ext_resource path="res://Objects/Effects/fxDithering.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Data/Fonts/fontRobotoLightItalic.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://Materials/matUIImages2.tres" type="Material" id=7]
+[ext_resource path="res://Materials/matUIText.tres" type="Material" id=8]
+[ext_resource path="res://Shaders/Screen/shrUI.shader" type="Shader" id=9]
 
 [sub_resource type="CanvasItemMaterial" id=1]
 blend_mode = 1
@@ -16,6 +19,12 @@ font_data = ExtResource( 1 )
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 26.5, 26.5 )
+
+[sub_resource type="ShaderMaterial" id=5]
+shader = ExtResource( 9 )
+shader_param/modular = Color( 1, 1, 1, 0.603922 )
+shader_param/blur_amount = 0.0
+shader_param/grain_strenth = 2.0
 
 [sub_resource type="DynamicFont" id=4]
 size = 13
@@ -58,6 +67,7 @@ __meta__ = {
 }
 
 [node name="txtDialogue" type="Label" parent="uiDialogue"]
+material = ExtResource( 8 )
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -96,6 +106,7 @@ shape = SubResource( 3 )
 visibility_mode = 1
 
 [node name="sprAlert" type="Sprite" parent="uiButtons/btnAlert"]
+material = ExtResource( 7 )
 texture = ExtResource( 4 )
 centered = false
 hframes = 7
@@ -107,6 +118,7 @@ shape = SubResource( 3 )
 passby_press = true
 
 [node name="sprMoveFoward" type="Sprite" parent="uiButtons/btnMoveFoward"]
+material = ExtResource( 7 )
 texture = ExtResource( 4 )
 centered = false
 hframes = 7
@@ -117,6 +129,7 @@ shape = SubResource( 3 )
 passby_press = true
 
 [node name="sprMoveBackward" type="Sprite" parent="uiButtons/btnMoveBackward"]
+material = ExtResource( 7 )
 texture = ExtResource( 4 )
 centered = false
 hframes = 7
@@ -128,6 +141,7 @@ shape = SubResource( 3 )
 passby_press = true
 
 [node name="sprMoveLeft" type="Sprite" parent="uiButtons/btnMoveLeft"]
+material = ExtResource( 7 )
 texture = ExtResource( 4 )
 centered = false
 hframes = 7
@@ -139,6 +153,7 @@ shape = SubResource( 3 )
 passby_press = true
 
 [node name="sprMoveRight" type="Sprite" parent="uiButtons/btnMoveRight"]
+material = ExtResource( 7 )
 texture = ExtResource( 4 )
 centered = false
 hframes = 7
@@ -150,6 +165,7 @@ shape = SubResource( 3 )
 passby_press = true
 
 [node name="sprTurnRight" type="Sprite" parent="uiButtons/btnTurnRight"]
+material = ExtResource( 7 )
 texture = ExtResource( 4 )
 centered = false
 hframes = 7
@@ -161,12 +177,14 @@ shape = SubResource( 3 )
 passby_press = true
 
 [node name="sprTurnLeft" type="Sprite" parent="uiButtons/btnTurnLeft"]
+material = ExtResource( 7 )
 texture = ExtResource( 4 )
 centered = false
 hframes = 7
 frame = 2
 
 [node name="txtTutorial" type="Label" parent="uiButtons"]
+material = SubResource( 5 )
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5

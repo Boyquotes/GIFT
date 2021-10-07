@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Data/Fonts/fontRobotoLight.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Scripts/scrScene.gd" type="Script" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Sounds/SFX/sfxDoor.ogg" type="AudioStream" id=10]
 [ext_resource path="res://Sounds/MUS/musAveMaria2.ogg" type="AudioStream" id=11]
 [ext_resource path="res://Sounds/SFX/sfxKey.ogg" type="AudioStream" id=12]
+[ext_resource path="res://Objects/Effects/fxDithering.tscn" type="PackedScene" id=13]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 100, -20 )
@@ -496,6 +497,7 @@ __meta__ = {
 }
 
 [node name="btnExit" type="TouchScreenButton" parent="nCredits/nUI/pivotExit"]
+visible = false
 shape = SubResource( 1 )
 shape_visible = false
 
@@ -650,6 +652,8 @@ uppercase = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="fxDithering" parent="nTeaser" instance=ExtResource( 13 )]
 
 [node name="nSounds" type="Node" parent="."]
 

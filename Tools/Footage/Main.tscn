@@ -1,18 +1,25 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://Smile/Smile.tres" type="SpriteFrames" id=2]
-[ext_resource path="res://GodotRetro/font_vcr_csd_mono.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://GodotRetro/Screen Shaders/VHS.shader" type="Shader" id=141]
+[ext_resource path="res://GodotRetro/Other/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://GodotRetro/Screen Shaders/NTSC.shader" type="Shader" id=4]
+[ext_resource path="res://GodotRetro/Screen Shaders/Aditional Shaders/Sharpness.shader" type="Shader" id=5]
+[ext_resource path="res://GodotRetro/Other/Images/grain.jpg" type="Texture" id=6]
+[ext_resource path="res://addons/Recorder/recorder.gd" type="Script" id=7]
 
 [sub_resource type="ShaderMaterial" id=1]
-shader = ExtResource( 141 )
-shader_param/tape_wave_amount = 0.011
-shader_param/tape_crease_amount = 15.0
-shader_param/color_displacement = 4.184
-shader_param/lines_velocity = 2.226
+shader = ExtResource( 5 )
+shader_param/sharpen_amount = 1.5
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="ShaderMaterial" id=2]
+shader = ExtResource( 4 )
+shader_param/blur_amount = 1.5
+shader_param/signal_quality = 0.08
+shader_param/bottom_strenth = 0.0
+shader_param/grain_tex = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=3]
 size = 35
 font_data = ExtResource( 3 )
 
@@ -25,12 +32,47 @@ __meta__ = {
 }
 
 [node name="2D" type="Node2D" parent="."]
+visible = false
 
 [node name="Footage" type="AnimatedSprite" parent="2D"]
-visible = false
-material = SubResource( 1 )
+scale = Vector2( 0.666667, 0.666667 )
 frames = ExtResource( 2 )
+animation = "david"
 centered = false
+
+[node name="BackBufferCopy2" type="BackBufferCopy" parent="2D"]
+position = Vector2( 640, 360 )
+scale = Vector2( 6.4, 3.6 )
+copy_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="2D/BackBufferCopy2"]
+material = SubResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -100.0
+margin_top = -100.0
+margin_right = -100.0
+margin_bottom = -100.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="2D"]
+position = Vector2( 640, 360 )
+scale = Vector2( 6.4, 3.6 )
+copy_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="2D/BackBufferCopy"]
+material = SubResource( 2 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -100.0
+margin_top = -100.0
+margin_right = -100.0
+margin_bottom = -100.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Frame" type="Label" parent="."]
 anchor_top = 1.0
@@ -39,8 +81,19 @@ margin_left = 18.6877
 margin_top = -46.0361
 margin_right = 81.6877
 margin_bottom = -15.0361
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 text = "000"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Recorder" type="ReferenceRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+frames_per_second = 20.0
+
+[connection signal="animation_finished" from="2D/Footage" to="." method="_on_Footage_animation_finished"]

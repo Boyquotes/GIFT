@@ -64,6 +64,8 @@ func _init():
 	GameManeger.nodes.player = self 
 func _ready():
 	fix_light_bightness()
+	
+	Pause.can_pause = true
 func _physics_process(delta):
 	can_move = GameManeger.info.player_movable
 	

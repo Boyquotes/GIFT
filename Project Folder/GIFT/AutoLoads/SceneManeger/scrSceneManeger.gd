@@ -3,12 +3,7 @@ extends Control
 signal changing_scene
 signal scene_changed
 
-export (float) var volume
-
 onready var anm = $anmTransitions
-
-func _process(delta):
-	AudioServer.set_bus_volume_db(0, linear2db(volume))
 
 func change_scene(scene :String):
 	var scene_path :String
@@ -48,3 +43,6 @@ func change_scene(scene :String):
 		GameManeger.info.currect_scene = scene
 		GameManeger._save()
 		$anmSav.play("anmSave")
+
+func mute_audio(mute: bool):
+	AudioServer.set_bus_mute(0, mute)

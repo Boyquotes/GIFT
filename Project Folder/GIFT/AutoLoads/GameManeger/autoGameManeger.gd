@@ -3,7 +3,8 @@ extends Node
 var info = {
 	player_movable = true,
 	on_tutorial = true,
-	currect_scene = ""}
+	currect_scene = "",
+	unlock_extras = false}
 var nodes = {
 	player = null,
 	UI = null}
@@ -22,8 +23,6 @@ func _init():
 	if check_save_file():
 		_load()
 func _process(delta):
-	if Input.is_action_just_pressed("player_quit"):
-		get_tree().quit()
 	if Input.is_action_just_pressed("player_fullscreen"):
 		if globals.can_go_fullscreen:
 			OS.window_fullscreen =! OS.window_fullscreen
@@ -36,13 +35,15 @@ func _save():
 func _load():
 	var save_file = File.new()
 	save_file.open(data_path + "gift.sav", File.READ)
-	var json = save_file.get_as_text()
+	var json :String = save_file.get_as_text()
 	var json_result = JSON.parse(json).result
 	save_file.close()
 	
 	info.player_movable = json_result["player_movable"]
 	info.on_tutorial = json_result["on_tutorial"]
 	info.currect_scene = json_result["currect_scene"]
+	if "unlock_extras" in json:
+		info.unlock_extras = json_result["unlock_extras"]
 
 func window_setup():
 	if globals.os_type == "Mobile":

@@ -1,8 +1,9 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Data/Fonts/fontRobotoLight.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Data/Fonts/fontRobotoMedium.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Scripts/scrSetup.gd" type="Script" id=3]
+[ext_resource path="res://Materials/matUIText.tres" type="Material" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 22
@@ -76,8 +77,12 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="txtTittle" type="Label" parent="."]
+material = ExtResource( 4 )
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -63.0
@@ -95,6 +100,7 @@ __meta__ = {
 }
 
 [node name="txtConfirm" type="Label" parent="."]
+material = ExtResource( 4 )
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -117,6 +123,7 @@ __meta__ = {
 shape = SubResource( 3 )
 
 [node name="obLanguages" type="OptionButton" parent="."]
+material = ExtResource( 4 )
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -130,7 +137,7 @@ theme = SubResource( 8 )
 custom_fonts/font = SubResource( 2 )
 custom_constants/arrow_margin = -1
 text = "English"
-items = [ "English", null, false, 0, null, "Portugues", null, false, 1, null, "Español", null, false, 2, null, "Deutsche", null, false, 3, null, "Français", null, false, 4, null, "Polskie", null, false, 5, null ]
+items = [ "English", null, false, 0, null, "Portugues", null, false, 1, null, "Español*", null, false, 2, null, "Deutsche*", null, false, 3, null, "Français*", null, false, 4, null, "Polskie*", null, false, 5, null ]
 selected = 0
 __meta__ = {
 "_edit_use_anchors_": false

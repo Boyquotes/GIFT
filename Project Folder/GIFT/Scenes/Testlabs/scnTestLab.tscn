@@ -1,7 +1,6 @@
 [gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Objects/oPlayer.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Data/Environments/envMain.tres" type="Environment" id=2]
 [ext_resource path="res://Objects/oUI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Objects/oDoor.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Materials/matMain.tres" type="Material" id=5]
@@ -33,6 +32,17 @@ data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1
 
 [sub_resource type="ConcavePolygonShape" id=5]
 data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="Environment" id=7]
+background_mode = 1
+ambient_light_color = Color( 0.121569, 0.121569, 0.121569, 1 )
+fog_enabled = true
+fog_color = Color( 0, 0, 0, 1 )
+fog_sun_color = Color( 0, 0, 0, 1 )
+fog_transmit_enabled = true
+fog_height_min = 2.5
+fog_height_max = -0.1
+fog_height_curve = 0.707107
 
 [node name="scnTestLab" type="Spatial"]
 
@@ -139,7 +149,7 @@ door = NodePath("../oDoor")
 [node name="nData" type="Spatial" parent="nMap"]
 
 [node name="WrldEnv" type="WorldEnvironment" parent="nMap/nData"]
-environment = ExtResource( 2 )
+environment = SubResource( 7 )
 
 [node name="nTriggers" type="Spatial" parent="nMap"]
 

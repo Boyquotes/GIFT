@@ -30,6 +30,7 @@ default_bus_layout="res://Data/Audio/busMain.tres"
 GameManeger="*res://AutoLoads/GameManeger/autoGameManeger.gd"
 SceneManeger="*res://AutoLoads/SceneManeger/autoSceneManeger.tscn"
 Overlays="*res://AutoLoads/Overlays/autoOverlays.tscn"
+Pause="*res://AutoLoads/Pause/autoPause.tscn"
 
 [debug]
 
@@ -40,10 +41,15 @@ settings/fps/force_fps=24
 
 window/size/width=360
 window/size/height=640
+window/size/always_on_top=true
 window/vsync/use_vsync=false
 window/handheld/orientation="sensor_portrait"
-window/stretch/mode="viewport"
+window/stretch/mode="2d"
 window/stretch/aspect="keep_width"
+
+[editor_plugins]
+
+enabled=PoolStringArray(  )
 
 [global]
 
@@ -126,8 +132,12 @@ pointing/emulate_touch_from_mouse=true
 
 [locale]
 
-translations=PoolStringArray( "res://Data/Translations/Translations.en.translation", "res://Data/Translations/Translations.pt_BR.translation", "res://Data/Translations/Translations.de.translation", "res://Data/Translations/Translations.es.translation", "res://Data/Translations/Translations.fr.translation", "res://Data/Translations/Translations.pl.translation" )
-locale_filter=[ 1, [ "en", "pt_BR" ] ]
+translations=PoolStringArray( "res://Data/Translations/Translations.de.translation", "res://Data/Translations/Translations.en.translation", "res://Data/Translations/Translations.es.translation", "res://Data/Translations/Translations.fr.translation", "res://Data/Translations/Translations.pl.translation", "res://Data/Translations/Translations.pt_BR.translation" )
+locale_filter=[ 1, [ "de", "en", "es", "fr", "pl", "pt_BR" ] ]
+
+[localization_editor]
+
+locales_path_to_file="res://Data/Translations/Translations-backup.csv"
 
 [logging]
 
@@ -141,6 +151,7 @@ name_casing=1
 [rendering]
 
 quality/driver/driver_name="GLES2"
+quality/driver/fallback_to_gles2=true
 quality/intended_usage/framebuffer_allocation.mobile=2
 vram_compression/import_etc=true
 quality/directional_shadow/size=2048
@@ -154,9 +165,10 @@ quality/shading/force_blinn_over_ggx=true
 quality/depth_prepass/disable_for_vendors=""
 quality/filters/anisotropic_filter_level=1
 quality/filters/use_nearest_mipmap_filter=true
+gles2/compatibility/disable_half_float=true
 gles2/compatibility/enable_high_float.Android=true
 batching/precision/uv_contract=true
-quality/subsurface_scattering/quality=0
 quality/depth/hdr.mobile=true
 environment/default_environment="res://Data/Environments/envDebug.tres"
 quality/dynamic_fonts/use_oversampling=false
+quality/subsurface_scattering/quality=0

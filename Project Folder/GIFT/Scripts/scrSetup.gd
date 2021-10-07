@@ -18,6 +18,11 @@ func _ready():
 			$obLanguages.select(4)
 		"pl":
 			$obLanguages.select(5)
+	
+	Pause.can_pause = false
+func _process(delta):
+	if Input.is_action_just_pressed("player_interact"):
+		_on_btnConfirm_released()
 
 func _on_obLanguages_item_selected(index):
 	match(index):
@@ -35,4 +40,4 @@ func _on_obLanguages_item_selected(index):
 			TranslationServer.set_locale("pl")
 
 func _on_btnConfirm_released():
-	get_tree().change_scene("res://Scenes/scnMenu.tscn")
+	get_tree().change_scene("res://Scenes/scnBoot.tscn")

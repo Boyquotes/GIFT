@@ -6,6 +6,9 @@ enum cutscenes {
 	OUTRO}
 export(cutscenes) var currect_cutscene
 
+func _ready():
+	Pause.can_pause = true
+
 func change_scene():
 	if currect_cutscene == cutscenes.INTRO:
 		SceneManeger.change_scene("res://Scenes/Begin/scnBegin1.tscn")
@@ -54,6 +57,10 @@ func _process(delta):
 		
 		if rotate_gift:
 			rotate_gift(delta)
+		
+		if $nUI/leOpnion.visible == true and $nUI/leOpnion.text.length() >= 15:
+			if Input.is_action_just_pressed("player_interact"):
+				ok_pressed()
 	
 	if currect_cutscene == cutscenes.INTRO or currect_cutscene == cutscenes.OUTRO:
 		if get_node(btn_gift).shape  != null && Input.is_action_just_pressed("player_interact"):

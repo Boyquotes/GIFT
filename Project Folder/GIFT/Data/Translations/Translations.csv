@@ -1,68 +1,77 @@
 ,en,pt_BR,es,de,fr,pl
 &setup1,Select a language,Selecione um idioma,Selecciona un idioma,Wähle eine Sprache,Sélectionnez une langue,Wybierz język
-&setup2,Confirm,Confirmar,Confirmar,Bestätigen,Confirmer,Potwierdzać
+&setup2,Confirm,Confirmar,Confirmar,Bestätigen Sie,Confirmer,Potwierdzać
 ,,,,,,
-&menu1,Play,Jogar,Jugar,abspielen,Jouer,Grać
-&menu2,Continue,Continuar,Continuar,Fortsetzen,Continuer,Kontyntynuj
+&menu1,Play,Jogar,Jugar,Spiel,Jouer,Bawić się
+&menu2,Continue,Continuar,Continuar,Weitermachen,Continuer,Kontyntynuj
 &menu3,New game,Novo jogo,Nuevo juego,Neues Spiel,Nouveau jeu,Nowa gra
-&menu4,This game saves automatically,Este jogo salva automaticamente.,Este juego guarda automáticamente.,Dieses Spiel speichert automatisch,Ce jeu sauvegarde automatiquement,Gra zapisuje się automatycznie
-&menu5,Best experienced with headphones.,Melhor experenciado com fones de ouvido.,Mejor lightful con auriculares.,Am besten mit Kopfhörern erfahren.,Mieux avec un casque.,Najlepiej doświadczony ze słuchawkami.
-&menu6,This game have controller and keyboard support.,Este jogo possui suporte para controle e teclado.,Este juego cuenta con el apoyo para el control y el teclado.,Dieses Spiel hat Controller und Tastatur-Unterstützung.,Ce jeu a le soutien du contrôleur et du clavier.,Ta gra ma kontrolera klawiatury i wsparcie.
+&menu4,This game saves automatically,Este jogo salva automaticamente.,Este juego salva automáticamente.,Dieses Spiel speichert automatisch,Ce jeu sauve automatiquement,Ta gra zapisuje się automatycznie
+&menu5,Best experienced with headphones.,Melhor experenciado com fones de ouvido.,Mejor experimentado con auriculares.,Am besten mit Kopfhörern erfahren.,Mieux expérimenté avec des écouteurs.,Najlepiej doświadczyć słuchawek.
+&menu6,This game have controller and keyboard support.,Este jogo possui suporte para controle e teclado.,Este juego tiene soporte para control y teclado.,Dieses Spiel hat Controller- und Tastatur-Unterstützung.,Ce jeu dispose d'un support de contrôleur et de clavier.,Ta gra ma kontroler i obsługę klawiatury.
+&menu7,A game by Lucas Ângelo / Ahopness,Uma obra de Lucas Ângelo / Ahopness,Una obra de Lucas ÂNGELO / AHOPNESS,Ein Spiel von Lucas ângelo / Ahopness,Un jeu de Lucas Ângelo / Ahopness,Gra Lucas ângelo / AHOPness
+&menu8,Legal information,Informações legais,Información legal,Rechtsinformation,Information légale,Informacje prawne.
+&menu9,Extras,Extras,Extras,Extras,Suppléments,Dodatki
 ,,,,,,
-&playtest1,"This is a playtesting build, things may change in the final game","Essa é uma build de playtesting, coisas podem mudar no jogo final","Se trata de una acumulación de pruebas de juego, las cosas pueden cambiar en el último partido","Dies ist ein Spieltest zu bauen, können die Dinge im letzten Spiel ändern","Ceci est une version playtesting, les choses peuvent changer dans le jeu final","Jest to build playtesting, wszystko może się zmienić w ostatnim meczu"
-&playtest2,"For now, it ends here. Thanks for playtesting GIFT! Don't forget to give feedback to the creator!","Por enquanto, acaba aqui. Obrigado por fazer o playtesting de GIFT! Não esqueça de dar feedback ao criador!","Por ahora, sólo aquí. Gracias por hacer pruebas de juego de REGALO! No se olvide de dar retroalimentación al creador!","Denn jetzt, es endet hier. Vielen Dank für die Spieltests GESCHENK! Vergessen Sie nicht, Feedback an den Schöpfer zu geben!","Pour l'instant, elle se termine ici. Merci pour playtesting cadeau! Ne pas oublier de donner des commentaires au créateur!",Na razie kończy się tutaj. Dzięki za playtesting prezent! Nie zapomnij wyrazić opinię twórcy!
-&playtest3,End session,Finalizar sessão,Cerrar sesión,Sitzung beenden,Fin de session,koniec sesji
+$pause0,Paused,Pausado,Pausado,Pause,S'arrêta,Wstrzymany
+$pause1,Resume,Continuar,Continuar,Lebenslauf,Reprendre,Wznawiać
+$pause2,Exit,Sair,Salir,Ausgang,Sortir,Wyjście
+$pause3,Volume,Volume,Volumen,Volumen,Le volume,Tom
+$pause4,FOV,FOV,Fof,Fov,Fov,Fov.
 ,,,,,,
-&ui1,It's locked.,Está trancado.,Está cerrada.,Es ist abgeschlossen.,Il est verrouillé.,Jest zamknięta.
-&ui2,You unlocked a door near by.,Você destrancou uma porta por perto.,Has desbloqueado una puerta cercana.,Sie schloß eine Tür in der Nähe.,Débloquer une porte à proximité.,Ci odblokowane drzwi w pobliżu.
+&playtest1,"This is a playtesting build, things may change in the final game","Essa é uma build de playtesting, coisas podem mudar no jogo final","Esta es una construcción de participación, las cosas pueden cambiar en el juego final.","Dies ist ein Playtesting-Build, die Dinge können sich im letzten Spiel ändern","Ceci est une construction de jeu de jeu, les choses peuvent changer dans le dernier match","Jest to zabawna kompilacja, rzeczy mogą się zmienić w ostatniej grze"
+&playtest2,"For now, it ends here. Thanks for playtesting GIFT! Don't forget to give feedback to the creator!","Por enquanto, acaba aqui. Obrigado por fazer o playtesting de GIFT! Não esqueça de dar feedback ao criador!","Por ahora, termina aquí. ¡Gracias por hacer el regalo PlayTesting! ¡No te olvides de dar feedback al Creador!","Im Moment endet es hier. Danke für das Spielen von Geschenk! Vergessen Sie nicht, dem Schöpfer Feedback zu geben!","Pour l'instant, cela se termine ici. Merci pour cadeau de test de jeu! N'oubliez pas de donner des commentaires au Créateur!",Na razie kończy się tutaj. Dziękujemy za zabawny prezent! Nie zapomnij przekazać informacji zwrotnej Stwórcy!
+&playtest3,End session,Finalizar sessão,Finalizar la sesión,Endsitzung,Session de fin,Koniec sesji.
 ,,,,,,
-&tutorial,"Press ""back"" 2x to turn around","Pressione ""trás"" 2x para virar-se","Pulse el botón ""volver"" 2x para subir",Drücken Sie auf „zurück“ 2x zu umdrehen,Appuyez sur « retour » 2x pour faire demi-tour,Naciśnij przycisk „back” 2x zawrócić
+&ui1,It's locked.,Está trancado.,Está bloqueado.,Es ist abgeschlossen.,Il est verrouillé.,Jest zamknięta.
+&ui2,You unlocked a door near by.,Você destrancou uma porta por perto.,Desbloqueaste una puerta alrededor.,Sie haben eine Tür in der Nähe freigeschaltet.,Vous avez déverrouillé une porte près de.,Odblokujesz drzwi w pobliżu.
+,,,,,,
+&tutorial,"Press ""back"" 2x to turn around","Pressione ""trás"" 2x para virar-se","Presiona ""trae"" 2x para convertirte","Drücken Sie ""Zurück"" 2x, um sich umzudrehen","Appuyez sur ""Retour"" 2x pour faire demi-tour","Naciśnij ""Back"" 2x, aby odwrócić"
 ,,,,,,
 &intro1,You woke up...,Você acorda...,Te despiertas...,Du bist aufgewacht...,Tu t'es reveillé...,Obudziłeś się...
-&intro2,"Theres someone on your side,","Tem alguém do seu lado,","Tener a alguien a su lado,","Theres jemand auf Ihrer Seite,","Theres quelqu'un de votre côté,","Tam ktoś na swojej stronie,"
-&intro3,They give you a gift.,Ele te dá um presente.,Se le da un regalo.,Sie geben Ihnen ein Geschenk.,Ils vous donnent un cadeau.,Dają ci prezent.
+&intro2,"Theres someone on your side,","Tem alguém do seu lado,","Hay alguien de tu lado,","Es gibt jemanden auf Ihrer Seite,","Theres quelqu'un de ton côté,","Tam ktoś po twojej stronie,"
+&intro3,They give you a gift.,Ele te dá um presente.,Te da un regalo.,Sie geben dir ein Geschenk.,Ils vous donnent un cadeau.,Dają ci prezent.
 &intro4,Open it?,Abrir-lo?,¿Abrelo?,Öffne es?,Ouvrez-le?,Otwórz to?
-&intro5,Did you like it?,Você gostou?,¿Te gustó?,Magst du das?,As-tu aimé?,Podobało ci się?
+&intro5,Did you like it?,Você gostou?,¿Te gustó?,Hat es dir gefallen?,As-tu aimé?,Podobało ci się?
 ,,,,,,
-&rosalia1,I was diagnosed with Alzheimer when i was 52.,Eu fui diagnosticada com Alzheimer com 52 anos.,Me diagnosticaron con 52 años de Alzheimer.,"Ich war mit Alzheimer diagnostiziert, als ich 52 war.",J'ai été diagnostiqué avec la maladie d'Alzheimer quand j'avais 52.,"Zdiagnozowano u mnie chorobę Alzheimera, kiedy był 52."
-&rosalia2,You know... Dementia is one of those things that changed everything about your life;,Você sabe... Demência é uma daquelas coisas que altera tudo da sua vida;,Ya sabes ... La demencia es una de esas cosas que cambia toda su vida;,"Sie wissen schon ... Dementia eines dieser Dinge ist, dass alles über Ihr Leben verändert;",Vous savez ... La démence est une de ces choses que tout a changé votre vie;,"Wiesz ... Demencja jest jedna z tych rzeczy, które zmieniły wszystko o swoim życiu;"
-&rosalia3,"From the people around you,","Das pessoas ao seu redor,","Las personas que le rodean,","Von den Menschen um Sie herum,","Des gens autour de vous,","Od ludzi wokół ciebie,"
-&rosalia4,"Your memories and thoughts about those people,","As suas memorias com essas pessoas,","Sus memorias con estas personas,","Ihre Erinnerungen und Gedanken über diese Leute,","Vos souvenirs et réflexions sur ces personnes,","Twoje wspomnienia i myśli o tych ludzi,"
-&rosalia5,And how those people see you.,E como essas pessoas te veem.,Y ya que estas personas te ven.,Und wie die Leute sehen dich.,Et comment ces gens que vous voyez.,A jak ci ludzie cię widzieć.
-&rosalia6,"Once you get diagnosed, you feel like your life ended by there,","Quando você é diagnosticado, a sensação é que a sua vida acaba alí.","Cuando se le diagnostica, la sensación es que su vida termina allí.","Sobald Sie diagnostiziert bekommen, fühlen Sie sich wie Sie Ihr Leben durch dort endete,","Une fois que vous obtenez un diagnostic, vous sentez que votre vie a pris fin par là,","Kiedy się zdiagnozowany, czujesz jak twoje życie zakończył tam,"
-&rosalia7,"Its like if god looked at you and said ""you're done here"",","É como deus olhasse pra sua cara e falasse ""seu trabalho acabou aqui"",","Es como si Dios miró a la cara y hablar ""su trabajo está hecho aquí""","Es ist wie wenn Gott dich ansah und sagte: „Sie sind hier fertig“,","Son comme si Dieu vous a regardé et a dit: « vous avez fait ici »,",To jak gdyby Bóg spojrzał na ciebie i powiedział „ty skończysz tutaj”
-&rosalia8,"But something happend and you are still there,","Mas alguma coisa aconteceu e eu ainda to aqui,","Pero algo pasó y tengo que aquí,","Aber etwas geschieht und Sie sind immer noch da,","Mais quelque chose happend et vous êtes toujours là,","Ale coś się stało, a ty wciąż tam są,"
-&rosalia9,"Laying in bed, just waiting until everthing to be gone and you to die in a extreamily slow way.","Deitado na cama, esperando pra tudo desaparecer e pra você morrer de forma lenta.","Acostado en la cama, esperando a que todo desaparecerá y morir lentamente.","im Bett legen, die nur darauf warten, bis das Everthing weg zu sein und Sie in einer extreamily langsamen Art zu sterben.","Couché dans son lit, en attendant jusqu'à ce que everthing soit parti et vous mourir d'une manière lente extreamily.","Układanie w łóżku, tylko czekają aż everthing aby zniknąć i umrzeć w extreamily powolny sposób."
+&rosalia1,I was diagnosed with Alzheimer when i was 52.,Eu fui diagnosticada com Alzheimer com 52 anos.,Me diagnosticaron Alzheimer con 52 años.,Mit einem Alzheimer wurde ich als 52 diagnostiziert.,On m'a diagnostiqué avec Alzheimer quand j'avais 52 ans.,"Zdiagnozowano mnie Alzheimera, kiedy miałem 52 lat."
+&rosalia2,You know... Dementia is one of those things that changed everything about your life;,Você sabe... Demência é uma daquelas coisas que altera tudo da sua vida;,Ya sabes ... La demencia es una de esas cosas que cambia de todo desde tu vida;,"Sie wissen ... Demenz ist eines der Dinge, die alles über Ihr Leben verändert haben;",Vous savez ... La démence est l'une de ces choses qui ont tout changé dans votre vie;,"Wiesz ... Dementia jest jedną z tych rzeczy, które zmieniły wszystko o swoim życiu;"
+&rosalia3,"From the people around you,","Das pessoas ao seu redor,","De las personas a tu alrededor,","Von den Menschen um dich herum,","Des gens autour de vous,","Od ludzi wokół ciebie,"
+&rosalia4,"Your memories and thoughts about those people,","As suas memorias com essas pessoas,","Sus recuerdos con estas personas,","Ihre Erinnerungen und Gedanken über diese Menschen,","Vos souvenirs et vos pensées sur ces personnes,","Twoje wspomnienia i myśli o tych ludziach,"
+&rosalia5,And how those people see you.,E como essas pessoas te veem.,Y cómo estas personas te ven.,Und wie diese Leute dich sehen.,Et comment ces gens te voient.,I jak ci ludzie cię widzą.
+&rosalia6,"Once you get diagnosed, you feel like your life ended by there,","Quando você é diagnosticado, a sensação é que a sua vida acaba alí.","Cuando se le diagnostica, la sensación es que tu vida termina allí.","Sobald Sie diagnostiziert haben, fühlen Sie sich wie Ihr Leben, das dort endet,","Une fois que vous avez diagnostiqué, vous vous sentez comme si votre vie s'est terminée par là,","Po zdiagnozowaniu, czujesz się jak twoje życie tam zakończyło się"
+&rosalia7,"Its like if god looked at you and said ""you're done here"",","É como deus olhasse pra sua cara e falasse ""seu trabalho acabou aqui"",","Es como que Dios miró tu cara y hablaba ""Tu trabajo terminó aquí""","Es ist wie, wenn Gott dich ansah und gesagt hat, ""du bist hier gemacht"",","C'est comme si Dieu vous a regardé et dit ""tu as fini ici"",","Tak jakby, jeśli Bóg na ciebie spojrzał i powiedział: ""Skończyłeś tutaj"","
+&rosalia8,"But something happend and you are still there,","Mas alguma coisa aconteceu e eu ainda to aqui,","Pero algo sucedió y todavía estoy aquí,","Aber etwas ist passiert und du bist immer noch da,","Mais quelque chose se passe et vous êtes toujours là,","Ale coś się dzieje i wciąż tam jesteś,"
+&rosalia9,"Laying in bed, just waiting until everthing to be gone and you to die in a extreamily slow way.","Deitado na cama, esperando pra tudo desaparecer e pra você morrer de forma lenta.","Acostado en la cama, esperando que todo desaparezca y para que mueres lentamente.","Legen Sie sich im Bett, warten Sie nur, bis alles verschwunden ist, und Sie sterben auf extremampf langsamer Weise.","Couloir au lit, attendant Jusqu'à tout rester et que vous mourriez de mourir d'une manière extrêmement lente.","Układanie w łóżku, po prostu czekając, aż wszystko będziesze, a ty umrzesz w wyjątkowo powolny."
 ,,,,,,
-&statue1,"Things just stoped making sense with time,","As coisas paravam de fazer sentido com o tempo,","Cosas dejan de tener sentido con el tiempo,","Dinge stoped nur mit der Zeit macht Sinn,","Les choses stoped donner un sens avec le temps,","Rzeczy po prostu zatykać sensu z czasem,"
-&statue2,"And i stopped searching the sense for those things too,",E eu parei de procurar sentido pra essas coisas tambem.,Y dejé de buscar sentido a estas cosas también.,"Und ich hielt auch den Sinn für die Dinge suchen,","Et je me suis arrêté de chercher le sens pour ces choses aussi,","I zatrzymał przeszukiwania sens tych rzeczy też,"
+&statue1,"Things just stoped making sense with time,","As coisas paravam de fazer sentido com o tempo,","Las cosas dejaron de dar sentido con el tiempo,","Die Dinge haben gerade aufgehört, mit der Zeit sinnvoll zu machen,","Les choses ont juste arrêté de donner un sens avec le temps,","Rzeczy po prostu zatrzymały się z czasem,"
+&statue2,"And i stopped searching the sense for those things too,",E eu parei de procurar sentido pra essas coisas tambem.,Y dejé de buscar estas cosas también.,"Und ich hörte auf, auch den Sinn für diese Dinge zu suchen,","Et j'ai arrêté de chercher le sens de ces choses aussi,","I przestałem poszukiwać sens dla tych rzeczy,"
 ,,,,,,
-&interlude1,"In a certain way, i stoped carying about the people that leaved.","De certa forma, eu parei de ligar para as pessoas que sairam.","En cierto modo, me detuve a llamar a las personas que dejaron.","In gewisser Weise stoped ich über die Menschen, die carying Endivie.","D'une certaine manière, je stoped carying sur les gens qui feuilles.","W pewnym sensie, i zatykać carying o ludziach, że karbowanych."
-&interlude2,Mostly because i was forgetting about them...,Principalmente poque eu estava esquecendo sobre elas...,Sobre todo me poque estaba olvidando de ellos ...,"Vor allem, weil ich über sie wurde vergessen ...",La plupart du temps parce que j'oubliais sur eux ...,"Głównie dlatego, że zapomniał o nich ..."
-&interlude3,But i certainly care about me leaving people's lifes,Mas eu certamente ligo pra eu saindo da vida de pessoas,Pero desde luego llamaré a cabo la vida de las personas,Aber ich sorge mich sicher über mich Menschen Leben verlassen,Mais je me soucie certainement de me laisser les natures mortes de personnes,Ale na pewno dbają o mnie pozostawiając natury ludzi
-&interlude4,"Since im not there to anybody,",Já que eu estou lá pra ninguem.,Desde que estoy allí a cualquiera.,"Da im nicht dort jemand,","Depuis je ne suis pas là pour tout le monde,","Ponieważ nie jestem tam do nikogo,"
-&interlude5,"And nobody is there for me,","E ninguem esta lá pra mim,","Y nadie está ahí para mí,","Und niemand ist da für mich,","Et personne est là pour moi,","I nikt nie jest tam dla mnie,"
-&interlude6,Whats the point for being alive then?,Qual é o ponto de viver então?,Cuál es el punto de la vida entonces?,Was ist der Punkt für am Leben dann sein?,Quel est le point d'être en vie alors?,"Whats punkt za to, że żyje wtedy?"
+&interlude1,"In a certain way, i stoped carying about the people that leaved.","De certa forma, eu parei de ligar para as pessoas que sairam.","De una manera, dejé de llamar a las personas que se fueron.","In gewisser Weise hörte ich auf, um die Menschen zu pflegen, die blätterte.","D'une certaine manière, j'ai arrêté de caryer les gens qui ont feuillu.","W pewien sposób zatrzymałem się opiekującego ludu, które liściały."
+&interlude2,Mostly because i was forgetting about them...,Principalmente poque eu estava esquecendo sobre elas...,Sobre todo porque estaba olvidando de ellos ...,"Meistens, weil ich mich vergessen habe ...",Surtout parce que j'oublais à leur sujet ...,"Przeważnie dlatego, że zapominałem o nich ..."
+&interlude3,But i certainly care about me leaving people's lifes,Mas eu certamente ligo pra eu saindo da vida de pessoas,Pero ciertamente me llamo salir de la vida de las personas.,"Aber ich interessiere mich sicherlich um mich, die das Leben der Menschen verlasse",Mais je me soucie certainement de moi laissant la vie des gens,"Ale na pewno dbam o mnie, że zostawiam życie ludzi"
+&interlude4,"Since im not there to anybody,",Já que eu estou lá pra ninguem.,Ya que estoy allí para cualquier persona.,"Da bin ich nicht mit jemandem,","Depuis que je ne suis pas là à personne,","Ponieważ nie jestem tam dla kogokolwiek,"
+&interlude5,"And nobody is there for me,","E ninguem esta lá pra mim,","Y nadie está ahí para mí,","Und niemand ist für mich da,","Et personne n'est là pour moi,","I nikt nie jest dla mnie,"
+&interlude6,Whats the point for being alive then?,Qual é o ponto de viver então?,¿Cuál es el punto de vida entonces?,"Was ist der Punkt, dass damals am Leben sein?",Quel est le point d'être en vie alors?,Jaki jest wtedy punkt życia?
 ,,,,,,
-&brother1,My brother used to visit me frequently.,Meu irmão me visitava frequentemente.,Mi hermano me visitaba a menudo.,Mein Bruder hat mich oft zu besuchen.,Mon frère me rendre visite fréquemment.,Mój brat odwiedzał mnie często.
-&brother2,"We used to hang out, he was really suportive!","Agente passava um tempo junto, ele era bem solidario!","Agente ha pasado tiempo juntos, así que era de Solidaridad!","Früher haben wir hängen, war er wirklich suportive!","Nous avons l'habitude de traîner, il était vraiment suportive!","Użyliśmy wywiesić, był naprawdę suportive!"
-&brother3,I cant remember a time that he wasnt there for me.,Eu não consigo lembrar em um momento que ele não tava ali pra mim quando eu precisava.,No puedo recordar un momento en lo que él no estaba allí para mí cuando lo necesitaba.,"Ich kann nicht an eine Zeit erinnern, dass er war nicht für mich da.",Je ne peux pas me souviens d'un temps qu'il était pas là pour moi.,"Nie pamiętam czas, że Nie był tam dla mnie."
-&brother4,I don't know... I'm just afraid to forget about him.,Você sabe né... eu só tenho medo de esquecer ele.,Ya sabes eh ... Sólo miedo de olvidarlo.,Ich weiß nicht ... Ich habe nur Angst um ihn zu vergessen.,Je ne sais pas ... Je suis juste peur d'oublier.,Nie wiem ... Jestem po prostu boi się o nim zapomnieć.
+&brother1,My brother used to visit me frequently.,Meu irmão me visitava frequentemente.,Mi hermano me visitó con frecuencia.,Mein Bruder besuchte mich häufig.,Mon frère me rendait fréquemment visitant.,Mój brat odwiedził mnie często.
+&brother2,"We used to hang out, he was really suportive!","Agente passava um tempo junto, ele era bem solidario!","¡El agente pasó tiempo juntos, él estaba bien solidario!","Wir fanden früher heraus, er war wirklich suppend!","Nous avions l'habitude de sortir, il était vraiment aussi suportif!","Kiedyś spędzaliśmy czas, był naprawdę superive!"
+&brother3,I cant remember a time that he wasnt there for me.,Eu não consigo lembrar em um momento que ele não tava ali pra mim quando eu precisava.,No puedo recordar en un momento que no estaba allí para mí cuando necesitaba.,"Ich kann mich nicht erinnern, dass er nicht für mich da war.",Je ne me souviens pas d'une heure où il n'était pas là pour moi.,"Nie pamiętam czasu, którego nie był dla mnie."
+&brother4,I don't know... I'm just afraid to forget about him.,Você sabe né... eu só tenho medo de esquecer ele.,Sabes ... Solo tengo miedo de olvidarlo.,"Ich weiß nicht ... Ich habe nur Angst, ihn zu vergessen.",Je ne sais pas ... J'ai juste peur d'oublier de lui.,Nie wiem ... Boję się o nim zapomnieć.
 ,,,,,,
-&end1,"From all the people i met,","De todas as pessoas que eu conheci,","De todas las personas que conocí,","Von allen Menschen, die ich traf,","De tous les gens que je rencontrais,","Ze wszystkich ludzi poznałem,"
-&end2,"From every place i got,","De todos os lugares que eu já fui,","De todos los lugares que he estado,","Von jedem Ort, den ich bekam,","De tous les endroits que je suis arrivé,","Z każdego miejsca dostałam,"
+&end1,"From all the people i met,","De todas as pessoas que eu conheci,","De todas las personas que conocí,","Von allen Menschen, die ich traf,","De toutes les personnes que j'ai rencontrées,","Od wszystkich ludzi, których spotkałem,"
+&end2,"From every place i got,","De todos os lugares que eu já fui,","En todas partes que alguna vez fui,","Von jedem Ort, den ich bekam,","De chaque endroit où j'ai eu,","Z każdego miejsca dostałem,"
 &end3,"It was great,",Valeu a pena.,Valió la pena.,"Es war toll,","C'était super,","To było wspaniałe,"
 &end4,It was worth it.,Foi bom...,Fue bueno...,Das war es wert.,Ça valait la peine.,To było tego warte.
 ,,,,,,
-&god1,Fear not.,Não temas.,No temas.,Keine Angst.,Ne crains pas.,Nie bój się.
-&god2,I've come for you.,Eu estou aqui para você.,Yo estoy aqui para ti.,Ich habe für Sie kommen.,Je suis venu pour vous.,Doszedłem do ciebie.
-&god3,Everything will make more sense.,Tudo vai fazer mais sentido.,Todo va a tener más sentido.,Alles wird mehr Sinn machen.,Tout sera plus logique.,Wszystko będzie więcej sensu.
+&god1,Fear not.,Não temas.,No temas.,Keine Angst.,Peur pas.,Nie bój się.
+&god2,I've come for you.,Eu estou aqui para você.,Yo estoy aqui para ti.,Ich bin für dich gekommen,Je suis venu pour toi.,Przyszedłem dla ciebie.
+&god3,Everything will make more sense.,Tudo vai fazer mais sentido.,Todo tendrá más sentido.,Alles wird sinnvoller machen.,Tout aura plus de sens.,Wszystko będzie bardziej sensowne.
 &god4,Its a matter of time.,É uma questão de tempo.,Es cuestión de tiempo.,Es ist eine Frage der Zeit.,C'est une question de temps.,To kwestia czasu.
 &god5,...,...,...,...,...,...
-&god6,"Go on, it depends on you.","Vai, isso depende de você.","Will, que depende de usted.","Gehen Sie weiter, es hängt von Ihnen ab.","Allez, cela dépend de vous.","No, to zależy od ciebie."
+&god6,"Go on, it depends on you.","Vai, isso depende de você.","Ir, depende de ti.","Mach weiter, es hängt von dir ab.","Continuez, cela dépend de vous.","Idź, to zależy od ciebie."
 ,,,,,,
-&outroUI,Type here (optional),Digite aqui (opcional),Ingrese aquí (opcional),Geben Sie hier (optional),Tapez ici (en option),Wpisz tutaj (opcjonalnie)
-&outro,"What is the gift, for you?","Oque é o presente, pra você?",¿Qué es el presente para usted?,"Was ist das Geschenk, für Sie?","Quel est le cadeau, pour vous?",Co to jest prezent dla ciebie?
+&outroUI,Type here (optional),Digite aqui (opcional),Ingrese aquí (opcional),Geben Sie hier ein (optional),Tapez ici (facultatif),Wpisz tutaj (opcjonalnie)
+&outro,"What is the gift, for you?","Oque é o presente, pra você?","¿Cuál es el presente, para ti?",Was ist das Geschenk für dich?,"Quel est le cadeau, pour vous?",Jaki jest dla ciebie prezent?
 ,,,,,,
 &credits0,Continues...,Continua...,Continuará...,Geht weiter...,Continue...,Trwa...
 &credits,">Concection lost...
@@ -143,19 +152,19 @@
 >
 >Obrigado por jogar!
 >
->Clique aqui para sair","> Pérdida de conexión ...
+>Clique aqui para sair","> Conexión perdida ...
 >
 >
 > Un juego por:
-> Lucas Angelo Hall (@ahopness)
+> Cámara Lucas ÂNGELO (@ahopness)
 >
 >
-> Reconocimientos:
-> Sonidos freesound.org
-> Shader PSOne por marmitoTH
-> Shader tramado por WittyCognomen
-> Nube de sombreado por Gonkee
-> Script alambre por gorrgolem
+> Reconocimiento:
+> Sonidos de freesound.org
+> Shader Psoone de Marmitth
+> Shader Dithering por wittycognomen
+> Shader de la nube por gonkee
+> Script de Wireframe por Gorrgolem
 > Shader de fusión de Krzysztof Kondrak
 >
 >
@@ -163,65 +172,65 @@
 > Godot
 >
 >
-> Playtest por:
-> YellowMurloc
-> Scott Melanson
-> Lázaro Tegra
-> Warisson
-> Rukasu
-> Gard Gasodden
->
-> Vesão para MacOS exportado por Gard Gassoden.
->
-> Gracias especiales:
-> Nykra Comunidad
-> HPSX Comunidad
-> Maninha
->
->
->
-> Gracias por jugar!
->
-> Haga clic para salir","> Concection verloren ...
->
->
-> Ein Spiel von:
-> Lucas Ângelo Câmara (@ahopness)
->
->
-> Anerkennungen:
-> Sounds von freesound.org
-> PSOne-Shader von marmitoTH
-> Dithering-Shader von WittyCognomen
-> Cloud-Shader von Gonkee
-> Wireframe-Skript von gorrgolem
-> Schmelz Shader durch Krzysztof Kondrak
->
->
-> Powered by:
-> Godot
->
->
-> Playtested von:
-> YellowMurloc
+> PlayTest por:
+> Yellowmurloc
 > Scott Melanson
 > Lazarus Tegra
 > Warisson
 > Rukasu
 > Gard Gasodden
 >
-> MacOS-Version von Gard Gassoden exportiert.
+> Versión para MacOS exportada por Gard Gassoden.
 >
-> Spezielle Kredite:
-> Nykra Gemeinschaft
-> HPSX Gemeinschaft
-> Sis
+> Gracias especial:
+> Nykra Community
+> Comunidad HPSX
+> Maninha
 >
 >
 >
-> Vielen Dank für das Spiel!
+> ¡Gracias por jugar!
 >
-> Klicken Sie hier zu beenden","> Concection perdu ...
+> HAGA CLIC AQUÍ PARA SALIR","> Konzern verloren ...
+>.
+>.
+> Ein Spiel von:
+> Lucas ângelo câmara (@ahofness)
+>.
+>.
+> Bestätigungen:
+> Geräusche von FreeSound.org
+> PSONE Shader von Marmitoth
+> Dithering Shader von WittyCognomen
+> Cloud Shader von Gonkee
+> Wireframe-Skript von Gorrgolem
+> Schmelzen von Shader von Krzysztof Kondrak
+>.
+>.
+> Powered by:
+> Godot
+>.
+>.
+> Wiedergabe von:
+> YellowMurloc.
+> Scott Melanson.
+> Lazarus Tegra.
+> Warisson
+> Rukasu.
+> Gard Gasodden.
+>.
+> Makos-Version, die von Gard Gassoden exportiert wurde.
+>.
+> Sondergutschriften:
+> Nykra-Gemeinschaft
+> HPSX-Community.
+> Sis.
+>.
+>.
+>.
+> Danke für das Spielen!
+>.
+> Klicken Sie hier, um zu beenden","> Concision perdue ...
 >
 >
 > Un jeu par:
@@ -229,77 +238,117 @@
 >
 >
 > Remerciements:
-> Sons de freesound.org
-> Shader PSOne par marmitoTH
-> Tramage shaders par WittyCognomen
-> Shaders Cloud par Gonkee
-> Script par Wireframe gorrgolem
-> Shader fusion par Krzysztof Kondrak
+> Sonne de freesound.org
+> Shader psone par marmitoth
+> Shader Dithithering by Wittycognomen
+> Nuageux shader par gonkee
+> Script filaire filaire par Gorrgolem
+> Melting Shader de Krzysztof Kondrak
 >
 >
-> Animé par:
+> Propulsé par:
 > Godot
 >
 >
-> Playtested par:
+> Playttesté par:
 > YellowMurloc
 > Scott Melanson
-> Lazarus Tegra
+> Lazare Tegra
 > Warisson
 > Rukasu
 > Gard Gasodden
 >
-> Version MacOS exporté par Gard Gassoden.
+> Version MacOS exportée par Gard Gassoden.
 >
 > Crédits spéciaux:
-> Communauté Nykra
+> Communauté de Nykra
 > Communauté HPSX
 > Sis
 >
 >
 >
-> Merci pour jouer!
+> Merci de jouer!
 >
-> Cliquez ici pour quitter","> Concection stracił ...
->
->
-> A gra przez:
-> Lucas Ângelo Camara (@ahopness)
->
->
+> Cliquez ici pour quitter","> Contaction Lost ...
+>.
+>.
+> Gra według:
+> Lucas ângelo Câmara (@ahopness)
+>.
+>.
 > Podziękowania:
 > Dźwięki z freesound.org
-> PSOne shader przez marmitoTH
-> Dithering cieniującego przez WittyCognomen
-> Chmura shader przez Gonkee
-> Szkielet skryptu przez gorrgolem
-> Moduł cieniujący topnienia Krzysztof Kondrak
->
->
-> Powered by:
-> Godot
->
->
-> Playtested przez:
-> YellowMurloc
-> Scott Melanson
-> Łazarz Tegra
-> Warisson
-> Rukasu
-> Gard Gasodden
->
-> MacOS wersja eksportowana przez Gard Gassoden.
->
-> Punkty szczególne:
-> Społeczność Nykra
-> Społeczność HPSX
-> Sis
->
->
->
-> Dzięki za grę!
->
-> Kliknij tutaj, aby zamknąć"
+> Psone Shader by Marmitooth
+> Dithering Shader by WittyCognomen
+> Cloud Shader przez Gnakkee
+> Skrypt szkieletowy Gorrgolem
+> Temperatura cieniowania przez Krzysztofa Kondraka
+>.
+>.
+> Zasilany przez:
+> GODOT.
+>.
+>.
+> Odtwarzane przez:
+> YellowMurLoc.
+> Scott Melanson.
+> Lazarus Tegra.
+> Warisson.
+> Rukasu.
+> Gardden.
+>.
+> Wersja MacO eksportowana przez Gard Gassoden.
+>.
+> Specjalne kredyty:
+> Społeczność Nykra.
+> Społeczność HPSX.
+> Sis.
+>.
+>.
+>.
+> Dziękuję za grę!
+>.
+> Kliknij tutaj, aby rzucić"
 ,,,,,,
-&thankyou1,Thanks for playing! Don't forget to rate the game on the playstore!,Obrigado por jogar! Não se esqueça de avaliar o jogo na playstore!,¡Gracias por jugar! No se olvide de evaluar el juego en playstore!,"Danke fürs Spielen! Vergessen Sie nicht, das Spiel auf dem Plays um zu bewerten!",Merci d'avoir joué! Ne pas oublier de noter le jeu sur le Playstore!,Dzięki za grę! Nie zapomnij ocenić grę na playstore!
-&thankyou2,Thanks for playing! Don't forget to rate the game on the itch.io!,Obrigado por jogar! Não se esqueça de avaliar o jogo na itch.io!,¡Gracias por jugar! No se olvide de evaluar el juego en itch.io!,"Danke fürs Spielen! Vergessen Sie nicht, das Spiel auf dem itch.io um zu bewerten!",Merci d'avoir joué! Ne pas oublier de noter le jeu sur le itch.io!,Dzięki za grę! Nie zapomnij ocenić grę na itch.io!
+&thankyou1,"Thanks for playing! Don't forget to rate the game on the playstore! Also check the extra content, which is now available on the main menu.","Obrigado por jogar! Não se esqueça de avaliar o jogo na playstore! Tambem cheque o conteudo extra, que agora esta diponivel agora no menu principal.","¡Gracias por jugar! ¡No olvides evaluar el juego en PlayStore! También compruebe el contenido adicional, que ahora está disponible en el menú principal.","Danke fürs Spielen! Vergessen Sie nicht, das Spiel auf dem PlayStore zu bewerten! Überprüfen Sie auch den zusätzlichen Inhalt, der jetzt im Hauptmenü verfügbar ist.","Merci d'avoir joué! N'oubliez pas d'évaluer le jeu sur la PlayStore! Vérifiez également le contenu supplémentaire, qui est maintenant disponible dans le menu principal.","Dzięki za grę! Nie zapomnij oceniać gry w PlayStore! Sprawdź również dodatkowe treści, które jest teraz dostępne w menu głównym."
+&thankyou2,"Thanks for playing! Don't forget to rate the game on the itch.io! Also check the extra content, which is now available on the main menu.","Obrigado por jogar! Não se esqueça de avaliar o jogo na itch.io!  Tambem cheque o conteudo extra, que agora esta diponivel agora no menu principal.","¡Gracias por jugar! ¡No olvides evaluar el juego en Itch.io! También compruebe el contenido adicional, que ahora está disponible en el menú principal.","Danke fürs Spielen! Vergessen Sie nicht, das Spiel auf dem Itch.io zu bewerten! Überprüfen Sie auch den zusätzlichen Inhalt, der jetzt im Hauptmenü verfügbar ist.","Merci d'avoir joué! N'oubliez pas d'évaluer le jeu sur la démangeaison! Vérifiez également le contenu supplémentaire, qui est maintenant disponible dans le menu principal.","Dzięki za grę! Nie zapomnij oceniać gry na Itch.io! Sprawdź również dodatkowe treści, które jest teraz dostępne w menu głównym."
+,,,,,,
+&extra1,Behind the scenes,Por trás das cenas,Entre bastidores,Hinter den Kulissen,Dans les coulisses,Za kulisami
+&extra2,Developer commentary,Comentario do desenvolverdor,Comentario del desarrollador,Entwickler Kommentar,Commentaire du développeur,Komentarz deweloperski
+&extra3,Videos,Vídeos,videos,Videos,Vidéos,Filmy
+&extra4,Extra context blocked,Conteudo extra bloqueado,,,,
+&extra5,"To unlock the extra content, is reccomended for you to finisht the game at least once before, because the content inside has spoilers for the game.","Para desbloquear o conteudo extra, é recomendado que você termine o jogo uma primeira vez antes, pois este conteudo possui spoilers do jogo dentro dele.",,,,
+&extra6,Unlock anyway,Desbloquear mesmo assim,,,,
+&extra7,Go back,Voltar,,,,
+,,,,,,
+&BTS1,The Making of GIFT,A criação de GIFT,La creación de regalo,Die Herstellung von Geschenk,La fabrication de cadeau,Wykonanie prezentu
+&BTS2,Concept art from my sketch book.,Arte conceitual desenhada nos dias iniciais de produção.,Arte conceptual dibujado en los días iniciales de producción.,Konzeptkunst aus meinem Skizzenbuch.,Art concept de mon livre de croquis.,Sztuka koncepcyjna z mojej książki szkic.
+&BTS3,This room with fully red eerie lightning was scrapped and transformed into a debbuging room.,A ideia uma sala com iluminação toda vermelha foi re-ultilizada para esta sala de testes.,La idea de una sala de iluminación roja se ha reutilizado para esta sala de pruebas.,"Dieses Zimmer mit vollem rotem, unheimlichem Blitz wurde verschrottet und in einen Debbuging-Raum umgewandelt.",Cette chambre avec un éclairage Eerie entièrement rouge a été mis au rebut et transformée en une salle de débutation.,Ten pokój z w pełni czerwonym błyskawicą był złomowany i przekształcony w pokój debbufingowy.
+&BTS4,First notes writen about the game.,"Primeiras anotações feitas sobre o jogo, ainda em pre-produção.","Primeras notas hechas en el juego, aún en preproducción.",Erste Anmerkungen writen über das Spiel.,Premières notes écrivies sur le jeu.,Pierwsze notatki napisane o grze.
+&BTS5,"First prototype of the game, made with the Unity Engine.","Primeiro prototipo do jogo, feito na Unity Engine.","Primer prototipo del juego, hecho en el motor de Unity.","Erster Prototyp des Spiels, der mit dem Unity-Motor hergestellt wurde.","Premier prototype du jeu, fait avec le moteur Unity.","Pierwszy prototyp gry, wykonany z silnikiem jedności."
+&BTS6,Map of the game inside of the Godot Engine.,Mapa do jogo dentro do editor da Godot Engine,Mapa del juego dentro del editor de Godot Motor.,Karte des Spiels innerhalb des Godot-Motors.,Carte du jeu à l'intérieur du moteur Godot.,Mapa gry wewnątrz silnika Godotka.
+&BTS7,Testing shaders on an extreamily early version of the ending.,Testando shaders em uma versão estremamente inicial do mapa final.,Pruebas de sombreadores en una versión inicial estircialmente del mapa final.,Testen von Shadern auf einer extemberilen frühen Version des Endes.,Tester des shaders sur une version extra-rapide de la fin de la fin.,Testowanie cieniowania na ekstarazowej wczesnej wersji końcówki.
+&BTS8,"Old button layout, it changed near release because it felt unconfortable to play. ","Layout antigo dos butões, eles mudaram perto do lançamento pois eram muito desconfotaveis.","El diseño antiguo de Bhutones, cambiaron cerca del lanzamiento porque eran muy incómodos.","Old Button-Layout, es hat sich in der Nähe von Release geändert, weil es sich unberührt fühlte, um zu spielen.","Old Button Mise en page, il a changé près de la libération car elle se sentait inconfortable de jouer.","Stary układ przycisku, zmienił go w pobliżu wydania, ponieważ czuła się niekonforgensować."
+&BTS9,"Original script, the game was fully re-writen mid-development.","Roteiro original, o jogo foi re-escrito por inteiro no meio da produção.","Script original, el juego fue reescribido por completo en medio de la producción.","Original-Skript, das Spiel war die mittlere Entwicklung vollständig neu verworren.","Script d'origine, le jeu a été entièrement réécrudé à mi-développement.","Oryginalny skrypt, gra była w pełni napisana średniego rozwoju."
+&BTS10,Early tests in unity with black & white scenario and lightining.,Testes iniciais na Unity Engine com cenario em preto e branco com iluminação.,Pruebas iniciales en Unity Engine con escenario en blanco y negro con iluminación.,Frühe Tests in der Einheit mit Black & White Szenario und Lightining.,Tests précoces dans l'unité avec scénario noir et blanc et éclairage.,Wczesne testy w jedności z czarno-białym scenariuszem i oświetleniem.
+&BTS11,"Testing pre-calculated lightning, the actual game uses real-time lightning for it's scenarios.","Testando iluminação pré-calculada, o jogo final usa iluminação em tempo real para os cenarios.","Pruebas de iluminación precalculada, el juego final utiliza iluminación en tiempo real para los escenarios.",Das testende vorberechnete Blitz testet das eigentliche Spiel Echtzeitblitz für seine Szenarien.,"Test de la foudre pré-calculée, le jeu actuel utilise un éclair en temps réel pour ses scénarios.","Testowanie przed obliczonymi błyskawicami, rzeczywista gra wykorzystuje piorun w czasie rzeczywistym dla jego scenariuszy."
+&BTS12,"Unused dialog, was suposed to be in the ending but there wasn't a good enouth place for it to fit.","Dialogo inutilizado, era parar estar no final do jogo mais não tinha nenhum lugar bom o suficiente para ele.","Diálogo no utilizado, era dejar de estar al final del juego, pero no había suficiente lugar para él.","Nicht genutzter Dialog, wurde am Ende gesendet, aber es gab keinen guten ENOUD-Platz dafür, dass es passt.","La boîte de dialogue inutilisée a été supposée être à la fin, mais il n'y avait pas de bonne place en plein air pour cela.","Nieużywane okno dialogowe zostało w końcu, ale nie było dobrego miejsca w Engouth."
+,,,,,,
+&DevC0,Commentary by : Lucas Ângelo / Ahopness,Comentario por : Lucas Ângelo / Ahopness,,,,
+&DevC,"It took me 4 months to develop GIFT (little for game development in general) in that time period I: learned 2 new programming languages, tried to write a decent script, remixed the same song (Ave Maria) 6 different times, stayed 1 month whole without working on the game for the simple fact that I was mentally exhausted and nearly knocked my PC out the window multiple times.
+
+Making a game is one of the most stressful tasks you can do, the infinite and extremely difficult to solve unexpected problems that come up along the way is exhausting in the extreme, and GIFT came about because of one of these problems, that ""I just I can't finish ANY project!"", so I came up with a plan to make a tiny game with a minimally interesting story that would be easy to finish in a few days, this game quickly became a GIFT.
+
+The game theme came up after I started making what is now a sequel - what we'll call Project Pier - with my paranoia involving death and illness that comes with age. GIFT came from the need to make a game that generated the need to write a story, which is a bit atypical, generally this process is the opposite in the Indie gaming market; I can't say that it made the game bad, in fact I'm even proud of this project and what out of the box it is compared to other mobile horror games that are scattered on the Google Play Store, full of ads and repetitive gameplay, this one game was also an attempt to try to contribute to a world with less ads within free apps, I don't know if it worked as the game hasn't had as many downloads as of the date I'm writing this (10/06/2021).
+
+The game was entirely made in Godot, with some prototypes inside Unity. I created GIFT with the mentality of spending no penny on programs, perhaps a consequence of living in a country with taxes as strange as Brazil and not having money to spend on programs because everything is very expensive. All applications used in the creation of this game are FOSS, which is an acronym for ""Free and Open Source Software"". Apps like Blender, Kdenlive, Audacity and Krita were just a few of my picks, each time made to support the community behind them.
+
+I tried to make this game as best as possible with the tools I had, I wasn't too pleased that in certain parts the script fails to realistically describe Alzheimer's, but still I believe the flaws are minimal and the game was one of the best pieces I've done so far, for how stressful it was.","Eu demorei 4 meses para desenvolver GIFT (pouco para desenvolvimento de jogos no geral) nesse período de tempo eu : aprendi 2 linguagens de programações novas, tentei escrever um roteiro decente, remixei a mesma musica (Ave Maria) 6 vezes diferentes, fiquei 1 mês inteiro sem trabalhar no jogo pelo simples fato que eu estava mentalmente exausto e quase taquei meu PC pela janela múltiplas vezes.
+
+Fazer um jogo é umas das tarefas mais estressantes que se pode fazer, os problemas inesperados infinitos e extremamente difíceis de solucionar que surgem no meio do caminho é exaustivo ao extremo, e GIFT surgiu por conta de um desses problemas, o de que """"eu simplesmente não estou conseguindo finalizar NENHUM projeto!"""", então eu surgi com um plano de fazer um jogo minúsculo com uma historia ao mínimo interessante  que seria fácil de finalizar em alguns dias, esse jogo rapidamente se tornou GIFT.
+
+O tema do jogo acabou surgindo depois de eu começar a fazer, o que agora é, a continuação - que vamos chamar de Project Pier - com umas paranoias minhas envolvendo morte e doenças que vem com a idade. GIFT surgiu da necessidade de fazer um jogo que gerou a necessidade de escrever uma historia, que é um pouco atípico, geralmente esse processo é ao contrario no meio Indie do mercado de gaming; Eu não posso dizer que isso deixou o jogo ruim, na verdade eu estou até orgulhoso desse projeto e qual fora da caixa ele é em relação a outros jogos mobile de terror que estão espalhados na Google Play Store, cheios de anúncios e gameplay repetitiva, esse jogo foi tambem uma tentativa de tentar contribuir para um mundo com menos anúncios dentro de aplicativos gratuitos, eu não sei se deu certo pois o jogo não teve tantos downloads até a data que eu estou escrevendo isso (06/10/2021).
+
+O jogo foi inteiramente feito na Godot, com uns protótipos dentro da Unity. Eu criei GIFT com a mentalidade de gastar nenhum centavo com programas, talvez consequência de se morar num pais com taxações tão estranhas como o no Brasil e não ter dinheiro pra gastar em programas pois tudo ta muito caro. Todos os aplicativos usados na criação desse jogo são FOSS, que é uma sigla para """"Free and Open Source Software"""", traduzindo : Software gratuito e de código aberto. Aplicativos como o Blender, Kdenlive, Audacity e Krita foram só algumas das minhas escolhas, todas as vezes feitas para apoiar a comunidade por trás delas.
+
+Eu tentei fazer esse jogo da melhor forma possíveis com as ferramentas que eu tive, não fiquei muito satisfeito pois em certas partes o roteiro falha em descrever o Alzheimer de forma realista, mas ainda sim eu acredito que as falhas são mínimas e que o jogo foi umas das melhores obras que eu já fiz até hoje, por quão estressante tenha sido.",,,,

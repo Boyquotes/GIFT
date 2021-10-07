@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Scripts/scrCutscene.gd" type="Script" id=1]
 [ext_resource path="res://Sounds/SFX/sfxWind.ogg" type="AudioStream" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Models/Maps/Outside/Out/texOutB1.png" type="Texture" id=11]
 [ext_resource path="res://Data/Fonts/fontRobotoLight.ttf" type="DynamicFontData" id=12]
 [ext_resource path="res://Models/Maps/Outside/Out/texOutBMain2.png" type="Texture" id=13]
+[ext_resource path="res://Materials/matUIText.tres" type="Material" id=14]
 
 [sub_resource type="Environment" id=1]
 background_mode = 1
@@ -350,10 +351,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="sprGrain" parent="nUI" instance=ExtResource( 4 )]
-
 [node name="txtDialogue" type="Label" parent="nUI"]
 visible = false
+material = ExtResource( 14 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 0
@@ -370,6 +370,8 @@ __meta__ = {
 }
 
 [node name="fxDithering" parent="nUI" instance=ExtResource( 3 )]
+
+[node name="sprGrain" parent="nUI" instance=ExtResource( 4 )]
 
 [node name="bgsVynil" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 8 )

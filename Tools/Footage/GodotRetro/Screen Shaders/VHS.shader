@@ -1,14 +1,15 @@
 //SHADER ORIGINALY CREADED BY "FMS_Cat" FROM SHADERTOY
 //PORTED AND MODIFYED TO GODOT BY AHOPNESS (@ahopness)
-//
+//LICENSE : CC0
+//COMATIBLE WITH : GLES2, GLES3
 //SHADERTOY LINK : https://www.shadertoy.com/view/XtBXDt
 
 shader_type canvas_item;
 
-uniform float tape_wave_amount :hint_range (0, .04) = 0.005;
-uniform float tape_crease_amount :hint_range (0, 15) = 10.0;
-uniform float color_displacement :hint_range (0, 5) = 2;
-uniform float lines_velocity :hint_range (0, 5) = .1;
+uniform float tape_wave_amount :hint_range (0, .04) = 0.003;
+uniform float tape_crease_amount :hint_range (0, 15) = 2.5;
+uniform float color_displacement :hint_range (0, 5) = 1;
+uniform float lines_velocity :hint_range (0, 5) = 0.1;
 
 const float PI = 3.14159265;
 
@@ -42,7 +43,7 @@ float noise( vec2 _v ){
 }
 
 void fragment(){
-	vec2 uv = UV;
+	vec2 uv = FRAGCOORD.xy / (1.0 / SCREEN_PIXEL_SIZE).xy;
 	vec2 uvn = uv;
 	vec3 col = vec3( 0.0 );
 	
@@ -60,7 +61,7 @@ void fragment(){
 	uvn.y += snPhase * 0.3;
 	uvn.x += snPhase * ( ( noise( vec2( uv.y * 100.0, TIME * 10.0 ) ) - 0.5 ) * 0.2 );
 	
-	col = tex2D( TEXTURE, uvn );
+	col = tex2D( SCREEN_TEXTURE, uvn );
 	col *= 1.0 - tcPhase;
 	col = mix(
 		col,
@@ -71,9 +72,9 @@ void fragment(){
 	// bloom
 	for( float x = -4.0; x < 2.5; x += 1.0 ){
 		col.xyz += vec3(
-		tex2D( TEXTURE, uvn + vec2( x - 0.0, 0.0 ) * 0.007 ).x,
-		tex2D( TEXTURE, uvn + vec2( x - color_displacement, 0.0 ) * 0.007 ).y,
-		tex2D( TEXTURE, uvn + vec2( x - color_displacement * 2.0, 0.0 ) * 0.007 ).z
+		tex2D( SCREEN_TEXTURE, uvn + vec2( x - 0.0, 0.0 ) * 0.007 ).x,
+		tex2D( SCREEN_TEXTURE, uvn + vec2( x - color_displacement, 0.0 ) * 0.007 ).y,
+		tex2D( SCREEN_TEXTURE, uvn + vec2( x - color_displacement * 2.0, 0.0 ) * 0.007 ).z
 		) * 0.1;
 	}
 	col *= 0.6;
