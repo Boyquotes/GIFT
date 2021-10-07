@@ -6,7 +6,7 @@
 
 ![](https://img.shields.io/github/license/Ahopness/GIFT?color=black)
 ![](https://img.shields.io/badge/version-2.0-black)
-![](https://img.shields.io/badge/plataforms-Android%20%7C%20WIndows%20%7C%20Linux%20%7C%20MacOS-black)
+![](https://img.shields.io/badge/plataforms-Android%20%7C%20Windows-black)
 ![](https://img.shields.io/github/stars/Ahopness/GIFT?color=black)
 ![](https://img.shields.io/github/forks/Ahopness/GIFT?color=black)
 
