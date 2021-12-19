@@ -70,11 +70,12 @@ All of the `.ogg` files in godot are grabbed and modifyed from [FreeSound](https
 
 ## Screenshots
 
-![](https://img.itch.zone/aW1hZ2UvMTAyNzUyOS81ODczNDU4LnBuZw==/original/eU%2FKu6.png)
-![](https://img.itch.zone/aW1hZ2UvMTAyNzUyOS81ODczNDU5LnBuZw==/original/5L3tmj.png)
+![1](https://user-images.githubusercontent.com/56614267/146692516-e61ad729-63b2-48f0-846a-65c85b008308.jpg)
+![6](https://user-images.githubusercontent.com/56614267/146692519-aca4f201-d1e8-4c30-b67b-0d8bb017c72a.jpg)
 
-![](https://img.itch.zone/aW1hZ2UvMTAyNzUyOS81ODczNDYwLnBuZw==/original/dphRXL.png)
-![](https://img.itch.zone/aW1hZ2UvMTAyNzUyOS81ODczNDYxLnBuZw==/original/ys9Ccz.png)
+![2](https://user-images.githubusercontent.com/56614267/146692521-badf53c5-4bd7-4b42-9913-27356e445286.jpg)
+![7](https://user-images.githubusercontent.com/56614267/146692524-79bcbcbb-3651-492a-af92-f4faa75dd092.jpg)
+
 
 ## Credits
 
