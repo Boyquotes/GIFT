@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Data/Fonts/fontTimes-Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Data/Fonts/fontRobotoLight.ttf" type="DynamicFontData" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Materials/matUIText.tres" type="Material" id=8]
 [ext_resource path="res://Materials/matUIImages.tres" type="Material" id=9]
 [ext_resource path="res://Data/Fonts/fontTimes.ttf" type="DynamicFontData" id=10]
+[ext_resource path="res://Materials/matUIText3.tres" type="Material" id=11]
 [ext_resource path="res://Sprites/UI/sprSav.png" type="Texture" id=18]
 [ext_resource path="res://Sounds/MUS/musAveMaria.ogg" type="AudioStream" id=23]
 [ext_resource path="res://Sprites/Menu/sprTwitter.png" type="Texture" id=37]
@@ -94,11 +95,11 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 3.9, 13, 17.4, 17.5 ),
+"times": PoolRealArray( 5, 13, 17.4, 17.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "values": [ {
 "args": [  ],
-"method": "prank"
+"method": "InitJumpscare"
 }, {
 "args": [  ],
 "method": "new_game"
@@ -251,6 +252,7 @@ __meta__ = {
 
 [node name="txtTitle" type="Label" parent="."]
 modulate = Color( 1, 1, 1, 0 )
+material = ExtResource( 11 )
 anchor_right = 1.0
 margin_top = 320.0
 margin_bottom = 358.0
@@ -391,9 +393,9 @@ margin_left = -152.0
 margin_top = -33.0
 grow_horizontal = 0
 grow_vertical = 0
-custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 0.462745, 0.462745, 0.462745, 1 )
-text = "v2.0.823543"
+custom_fonts/font = SubResource( 4 )
+text = "v3.0.823543"
 align = 2
 valign = 2
 autowrap = true
@@ -504,8 +506,8 @@ margin_right = 76.0
 margin_bottom = 70.5083
 grow_horizontal = 0
 grow_vertical = 0
-custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.784314, 0.784314, 0.784314, 1 )
+custom_fonts/font = SubResource( 2 )
 text = "&menu9"
 align = 1
 valign = 1
@@ -532,8 +534,8 @@ margin_right = 76.0
 margin_bottom = 9.0
 grow_horizontal = 0
 grow_vertical = 0
-custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 0.333333, 0.333333, 0.333333, 1 )
+custom_fonts/font = SubResource( 6 )
 text = "&menu8"
 align = 1
 valign = 1
@@ -563,7 +565,16 @@ __meta__ = {
 [node name="btnTwitter" type="TouchScreenButton" parent="sprTwitter"]
 shape = SubResource( 8 )
 
-[node name="fxDithering" parent="." instance=ExtResource( 7 )]
+[node name="backBufferCopy" type="BackBufferCopy" parent="."]
+position = Vector2( 180, 320 )
+scale = Vector2( 1.8, 3.2 )
+copy_mode = 2
+
+[node name="fxDithering" parent="backBufferCopy" instance=ExtResource( 7 )]
+margin_left = -100.0
+margin_top = -100.0
+margin_right = -100.0
+margin_bottom = -100.0
 
 [node name="sprGrain" parent="." instance=ExtResource( 3 )]
 

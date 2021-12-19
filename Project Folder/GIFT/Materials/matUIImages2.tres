@@ -1,9 +1,13 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=2]
 
-[ext_resource path="res://Shaders/Screen/shrUI.shader" type="Shader" id=1]
+[ext_resource path="res://Shaders/Screen/shrUIV2.shader" type="Shader" id=1]
 
 [resource]
 shader = ExtResource( 1 )
-shader_param/modular = Color( 1, 1, 1, 1 )
-shader_param/blur_amount = 0.049
-shader_param/grain_strenth = 0.7
+shader_param/grain_strenth = 0.661
+shader_param/blur_directions = 16.0
+shader_param/blur_quality = 3.0
+shader_param/blur_amount = 22.275
+shader_param/shake_strength = 1.229
+shader_param/shake_seed = 1.0
+shader_param/fx_brightness = 1.366

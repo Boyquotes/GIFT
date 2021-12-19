@@ -84,7 +84,7 @@ gradient = SubResource( 7 )
 
 [sub_resource type="ShaderMaterial" id=16]
 shader = ExtResource( 3 )
-shader_param/modular = Color( 1, 1, 1, 0.121569 )
+shader_param/modular = Color( 1, 1, 1, 0.129412 )
 shader_param/blur_amount = 0.01
 shader_param/grain_strenth = 0.7
 
@@ -692,9 +692,8 @@ __meta__ = {
 
 [node name="sprHeader" type="TextureRect" parent="scDevC/DevC"]
 material = SubResource( 10 )
-margin_left = 2.0
 margin_top = 69.0
-margin_right = 342.0
+margin_right = 340.0
 margin_bottom = 319.769
 rect_min_size = Vector2( 298.462, 250.769 )
 texture = ExtResource( 20 )

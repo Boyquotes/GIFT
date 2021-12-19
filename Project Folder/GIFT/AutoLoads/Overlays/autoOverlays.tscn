@@ -1,10 +1,26 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Data/Fonts/fontRobotoLightItalic.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scripts/scrVFXSetup.gd" type="Script" id=2]
+[ext_resource path="res://Shaders/Screen/shrCRT.gdshader" type="Shader" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 12
 font_data = ExtResource( 1 )
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = ExtResource( 3 )
+shader_param/res = Vector2( 640, 360 )
+shader_param/mask_type = 0
+shader_param/bloom_type = 0
+shader_param/hardScan = -2.392
+shader_param/hardPix = -2.0
+shader_param/hardBloomScan = -2.0
+shader_param/hardBloomPix = -1.5
+shader_param/bloomAmount = 16.0
+shader_param/warp = Vector2( 64, 64 )
+shader_param/maskDark = 0.5
+shader_param/maskLight = 1.5
 
 [node name="autoOverlays" type="Control"]
 anchor_right = 1.0
@@ -26,13 +42,33 @@ margin_right = 180.0
 margin_bottom = 51.0
 grow_horizontal = 2
 grow_vertical = 2
-custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 1, 1, 1, 0.392157 )
+custom_fonts/font = SubResource( 1 )
 text = "&playtest1"
 align = 1
 valign = 1
 autowrap = true
 uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="backBufferCopy" type="BackBufferCopy" parent="CanvasLayer"]
+visible = false
+position = Vector2( 180, 320 )
+scale = Vector2( 1.8, 3.2 )
+copy_mode = 2
+script = ExtResource( 2 )
+
+[node name="fxCRT" type="ColorRect" parent="CanvasLayer/backBufferCopy"]
+material = SubResource( 2 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -100.0
+margin_top = -100.0
+margin_right = -100.0
+margin_bottom = -100.0
+mouse_filter = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }

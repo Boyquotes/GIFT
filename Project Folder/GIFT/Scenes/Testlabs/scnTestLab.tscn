@@ -52,7 +52,7 @@ transform = Transform( 5.22817, 0, 0, 0, 5.22817, 0, 0, 0, 5.22817, 0, 0, 0 )
 [node name="nObjects" type="Spatial" parent="nMap"]
 
 [node name="MeshInstance" type="MeshInstance" parent="nMap/nObjects"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 9.44088, 0, 0, 0.539113 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 3.30538, 0, 0, -3.56548 )
 material_override = SubResource( 1 )
 mesh = SubResource( 2 )
 material/0 = ExtResource( 5 )
@@ -60,6 +60,17 @@ material/0 = ExtResource( 5 )
 [node name="StaticBody" type="StaticBody" parent="nMap/nObjects/MeshInstance"]
 
 [node name="CollisionShape" type="CollisionShape" parent="nMap/nObjects/MeshInstance/StaticBody"]
+shape = SubResource( 3 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="nMap/nObjects"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 3.30538, 0, -2.02444, 2.92771 )
+material_override = SubResource( 1 )
+mesh = SubResource( 2 )
+material/0 = ExtResource( 5 )
+
+[node name="StaticBody" type="StaticBody" parent="nMap/nObjects/MeshInstance4"]
+
+[node name="CollisionShape" type="CollisionShape" parent="nMap/nObjects/MeshInstance4/StaticBody"]
 shape = SubResource( 3 )
 
 [node name="MeshInstance2" type="MeshInstance" parent="nMap/nObjects"]
@@ -154,7 +165,7 @@ environment = SubResource( 7 )
 [node name="nTriggers" type="Spatial" parent="nMap"]
 
 [node name="oPlayer" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -1.54938, 6.12706, -9.56818 )
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.549, 5.221, -3.695 )
 use_light = false
 
 [node name="oUI" parent="." instance=ExtResource( 3 )]

@@ -1,14 +1,34 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Data/Fonts/fontRobotoLight.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Data/Fonts/fontRobotoMedium.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Scripts/scrSetup.gd" type="Script" id=3]
-[ext_resource path="res://Materials/matUIText.tres" type="Material" id=4]
+[ext_resource path="res://Shaders/Screen/shrUIV2.shader" type="Shader" id=4]
+
+[sub_resource type="ShaderMaterial" id=9]
+shader = ExtResource( 4 )
+shader_param/grain_strenth = 0.957
+shader_param/blur_directions = 16.0
+shader_param/blur_quality = 1.6
+shader_param/blur_amount = 8.0
+shader_param/shake_strength = 1.2
+shader_param/shake_seed = 1.0
+shader_param/fx_brightness = 0.7
 
 [sub_resource type="DynamicFont" id=1]
 size = 22
 use_filter = true
 font_data = ExtResource( 2 )
+
+[sub_resource type="ShaderMaterial" id=10]
+shader = ExtResource( 4 )
+shader_param/grain_strenth = 0.9
+shader_param/blur_directions = 16.0
+shader_param/blur_quality = 1.6
+shader_param/blur_amount = 8.0
+shader_param/shake_strength = 0.4
+shader_param/shake_seed = 1.0
+shader_param/fx_brightness = 0.7
 
 [sub_resource type="DynamicFont" id=2]
 size = 20
@@ -17,6 +37,16 @@ font_data = ExtResource( 1 )
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 62, 17 )
+
+[sub_resource type="ShaderMaterial" id=11]
+shader = ExtResource( 4 )
+shader_param/grain_strenth = 0.8
+shader_param/blur_directions = 16.0
+shader_param/blur_quality = 1.824
+shader_param/blur_amount = 8.0
+shader_param/shake_strength = 0.696
+shader_param/shake_seed = 1.0
+shader_param/fx_brightness = 1.0
 
 [sub_resource type="StyleBoxLine" id=4]
 color = Color( 1, 1, 1, 1 )
@@ -82,7 +112,7 @@ __meta__ = {
 }
 
 [node name="txtTittle" type="Label" parent="."]
-material = ExtResource( 4 )
+material = SubResource( 9 )
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -63.0
@@ -100,7 +130,7 @@ __meta__ = {
 }
 
 [node name="txtConfirm" type="Label" parent="."]
-material = ExtResource( 4 )
+material = SubResource( 10 )
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -123,7 +153,7 @@ __meta__ = {
 shape = SubResource( 3 )
 
 [node name="obLanguages" type="OptionButton" parent="."]
-material = ExtResource( 4 )
+material = SubResource( 11 )
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -134,8 +164,8 @@ margin_right = 94.5
 margin_bottom = 15.0
 grow_horizontal = 2
 theme = SubResource( 8 )
-custom_fonts/font = SubResource( 2 )
 custom_constants/arrow_margin = -1
+custom_fonts/font = SubResource( 2 )
 text = "English"
 items = [ "English", null, false, 0, null, "Portugues", null, false, 1, null, "Español*", null, false, 2, null, "Deutsche*", null, false, 3, null, "Français*", null, false, 4, null, "Polskie*", null, false, 5, null ]
 selected = 0

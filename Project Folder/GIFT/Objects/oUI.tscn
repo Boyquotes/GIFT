@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Data/Fonts/fontRobotoLight.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Sprites/UI/sprGrain.png" type="Texture" id=2]
@@ -6,9 +6,8 @@
 [ext_resource path="res://Sprites/UI/sprArrows.png" type="Texture" id=4]
 [ext_resource path="res://Objects/Effects/fxDithering.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Data/Fonts/fontRobotoLightItalic.ttf" type="DynamicFontData" id=6]
-[ext_resource path="res://Materials/matUIImages2.tres" type="Material" id=7]
 [ext_resource path="res://Materials/matUIText.tres" type="Material" id=8]
-[ext_resource path="res://Shaders/Screen/shrUI.shader" type="Shader" id=9]
+[ext_resource path="res://Shaders/Screen/shrUIV2.shader" type="Shader" id=9]
 
 [sub_resource type="CanvasItemMaterial" id=1]
 blend_mode = 1
@@ -22,9 +21,83 @@ extents = Vector2( 26.5, 26.5 )
 
 [sub_resource type="ShaderMaterial" id=5]
 shader = ExtResource( 9 )
-shader_param/modular = Color( 1, 1, 1, 0.603922 )
-shader_param/blur_amount = 0.0
+shader_param/grain_strenth = 0.8
+shader_param/blur_directions = 16.0
+shader_param/blur_quality = 3.0
+shader_param/blur_amount = 22.275
+shader_param/shake_strength = 1.229
+shader_param/shake_seed = 5.0
+shader_param/fx_brightness = 1.562
+
+[sub_resource type="ShaderMaterial" id=6]
+shader = ExtResource( 9 )
+shader_param/grain_strenth = 0.9
+shader_param/blur_directions = 16.0
+shader_param/blur_quality = 3.0
+shader_param/blur_amount = 22.0
+shader_param/shake_strength = 1.2
+shader_param/shake_seed = 10.0
+shader_param/fx_brightness = 0.6
+
+[sub_resource type="ShaderMaterial" id=7]
+shader = ExtResource( 9 )
+shader_param/grain_strenth = 0.9
+shader_param/blur_directions = 16.0
+shader_param/blur_quality = 3.0
+shader_param/blur_amount = 22.0
+shader_param/shake_strength = 1.2
+shader_param/shake_seed = 15.0
+shader_param/fx_brightness = 0.6
+
+[sub_resource type="ShaderMaterial" id=8]
+shader = ExtResource( 9 )
+shader_param/grain_strenth = 0.9
+shader_param/blur_directions = 16.0
+shader_param/blur_quality = 3.0
+shader_param/blur_amount = 22.0
+shader_param/shake_strength = 1.2
+shader_param/shake_seed = 20.0
+shader_param/fx_brightness = 0.6
+
+[sub_resource type="ShaderMaterial" id=9]
+shader = ExtResource( 9 )
+shader_param/grain_strenth = 0.9
+shader_param/blur_directions = 16.0
+shader_param/blur_quality = 3.0
+shader_param/blur_amount = 22.0
+shader_param/shake_strength = 1.2
+shader_param/shake_seed = 25.0
+shader_param/fx_brightness = 0.6
+
+[sub_resource type="ShaderMaterial" id=10]
+shader = ExtResource( 9 )
+shader_param/grain_strenth = 0.9
+shader_param/blur_directions = 16.0
+shader_param/blur_quality = 3.0
+shader_param/blur_amount = 22.0
+shader_param/shake_strength = 1.2
+shader_param/shake_seed = 30.0
+shader_param/fx_brightness = 0.6
+
+[sub_resource type="ShaderMaterial" id=11]
+shader = ExtResource( 9 )
+shader_param/grain_strenth = 0.9
+shader_param/blur_directions = 16.0
+shader_param/blur_quality = 3.0
+shader_param/blur_amount = 22.0
+shader_param/shake_strength = 1.2
+shader_param/shake_seed = 30.0
+shader_param/fx_brightness = 0.6
+
+[sub_resource type="ShaderMaterial" id=12]
+shader = ExtResource( 9 )
 shader_param/grain_strenth = 2.0
+shader_param/blur_directions = 16.0
+shader_param/blur_quality = 3.0
+shader_param/blur_amount = 25.0
+shader_param/shake_strength = 0.0
+shader_param/shake_seed = 1.0
+shader_param/fx_brightness = 1.0
 
 [sub_resource type="DynamicFont" id=4]
 size = 13
@@ -106,7 +179,7 @@ shape = SubResource( 3 )
 visibility_mode = 1
 
 [node name="sprAlert" type="Sprite" parent="uiButtons/btnAlert"]
-material = ExtResource( 7 )
+material = SubResource( 5 )
 texture = ExtResource( 4 )
 centered = false
 hframes = 7
@@ -118,7 +191,7 @@ shape = SubResource( 3 )
 passby_press = true
 
 [node name="sprMoveFoward" type="Sprite" parent="uiButtons/btnMoveFoward"]
-material = ExtResource( 7 )
+material = SubResource( 6 )
 texture = ExtResource( 4 )
 centered = false
 hframes = 7
@@ -129,7 +202,7 @@ shape = SubResource( 3 )
 passby_press = true
 
 [node name="sprMoveBackward" type="Sprite" parent="uiButtons/btnMoveBackward"]
-material = ExtResource( 7 )
+material = SubResource( 7 )
 texture = ExtResource( 4 )
 centered = false
 hframes = 7
@@ -141,7 +214,7 @@ shape = SubResource( 3 )
 passby_press = true
 
 [node name="sprMoveLeft" type="Sprite" parent="uiButtons/btnMoveLeft"]
-material = ExtResource( 7 )
+material = SubResource( 8 )
 texture = ExtResource( 4 )
 centered = false
 hframes = 7
@@ -153,7 +226,7 @@ shape = SubResource( 3 )
 passby_press = true
 
 [node name="sprMoveRight" type="Sprite" parent="uiButtons/btnMoveRight"]
-material = ExtResource( 7 )
+material = SubResource( 9 )
 texture = ExtResource( 4 )
 centered = false
 hframes = 7
@@ -165,7 +238,7 @@ shape = SubResource( 3 )
 passby_press = true
 
 [node name="sprTurnRight" type="Sprite" parent="uiButtons/btnTurnRight"]
-material = ExtResource( 7 )
+material = SubResource( 10 )
 texture = ExtResource( 4 )
 centered = false
 hframes = 7
@@ -177,14 +250,14 @@ shape = SubResource( 3 )
 passby_press = true
 
 [node name="sprTurnLeft" type="Sprite" parent="uiButtons/btnTurnLeft"]
-material = ExtResource( 7 )
+material = SubResource( 11 )
 texture = ExtResource( 4 )
 centered = false
 hframes = 7
 frame = 2
 
 [node name="txtTutorial" type="Label" parent="uiButtons"]
-material = SubResource( 5 )
+material = SubResource( 12 )
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5

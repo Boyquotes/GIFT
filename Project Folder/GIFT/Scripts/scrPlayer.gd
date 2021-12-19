@@ -20,19 +20,22 @@ onready var footstep = $playerFoot/playerFootstep
 onready var anm = $playerAnim
 onready var air_sfx = $playerAir
 onready var tween = $playerTween
+onready var fall_countdown = $tmFallCountdown
 
 # MOVEMENT #
 var direction = Vector3()
+var h_vel = Vector3()
 var movement = Vector3()
 var moving_on_wall = false
 var is_moving = false
-var currect_speed = 3
+var currect_speed = 4
 var h_acel = 6
 var can_move = false
 var can_flip = false
 
 # LOOK #
 var sensitivity = 40
+var look_direction :float = 0.0
 
 # GRAVITY #
 enum gravity_states {
@@ -55,6 +58,8 @@ var died = false
 export(bool) var player_locked = false
 export(bool) var movement_locked = false
 export(NodePath) var clouds = null
+var fall_countdown_finished = false
+var torso_rot :int = 0
 enum process_types {
 	PROCESSS,
 	PHYSICS_PROCESS}
@@ -96,12 +101,19 @@ func move(_delta):
 		if not movement_locked:
 			if button_pressed.foward or Input.is_action_pressed("player_move_foward"):
 				direction -= transform.basis.z
+				torso_rot = 0
 			if button_pressed.backwards or Input.is_action_pressed("player_move_backwards"):
 				direction += transform.basis.z
+				torso_rot = 0
 			if button_pressed.left or Input.is_action_pressed("player_move_left"):
 				direction -= transform.basis.x
+				torso_rot = 3
 			if button_pressed.right or Input.is_action_pressed("player_move_right"):
 				direction += transform.basis.x
+				torso_rot = -3
+	
+	rotation_degrees.z = lerp(rotation_degrees.z, torso_rot, 5 * _delta)
+	torso_rot = 0
 	
 	#Normalize
 	direction = direction.normalized()
@@ -114,21 +126,26 @@ func move(_delta):
 	
 	#Organization
 	gravity(_delta)
-	air_sound(_delta)
+	on_floor_activity(_delta)
 	headbob()
 	
-	direction.z += gravity_vec.z
-	direction.x += gravity_vec.x
-	direction.y = gravity_vec.y
+	#Smoothness
+	h_vel = h_vel.linear_interpolate(direction * currect_speed, h_acel * _delta)
+	movement.x = h_vel.x + gravity_vec.x
+	movement.z = h_vel.z + gravity_vec.z
+	movement.y = gravity_vec.y
 	
 	#Aply movemnt
-	move_and_slide(direction * currect_speed, Vector3.UP, false)
+	move_and_slide(movement, Vector3.UP, false)
 func look(_delta):
 	if not player_locked :
 		if button_pressed.look_left or Input.is_action_pressed("player_turn_left"):
-			rotate_y(deg2rad(sensitivity * _delta))
-		if button_pressed.look_right or Input.is_action_pressed("player_turn_right"):
-			rotate_y(deg2rad(-sensitivity *_delta))
+			look_direction = lerp(look_direction, sensitivity, 5 * _delta)
+		elif button_pressed.look_right or Input.is_action_pressed("player_turn_right"):
+			look_direction = lerp(look_direction, -sensitivity, 5 * _delta)
+		else:
+			look_direction = 0
+		rotate_y(deg2rad(look_direction * _delta))
 
 func gravity(_delta):
 	#Ground check
@@ -147,18 +164,37 @@ func gravity(_delta):
 	else:
 		gravity_vec = -get_floor_normal()
 		h_acel = normal_acel
-func air_sound(_delta):
-	if gravity_state == gravity_states.GROUNDED:
-		air_sfx.unit_db = lerp(air_sfx.unit_db, -80, 3 * _delta)
-		if not is_on_floor():
-			gravity_state = gravity_states.MIDAIR
-	elif gravity_state == gravity_states.MIDAIR:
-		air_sfx.unit_db = lerp(air_sfx.unit_db, 0, 3 * _delta)
-		if is_on_floor():
-			gravity_state = gravity_states.TOUCHDOWN
-	elif gravity_state == gravity_states.TOUCHDOWN:
-		$playerFoot/playerFootstep.play()
-		gravity_state = gravity_states.GROUNDED
+func on_floor_activity(_delta):
+	match gravity_state:
+		gravity_states.GROUNDED:
+			air_sfx.unit_db = lerp(air_sfx.unit_db, -80, 3 * _delta)
+			
+			head.translation.y = lerp(head.translation.y, 1.591, 10 * _delta)
+			rotation_degrees.x = lerp(rotation_degrees.x, 0, 10 * _delta)
+			
+			if not is_on_floor():
+				gravity_state = gravity_states.MIDAIR
+				fall_countdown_finished = false
+				fall_countdown.start()
+				yield(fall_countdown, "timeout")
+				fall_countdown_finished = true
+		gravity_states.MIDAIR:
+			if fall_countdown_finished:
+				air_sfx.unit_db = lerp(air_sfx.unit_db, 0, 3 * _delta)
+				
+				head.translation.y = lerp(head.translation.y, 2, .7 * _delta)
+				rotation_degrees.x = lerp(rotation_degrees.x, 10, .7 * _delta)
+			
+			if is_on_floor():
+				gravity_state = gravity_states.TOUCHDOWN
+		gravity_states.TOUCHDOWN:
+			if fall_countdown_finished:
+				$playerFoot/playerFootstep.play()
+				
+				head.translation.y = 1.2
+				rotation_degrees.x = -2
+			
+			gravity_state = gravity_states.GROUNDED
 func headbob():
 		if is_moving:
 			anm.play("anmWalk")

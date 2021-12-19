@@ -8,6 +8,10 @@ func _ready():
 	
 	$oUI/Menu/txtVolume/sldVolume.value = db2linear(AudioServer.get_bus_volume_db(0))
 	
+	var window_x = OS.window_size.x / 2
+	var window_y = OS.window_size.y / 2
+	$oUI/Menu/backBufferCopy.position = Vector2(window_x, window_y)
+	$oUI/Menu/backBufferCopy.scale = Vector2(window_x / 10, window_y / 10)
 func _process(delta):
 	if Input.is_action_just_pressed("player_quit"):
 		_on_btnPause_released()
@@ -17,13 +21,17 @@ func _process(delta):
 	if can_pause:
 		if game_paused:
 			$oUI/Menu.visible = true
+			if get_tree().current_scene.name.begins_with("scnWF"):
+				$oUI/Menu/txtExit.text = tr("$pause4")
+			else:
+				$oUI/Menu/txtExit.text = tr("$pause2")
 			
 			if GameManeger.globals.os_type == "Mobile":
 				$oUI/sprPause.visible = false
 			elif GameManeger.globals.os_type == "PC":
 				$oUI/sprPause.visible = false
 				
-			Engine.time_scale = 0
+			get_tree().paused = true
 		else:
 			$oUI/Menu.visible = false
 			
@@ -32,7 +40,7 @@ func _process(delta):
 			elif GameManeger.globals.os_type == "PC":
 				$oUI/sprPause.visible = false
 				
-			Engine.time_scale = 1
+			get_tree().paused = false
 
 func _on_btnPause_released():
 	game_paused =! game_paused
@@ -45,7 +53,7 @@ func _on_btnExit_released():
 	
 	$oUI/Menu.visible = false
 	$oUI/sprPause.visible = true
-	Engine.time_scale = 1
+	get_tree().paused = false
 	
 	SceneManeger.change_scene("res://Scenes/scnMenu.tscn -no-auto-save")
 

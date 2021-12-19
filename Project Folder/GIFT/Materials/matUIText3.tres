@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[ext_resource path="res://Shaders/Screen/shrUIV2.shader" type="Shader" id=1]
+
+[resource]
+shader = ExtResource( 1 )
+shader_param/grain_strenth = 0.8
+shader_param/blur_directions = 16.0
+shader_param/blur_quality = 1.824
+shader_param/blur_amount = 8.0
+shader_param/shake_strength = 1.7
+shader_param/shake_seed = 1.0
+shader_param/fx_brightness = 1.0

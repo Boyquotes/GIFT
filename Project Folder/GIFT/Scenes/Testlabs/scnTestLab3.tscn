@@ -55,7 +55,7 @@ tracks/0/path = NodePath("Spatial:rotation_degrees")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
-tracks/0/enabled = true
+tracks/0/enabled = false
 tracks/0/keys = {
 "times": PoolRealArray( 0, 5 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -66,7 +66,7 @@ tracks/0/keys = {
 [node name="scnTestLab3" type="Spatial"]
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
-transform = Transform( 2.01372, 1.99632e-10, -0.00914483, 0.00914483, -8.76116e-08, 2.01372, -1.99632e-10, -2.01374, -8.76116e-08, -0.0498006, -1.96483, -0.0918567 )
+transform = Transform( 1.89227, -0.688773, -0.00858702, 0.00913812, -1.60534e-07, 2.01372, -0.688766, -1.89228, 0.00312542, -0.0498006, -1.96483, -0.0918567 )
 material_override = SubResource( 2 )
 mesh = ExtResource( 2 )
 material/0 = null

@@ -85,39 +85,26 @@ func update_controls(_delta):
 			movement_nodes[node].get_child(0).set_texture(disabled_buttom) # set prite to disabled one
 	
 	if can_interact:
-		if GameManeger.globals.os_type == "Mobile":
-			$uiPC.visible = false
-			
-			$uiButtons/btnAlert.shape_visible = true
-			$uiButtons/btnAlert/sprAlert.set_texture(normal_buttom)
-		elif GameManeger.globals.os_type == "PC":
-			$uiPC.visible = true
-			
-			$uiPC/barTop.rect_position = $uiPC/barTop.rect_position.linear_interpolate(Vector2(0, 0), anm_vel)
-			$uiPC/barBottom.rect_position = $uiPC/barBottom.rect_position.linear_interpolate(Vector2(0, 632), anm_vel)
-			$uiPC/barLeft.rect_position = $uiPC/barLeft.rect_position.linear_interpolate(Vector2(0, 0), anm_vel)
-			$uiPC/barRight.rect_position = $uiPC/barRight.rect_position.linear_interpolate(Vector2(352, 0), anm_vel)
+		$uiPC/barTop.rect_position = $uiPC/barTop.rect_position.linear_interpolate(Vector2(0, 0), anm_vel)
+		$uiPC/barBottom.rect_position = $uiPC/barBottom.rect_position.linear_interpolate(Vector2(0, get_viewport_rect().size.y - 8), anm_vel)
+		$uiPC/barLeft.rect_position = $uiPC/barLeft.rect_position.linear_interpolate(Vector2(0, 0), anm_vel)
+		$uiPC/barRight.rect_position = $uiPC/barRight.rect_position.linear_interpolate(Vector2(352, 0), anm_vel)
+		
+		$uiButtons/btnAlert.shape_visible = true
+		$uiButtons/btnAlert/sprAlert.set_texture(normal_buttom)
 	else:
-		if GameManeger.globals.os_type == "Mobile":
-			$uiPC.visible = false
-			
-			$uiButtons/btnAlert.shape_visible = false
-			$uiButtons/btnAlert/sprAlert.set_texture(disabled_buttom)
-		elif GameManeger.globals.os_type == "PC":
-			$uiPC.visible = true
-			
-			$uiButtons/btnAlert.shape_visible = false
-			$uiButtons/btnAlert/sprAlert.set_texture(null)
-			
-			$uiPC/barTop.rect_position = $uiPC/barTop.rect_position.linear_interpolate(Vector2(0, -8), anm_vel)
-			$uiPC/barBottom.rect_position = $uiPC/barBottom.rect_position.linear_interpolate(Vector2(0, 640), anm_vel)
-			$uiPC/barLeft.rect_position = $uiPC/barLeft.rect_position.linear_interpolate(Vector2(-8, 0), anm_vel)
-			$uiPC/barRight.rect_position = $uiPC/barRight.rect_position.linear_interpolate(Vector2(360, 0), anm_vel)
+		$uiPC/barTop.rect_position = $uiPC/barTop.rect_position.linear_interpolate(Vector2(0, -8), anm_vel)
+		$uiPC/barBottom.rect_position = $uiPC/barBottom.rect_position.linear_interpolate(Vector2(0, get_viewport_rect().size.y), anm_vel)
+		$uiPC/barLeft.rect_position = $uiPC/barLeft.rect_position.linear_interpolate(Vector2(-8, 0), anm_vel)
+		$uiPC/barRight.rect_position = $uiPC/barRight.rect_position.linear_interpolate(Vector2(360, 0), anm_vel)
+		
+		$uiButtons/btnAlert.shape_visible = false
+		$uiButtons/btnAlert/sprAlert.set_texture(disabled_buttom)
 func update_input():
-	player.button_pressed.foward =  get_node("uiButtons/btnMoveFoward").is_pressed()
-	player.button_pressed.backwards =  get_node("uiButtons/btnMoveBackward").is_pressed()
-	player.button_pressed.left =  get_node("uiButtons/btnMoveLeft").is_pressed()
-	player.button_pressed.right =  get_node("uiButtons/btnMoveRight").is_pressed()
+	player.button_pressed.foward = get_node("uiButtons/btnMoveFoward").is_pressed()
+	player.button_pressed.backwards = get_node("uiButtons/btnMoveBackward").is_pressed()
+	player.button_pressed.left = get_node("uiButtons/btnMoveLeft").is_pressed()
+	player.button_pressed.right = get_node("uiButtons/btnMoveRight").is_pressed()
 	player.button_pressed.look_left = get_node("uiButtons/btnTurnLeft").is_pressed()
 	player.button_pressed.look_right = get_node("uiButtons/btnTurnRight").is_pressed()
 

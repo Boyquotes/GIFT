@@ -523,6 +523,10 @@ shape = SubResource( 7 )
 
 [node name="nInteractables" type="Spatial" parent="nMap"]
 
+[node name="oDoor2" parent="nMap/nInteractables" instance=ExtResource( 6 )]
+transform = Transform( -4.37114e-08, 0, 1, -0.16231, 0.98674, -7.09479e-09, -0.98674, -0.16231, -4.31318e-08, -12.4982, 0.347015, 25.4771 )
+interactable = false
+
 [node name="oDoor" parent="nMap/nInteractables" instance=ExtResource( 6 )]
 transform = Transform( 1.3, 0, 0, 0, 1.2998, 0.0224839, 0, -0.0224839, 1.2998, 60.897, -35.9587, -15.9225 )
 scene_to_go = "res://Scenes/Begin/scnBegin2.tscn"
@@ -746,9 +750,7 @@ __meta__ = {
 stream = ExtResource( 20 )
 bus = "SFX"
 
-[node name="oPlayer" type="KinematicBody" parent="." groups=[
-"Player",
-]]
+[node name="oPlayer" type="KinematicBody" parent="." groups=["Player"]]
 transform = Transform( 0.99966, 0, -0.0260897, 0, 1, 0, 0.0260897, 0, 0.99966, -12.626, 0.378422, 23.3264 )
 script = ExtResource( 15 )
 gravity = 6.0
@@ -811,6 +813,9 @@ volume_db = 10.0
 bus = "SFX"
 
 [node name="playerTween" type="Tween" parent="oPlayer"]
+
+[node name="tmFallCountdown" type="Timer" parent="oPlayer"]
+wait_time = 0.5
 
 [node name="nSelfUI" type="Control" parent="oPlayer"]
 anchor_right = 1.0

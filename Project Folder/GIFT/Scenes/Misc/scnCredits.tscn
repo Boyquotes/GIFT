@@ -519,8 +519,8 @@ margin_top = 5.0
 margin_right = 345.0
 margin_bottom = 735.0
 rect_min_size = Vector2( 340, 730 )
-custom_fonts/font = SubResource( 9 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 9 )
 text = "&credits"
 clip_text = true
 uppercase = true
@@ -653,7 +653,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="fxDithering" parent="nTeaser" instance=ExtResource( 13 )]
+[node name="backBufferCopy" type="BackBufferCopy" parent="nTeaser"]
+position = Vector2( 180, 322.5 )
+scale = Vector2( 1.8, 3.175 )
+copy_mode = 2
+
+[node name="fxDithering" parent="nTeaser/backBufferCopy" instance=ExtResource( 13 )]
+margin_left = -102.817
+margin_top = -101.575
+margin_right = -102.817
+margin_bottom = -101.575
 
 [node name="nSounds" type="Node" parent="."]
 

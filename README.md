@@ -5,7 +5,7 @@
 - - - - - - -
 
 ![](https://img.shields.io/github/license/Ahopness/GIFT?color=black)
-![](https://img.shields.io/badge/version-2.0-black)
+![](https://img.shields.io/badge/version-3.0-black)
 ![](https://img.shields.io/badge/plataforms-Android%20%7C%20Windows-black)
 ![](https://img.shields.io/github/stars/Ahopness/GIFT?color=black)
 ![](https://img.shields.io/github/forks/Ahopness/GIFT?color=black)
@@ -28,7 +28,7 @@ A game by Lucas Ângelo ([@ahopness](http://twitter.com/Ahopness "Twitter"))
 
 
 GIFT is available for :
-[Android](https://play.google.com/store/apps/details?id=com.ahopness.gift "Android") and [PC](https://ahopness.itch.io/gift "PC") (Windows, MacOS and Linux)
+[Android](https://play.google.com/store/apps/details?id=com.ahopness.gift "Android") and [PC](https://ahopness.itch.io/gift "PC") (Windows only)
 
 ## License
 

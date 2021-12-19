@@ -1,0 +1,33 @@
+[gd_resource type="Shader" format=2]
+
+[resource]
+code = "shader_type canvas_item;
+
+uniform float factor = 0.9;
+uniform float strenth = 0.05;
+uniform float speed = 1.0;
+
+float rand(float n){return fract(sin(n) * 43758.5453123);}
+
+void fragment(){
+	// Normalized pixel coordinates (from 0 to 1)
+	vec2 uv =  FRAGCOORD.xy / (1.0 / SCREEN_PIXEL_SIZE).xy;
+	//vec2 uv = UV;
+	//vec2 offsets = vec2(sin(TIME * speed), cos(TIME * speed));
+	vec2 offsets = vec2(rand(TIME * speed), rand(TIME * speed / 2.0));
+	offsets *= strenth;
+	
+	
+	vec2 center = vec2(0.5, 0.5);
+	vec2 centerToDir = (uv - center);
+	
+	float l = length(centerToDir);
+	offsets *= l;
+	
+	
+	vec2 mixedUV = mix(center, uv, factor);  // factor*uv + (1.0-factor)*center
+	vec3 col = texture(SCREEN_TEXTURE, mixedUV + offsets).rgb;
+	
+	// Output to screen
+	COLOR = vec4(col,1.0);
+}"

@@ -1,0 +1,116 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Sprites/sprAM.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/scrScene.gd" type="Script" id=2]
+[ext_resource path="res://Shaders/shrGlitch.shader" type="Shader" id=3]
+[ext_resource path="res://Sounds/BGS/bgsNoise.ogg" type="AudioStream" id=4]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 3 )
+shader_param/range = 0.03
+shader_param/noiseQuality = 250.0
+shader_param/noiseIntensity = 0.041
+shader_param/offsetIntensity = 0.01
+shader_param/colorOffsetIntensity = 0.0
+
+[sub_resource type="Animation" id=2]
+resource_name = "anmMain"
+length = 4.7
+tracks/0/type = "value"
+tracks/0/path = NodePath("texAmelio:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 4, 4.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -141.437, 0 ), Vector2( -431.635, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("sfxBeep:pitch_scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 4, 4.1, 4.3, 4.5, 4.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 1.0, 1.56, 1.06, 1.47, 1.06 ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 4.7 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "exit_3am"
+} ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("sfxBeep:volume_db")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ -80.0, 0.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("texAmelio:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[node name="scn3AM" type="Spatial"]
+script = ExtResource( 2 )
+
+[node name="clBackground" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="texAmelio" type="TextureRect" parent="."]
+visible = false
+material = SubResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -265.808
+margin_right = 249.192
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 7
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sfxBeep" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -80.0
+pitch_scale = 1.06
+autoplay = true
+bus = "BGS"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "anmMain"
+anims/anmMain = SubResource( 2 )

@@ -74,11 +74,11 @@ func _on_btnExtras_released():
 	if can_touch:
 		SceneManeger.change_scene("res://Scenes/scnExtras.tscn -no-auto-save")
 
-func prank():
-	if OS.get_datetime(false).hour == 3:
-		if not GameManeger.globals.did_prank:
+func InitJumpscare():
+	if not have_save:
+		if not GameManeger.globals.did_prank and not GameManeger.info.unlock_extras:
 			GameManeger.globals.did_prank = true
-			get_tree().change_scene("res://Scenes/Misc/scn3AM.tscn")
+			get_tree().change_scene("res://Scenes/Wireframe/scnWF1.tscn")
 		
 		$musAveMaria.stream = load("res://Sounds/MUS/musAveMaria2.ogg")
 	else:

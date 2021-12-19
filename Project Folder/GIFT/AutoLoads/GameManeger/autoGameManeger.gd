@@ -17,6 +17,7 @@ var globals = {
 var data_path = "user://" 
 
 func _init():
+	Engine.target_fps = 24
 	check_os()
 	window_setup()
 	

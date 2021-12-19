@@ -1,18 +1,13 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://Shaders/shrPause.shader" type="Shader" id=1]
+[ext_resource path="res://Shaders/Screen/shrPause.shader" type="Shader" id=1]
 [ext_resource path="res://Data/Fonts/fontRobotoLight.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Sprites/UI/sprPause.png" type="Texture" id=3]
 [ext_resource path="res://Data/Fonts/fontTimes.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://AutoLoads/Pause/scrPause.gd" type="Script" id=5]
 [ext_resource path="res://Data/Themes/themeSliders.tres" type="Theme" id=6]
-[ext_resource path="res://Shaders/Screen/shrUI.shader" type="Shader" id=7]
+[ext_resource path="res://Materials/matUIImages.tres" type="Material" id=7]
 [ext_resource path="res://Materials/matUIText.tres" type="Material" id=8]
-
-[sub_resource type="ShaderMaterial" id=6]
-shader = ExtResource( 7 )
-shader_param/blur_amount = 0.016
-shader_param/grain_strenth = 1.064
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 24, 24 )
@@ -21,7 +16,9 @@ extents = Vector2( 24, 24 )
 shader = ExtResource( 1 )
 shader_param/contrast = 0.65
 shader_param/brightness = -0.238
-shader_param/strenth = 0.005
+shader_param/seed = 81.0
+shader_param/power = 0.008
+shader_param/speed = 0.5
 
 [sub_resource type="DynamicFont" id=3]
 size = 30
@@ -37,6 +34,7 @@ font_data = ExtResource( 2 )
 extents = Vector2( 75, 19.06 )
 
 [node name="autoPause" type="CanvasLayer"]
+pause_mode = 2
 script = ExtResource( 5 )
 
 [node name="oUI" type="Control" parent="."]
@@ -49,7 +47,7 @@ __meta__ = {
 
 [node name="sprPause" type="TextureRect" parent="oUI"]
 self_modulate = Color( 1, 1, 1, 0.313726 )
-material = SubResource( 6 )
+material = ExtResource( 7 )
 margin_left = 3.88908
 margin_top = 4.94975
 margin_right = 43.8891
@@ -72,8 +70,8 @@ __meta__ = {
 }
 
 [node name="backBufferCopy" type="BackBufferCopy" parent="oUI/Menu"]
-position = Vector2( 180, 552.929 )
-scale = Vector2( 1.8, 5.52929 )
+position = Vector2( 180, 320 )
+scale = Vector2( 1.8, 3.2 )
 copy_mode = 2
 
 [node name="fxB&W" type="ColorRect" parent="oUI/Menu/backBufferCopy"]

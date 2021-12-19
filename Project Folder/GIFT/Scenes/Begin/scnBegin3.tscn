@@ -391,9 +391,7 @@ tracks/4/keys = {
 "values": [ -80.0, 0.0, 80.0, -80.0, -80.0, 50.0, 80.0, -80.0 ]
 }
 
-[node name="scnBegin3" type="Spatial" groups=[
-"Scene",
-]]
+[node name="scnBegin3" type="Spatial" groups=["Scene"]]
 script = ExtResource( 19 )
 anm = NodePath("nMap/anmBigDoor")
 
@@ -492,9 +490,7 @@ shape = SubResource( 18 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5585, -4.005, 6.91508 )
 shape = SubResource( 19 )
 
-[node name="Beg4Blocking" type="CSGBox" parent="nMap/nModels/mdlBeg3/Beg4" groups=[
-"Collision",
-]]
+[node name="Beg4Blocking" type="CSGBox" parent="nMap/nModels/mdlBeg3/Beg4" groups=["Collision"]]
 transform = Transform( 1.68019, 4.3154e-14, 2.64877e-07, 4.3154e-14, 1, 0, 2.64877e-07, 0, 1, -13.4658, 3.86789e-07, 2.3741 )
 visible = false
 
@@ -796,9 +792,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.3788, -10.1515, -0.20137 )
 scene_to_go = "res://Scenes/Testlabs/scnTestLab.tscn"
 locked = true
 
-[node name="oButton2" type="Area" parent="nMap/nInteractables" groups=[
-"Buttom",
-]]
+[node name="oButton2" type="Area" parent="nMap/nInteractables" groups=["Buttom"]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.7219, -70.0808, -25.4735 )
 script = ExtResource( 21 )
 door = NodePath("../../..")
@@ -997,9 +991,7 @@ info = {
 transform = Transform( 52.3865, 0, 0, 0, 1, 0, 0, 0, 33.5959, 1.15044, -80.5922, -12.2714 )
 type = 11
 
-[node name="oTrigger9" type="Area" parent="nMap/nTriggers" groups=[
-"Trigger",
-]]
+[node name="oTrigger9" type="Area" parent="nMap/nTriggers" groups=["Trigger"]]
 script = ExtResource( 28 )
 type = 15
 info = {
@@ -1030,9 +1022,7 @@ shape = SubResource( 29 )
 
 [node name="triggerTween" type="Tween" parent="nMap/nTriggers/oTrigger9"]
 
-[node name="oTrigger10" type="Area" parent="nMap/nTriggers" groups=[
-"Trigger",
-]]
+[node name="oTrigger10" type="Area" parent="nMap/nTriggers" groups=["Trigger"]]
 script = ExtResource( 28 )
 type = 15
 info = {

@@ -378,7 +378,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="fxDithering" parent="nUI" instance=ExtResource( 3 )]
+[node name="backBufferCopy" type="BackBufferCopy" parent="nUI"]
+position = Vector2( 179.5, 322.5 )
+scale = Vector2( 1.805, 3.175 )
+copy_mode = 2
+
+[node name="fxDithering" parent="nUI/backBufferCopy" instance=ExtResource( 3 )]
+margin_left = -102.817
+margin_top = -101.575
+margin_right = -102.817
+margin_bottom = -101.575
 
 [node name="sprGrain" parent="nUI" instance=ExtResource( 11 )]
 

@@ -208,9 +208,7 @@ tracks/2/keys = {
 "values": [ Vector3( 0, 0, -2 ), Vector3( -2, 0, 0 ), Vector3( 0, 0, 2 ), Vector3( -2, 0, 0 ), Vector3( 0, 0, -2 ) ]
 }
 
-[node name="oPlayer" type="KinematicBody" groups=[
-"Player",
-]]
+[node name="oPlayer" type="KinematicBody" groups=["Player"]]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
 script = ExtResource( 2 )
 
@@ -270,6 +268,9 @@ volume_db = 5.0
 bus = "SFX"
 
 [node name="playerTween" type="Tween" parent="."]
+
+[node name="tmFallCountdown" type="Timer" parent="."]
+wait_time = 0.5
 
 [node name="nSelfUI" type="Control" parent="."]
 anchor_right = 1.0

@@ -6,4 +6,4 @@
 shader = ExtResource( 1 )
 shader_param/modular = Color( 1, 1, 1, 1 )
 shader_param/blur_amount = 0.01
-shader_param/grain_strenth = 0.7
+shader_param/grain_strenth = 1.896
