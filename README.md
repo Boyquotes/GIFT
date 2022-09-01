@@ -1,23 +1,18 @@
-# GIFT 
-
-![Logo](https://img.itch.zone/aW1nLzU4NzY1NjYucG5n/original/CdEMJM.png "Logo")
-
-- - - - - - -
-
-![](https://img.shields.io/github/license/Ahopness/GIFT?color=black)
-![](https://img.shields.io/badge/version-3.0-black)
-![](https://img.shields.io/badge/plataforms-Android%20%7C%20Windows-black)
-![](https://img.shields.io/github/stars/Ahopness/GIFT?color=black)
-![](https://img.shields.io/github/forks/Ahopness/GIFT?color=black)
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/56614267/188028453-1bdc4bcc-0d91-417c-89ac-676e26c2997a.png" align="center" width="30%"></img>
+    <br>
+    <img src="https://img.shields.io/github/license/Ahopness/GIFT?color=black" align="center"></img>
+    <img src="https://img.shields.io/badge/version-3.0-black" align="center"></img>
+    <img src="https://img.shields.io/badge/plataforms-Android%20%7C%20Windows-black" align="center"></img>
+    <img src="https://img.shields.io/github/stars/Ahopness/GIFT?color=black" align="center"></img>
+    <hr>
+</div>
 
 ## Sumary
 
 * [About](#About)
-
 * [License](#License)
-
 * [Screenshots](#Screenshots)
-
 * [Credits](#Credits)
 
 ## About
@@ -68,20 +63,18 @@ All of the `.ogg` files in godot are grabbed and modifyed from [FreeSound](https
 
 [More on here](https://github.com/Ahopness/GIFT/blob/main/LICENSE "More on here")
 
-## Screenshots
-
-![1](https://user-images.githubusercontent.com/56614267/146692516-e61ad729-63b2-48f0-846a-65c85b008308.jpg)
-![6](https://user-images.githubusercontent.com/56614267/146692519-aca4f201-d1e8-4c30-b67b-0d8bb017c72a.jpg)
-
-![2](https://user-images.githubusercontent.com/56614267/146692521-badf53c5-4bd7-4b42-9913-27356e445286.jpg)
-![7](https://user-images.githubusercontent.com/56614267/146692524-79bcbcbb-3651-492a-af92-f4faa75dd092.jpg)
-
-
 ## Credits
+
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/56614267/146692516-e61ad729-63b2-48f0-846a-65c85b008308.jpg" align="left"></img>
+    <img src="https://user-images.githubusercontent.com/56614267/146692519-aca4f201-d1e8-4c30-b67b-0d8bb017c72a.jpg" align="right"></img>
+    <img src="https://user-images.githubusercontent.com/56614267/146692521-badf53c5-4bd7-4b42-9913-27356e445286.jpg" align="left"></img>
+    <img src="https://user-images.githubusercontent.com/56614267/146692524-79bcbcbb-3651-492a-af92-f4faa75dd092.jpg" align="right"></img>
+</div>
 
 ### A game by : 
 
-Lucas Ângelo Câmara ([@ahopness](http://twitter.com/Ahopness "Twitter"))
+Lucas Ângelo ([@ahopness](http://twitter.com/Ahopness "Twitter"))
 
 
 ### Acknowledgements :
