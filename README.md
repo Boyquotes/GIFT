@@ -63,14 +63,17 @@ All of the `.ogg` files in godot are grabbed and modifyed from [FreeSound](https
 
 [More on here](https://github.com/Ahopness/GIFT/blob/main/LICENSE "More on here")
 
-## Credits
+# Screenshots
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/56614267/146692516-e61ad729-63b2-48f0-846a-65c85b008308.jpg" align="left"></img>
-    <img src="https://user-images.githubusercontent.com/56614267/146692519-aca4f201-d1e8-4c30-b67b-0d8bb017c72a.jpg" align="right"></img>
-    <img src="https://user-images.githubusercontent.com/56614267/146692521-badf53c5-4bd7-4b42-9913-27356e445286.jpg" align="left"></img>
-    <img src="https://user-images.githubusercontent.com/56614267/146692524-79bcbcbb-3651-492a-af92-f4faa75dd092.jpg" align="right"></img>
+    <img src="https://user-images.githubusercontent.com/56614267/146692516-e61ad729-63b2-48f0-846a-65c85b008308.jpg" align="center"></img>
+    <img src="https://user-images.githubusercontent.com/56614267/146692519-aca4f201-d1e8-4c30-b67b-0d8bb017c72a.jpg" align="center"></img>
+    <img src="https://user-images.githubusercontent.com/56614267/146692521-badf53c5-4bd7-4b42-9913-27356e445286.jpg" align="center"></img>
+    <img src="https://user-images.githubusercontent.com/56614267/146692524-79bcbcbb-3651-492a-af92-f4faa75dd092.jpg" align="center"></img>
 </div>
+
+
+## Credits
 
 ### A game by : 
 
